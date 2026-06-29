@@ -1,0 +1,680 @@
+=== Rank 1/20  score=64.50 ===
+  placed: 9/9
+  AtulsWorkshop  pos=(11,13)  ladder_global=13  priority=3
+  Field          pos=(0,0)  ladder_global=8  priority=2
+  Garden         pos=(15,0)  ladder_global=15  priority=2
+  GuestHouse     pos=(12,8)  ladder_global=16  priority=3 [LADDER MISMATCH]
+  GwensLodge     pos=(17,5)  ladder_global=18  priority=3
+  Kitchen        pos=(9,0)  ladder_global=13  priority=1
+  Loom           pos=(10,3)  ladder_global=10  priority=2 [LADDER MISMATCH]
+  New            pos=(0,8)  ladder_global=0  priority=3
+  Sawmill        pos=(3,5)  ladder_global=8  priority=3
+  priority_cost=14.50  ladder_mismatches=1
+
+┌──────────────────────────────────────────────┐
+│......................╔═══▲══════════════════╗│
+│▲══════════╗..........║   ▲                  ║│
+│▲          ║..........║   ▲                  ║│
+│▲          ║..........║ AtulsWorkshop        ║│
+│▲          ║..........╚═══▲══════════════════╝│
+│▲          ║............╔═══════▲════╗........│
+│▲          ║............║       ▲    ║═══════╗│
+│▲     ╔═════════▲══════╗║       ▲    ║       ║│
+│▲ New ║         ▲      ║║ GuestHouse ║       ║│
+│▲═════║         ▲      ║╚═══════▲════╝       ║│
+│......║         ▲ ░░▲════════╗....║ ▲        ║│
+│......║ Sawmill ▲ ░░▲        ║....║ GwensLod ║│
+│......╚═════════▲═░░▲        ║....╚═▲════════╝│
+│╔════════════════▲..▲ Loom   ║▲══════════════╗│
+│║                ▲..▲════════╝▲              ║│
+│║                ▲╔════════▲..▲              ║│
+│║ Field          ▲║ Kitche ▲..▲ Garden       ║│
+│╚════════════════▲╚════════▲..▲══════════════╝│
+└──────────────────────────────────────────────┘
+
+=== Rank 2/20  score=64.83 ===
+  placed: 9/9
+  AtulsWorkshop  pos=(3,13)  ladder_global=5  priority=3 [LADDER MISMATCH]
+  Field          pos=(0,0)  ladder_global=8  priority=2
+  Garden         pos=(15,0)  ladder_global=15  priority=2
+  GuestHouse     pos=(9,8)  ladder_global=13  priority=3 [LADDER MISMATCH]
+  GwensLodge     pos=(17,5)  ladder_global=18  priority=3
+  Kitchen        pos=(9,0)  ladder_global=13  priority=1
+  Loom           pos=(10,3)  ladder_global=10  priority=2
+  New            pos=(16,9)  ladder_global=16  priority=3
+  Sawmill        pos=(0,5)  ladder_global=5  priority=3
+  priority_cost=14.83  ladder_mismatches=1
+
+┌──────────────────────────────────────────────┐
+│......╔═══▲══════════════════╗..▲══════════╗..│
+│......║   ▲                  ║..▲          ║..│
+│......║   ▲                  ║..▲          ║..│
+│......║ AtulsWorkshop        ║..▲          ║..│
+│......╚═══▲══════════════════╝..▲          ║..│
+│..................╔═══════▲════╗▲          ║..│
+│..................║       ▲    ║▲     ═══════╗│
+│╔═════════▲══════╗║       ▲    ║▲ New        ║│
+│║         ▲      ║║ GuestHouse ║▲═════       ║│
+│║         ▲      ║╚═══════▲════╝..░░░░       ║│
+│║         ▲ ░░░░░░..▲════════╗....║ ▲        ║│
+│║ Sawmill ▲ ░░░░░░..▲        ║....║ GwensLod ║│
+│╚═════════▲═░░░░░░..▲        ║....╚═▲════════╝│
+│╔════════════════▲..▲ Loom   ║▲══════════════╗│
+│║                ▲..▲════════╝▲              ║│
+│║                ▲╔════════▲..▲              ║│
+│║ Field          ▲║ Kitche ▲..▲ Garden       ║│
+│╚════════════════▲╚════════▲..▲══════════════╝│
+└──────────────────────────────────────────────┘
+
+=== Rank 3/20  score=64.83 ===
+  placed: 9/9
+  AtulsWorkshop  pos=(0,13)  ladder_global=2  priority=3 [LADDER MISMATCH]
+  Field          pos=(0,0)  ladder_global=8  priority=2
+  Garden         pos=(15,0)  ladder_global=15  priority=2
+  GuestHouse     pos=(9,8)  ladder_global=13  priority=3 [LADDER MISMATCH]
+  GwensLodge     pos=(17,5)  ladder_global=18  priority=3
+  Kitchen        pos=(9,0)  ladder_global=13  priority=1
+  Loom           pos=(10,3)  ladder_global=10  priority=2
+  New            pos=(16,9)  ladder_global=16  priority=3
+  Sawmill        pos=(0,5)  ladder_global=5  priority=3
+  priority_cost=14.83  ladder_mismatches=1
+
+┌──────────────────────────────────────────────┐
+│╔═══▲══════════════════╗........▲══════════╗..│
+│║   ▲                  ║........▲          ║..│
+│║   ▲                  ║........▲          ║..│
+│║ AtulsWorkshop        ║........▲          ║..│
+│╚═══▲══════════════════╝........▲          ║..│
+│..................╔═══════▲════╗▲          ║..│
+│..................║       ▲    ║▲     ═══════╗│
+│╔═════════▲══════╗║       ▲    ║▲ New        ║│
+│║         ▲      ║║ GuestHouse ║▲═════       ║│
+│║         ▲      ║╚═══════▲════╝..░░░░       ║│
+│║         ▲ ░░░░░░..▲════════╗....║ ▲        ║│
+│║ Sawmill ▲ ░░░░░░..▲        ║....║ GwensLod ║│
+│╚═════════▲═░░░░░░..▲        ║....╚═▲════════╝│
+│╔════════════════▲..▲ Loom   ║▲══════════════╗│
+│║                ▲..▲════════╝▲              ║│
+│║                ▲╔════════▲..▲              ║│
+│║ Field          ▲║ Kitche ▲..▲ Garden       ║│
+│╚════════════════▲╚════════▲..▲══════════════╝│
+└──────────────────────────────────────────────┘
+
+=== Rank 4/20  score=64.83 ===
+  placed: 9/9
+  AtulsWorkshop  pos=(1,13)  ladder_global=3  priority=3 [LADDER MISMATCH]
+  Field          pos=(0,0)  ladder_global=8  priority=2
+  Garden         pos=(15,0)  ladder_global=15  priority=2
+  GuestHouse     pos=(9,8)  ladder_global=13  priority=3 [LADDER MISMATCH]
+  GwensLodge     pos=(17,5)  ladder_global=18  priority=3
+  Kitchen        pos=(9,0)  ladder_global=13  priority=1
+  Loom           pos=(10,3)  ladder_global=10  priority=2
+  New            pos=(16,9)  ladder_global=16  priority=3
+  Sawmill        pos=(0,5)  ladder_global=5  priority=3
+  priority_cost=14.83  ladder_mismatches=1
+
+┌──────────────────────────────────────────────┐
+│..╔═══▲══════════════════╗......▲══════════╗..│
+│..║   ▲                  ║......▲          ║..│
+│..║   ▲                  ║......▲          ║..│
+│..║ AtulsWorkshop        ║......▲          ║..│
+│..╚═══▲══════════════════╝......▲          ║..│
+│..................╔═══════▲════╗▲          ║..│
+│..................║       ▲    ║▲     ═══════╗│
+│╔═════════▲══════╗║       ▲    ║▲ New        ║│
+│║         ▲      ║║ GuestHouse ║▲═════       ║│
+│║         ▲      ║╚═══════▲════╝..░░░░       ║│
+│║         ▲ ░░░░░░..▲════════╗....║ ▲        ║│
+│║ Sawmill ▲ ░░░░░░..▲        ║....║ GwensLod ║│
+│╚═════════▲═░░░░░░..▲        ║....╚═▲════════╝│
+│╔════════════════▲..▲ Loom   ║▲══════════════╗│
+│║                ▲..▲════════╝▲              ║│
+│║                ▲╔════════▲..▲              ║│
+│║ Field          ▲║ Kitche ▲..▲ Garden       ║│
+│╚════════════════▲╚════════▲..▲══════════════╝│
+└──────────────────────────────────────────────┘
+
+=== Rank 5/20  score=64.83 ===
+  placed: 9/9
+  AtulsWorkshop  pos=(2,13)  ladder_global=4  priority=3 [LADDER MISMATCH]
+  Field          pos=(0,0)  ladder_global=8  priority=2
+  Garden         pos=(15,0)  ladder_global=15  priority=2
+  GuestHouse     pos=(9,8)  ladder_global=13  priority=3 [LADDER MISMATCH]
+  GwensLodge     pos=(17,5)  ladder_global=18  priority=3
+  Kitchen        pos=(9,0)  ladder_global=13  priority=1
+  Loom           pos=(10,3)  ladder_global=10  priority=2
+  New            pos=(16,9)  ladder_global=16  priority=3
+  Sawmill        pos=(0,5)  ladder_global=5  priority=3
+  priority_cost=14.83  ladder_mismatches=1
+
+┌──────────────────────────────────────────────┐
+│....╔═══▲══════════════════╗....▲══════════╗..│
+│....║   ▲                  ║....▲          ║..│
+│....║   ▲                  ║....▲          ║..│
+│....║ AtulsWorkshop        ║....▲          ║..│
+│....╚═══▲══════════════════╝....▲          ║..│
+│..................╔═══════▲════╗▲          ║..│
+│..................║       ▲    ║▲     ═══════╗│
+│╔═════════▲══════╗║       ▲    ║▲ New        ║│
+│║         ▲      ║║ GuestHouse ║▲═════       ║│
+│║         ▲      ║╚═══════▲════╝..░░░░       ║│
+│║         ▲ ░░░░░░..▲════════╗....║ ▲        ║│
+│║ Sawmill ▲ ░░░░░░..▲        ║....║ GwensLod ║│
+│╚═════════▲═░░░░░░..▲        ║....╚═▲════════╝│
+│╔════════════════▲..▲ Loom   ║▲══════════════╗│
+│║                ▲..▲════════╝▲              ║│
+│║                ▲╔════════▲..▲              ║│
+│║ Field          ▲║ Kitche ▲..▲ Garden       ║│
+│╚════════════════▲╚════════▲..▲══════════════╝│
+└──────────────────────────────────────────────┘
+
+=== Rank 6/20  score=64.83 ===
+  placed: 9/9
+  AtulsWorkshop  pos=(4,13)  ladder_global=6  priority=3 [LADDER MISMATCH]
+  Field          pos=(0,0)  ladder_global=8  priority=2
+  Garden         pos=(15,0)  ladder_global=15  priority=2
+  GuestHouse     pos=(9,8)  ladder_global=13  priority=3 [LADDER MISMATCH]
+  GwensLodge     pos=(17,5)  ladder_global=18  priority=3
+  Kitchen        pos=(9,0)  ladder_global=13  priority=1
+  Loom           pos=(10,3)  ladder_global=10  priority=2
+  New            pos=(16,9)  ladder_global=16  priority=3
+  Sawmill        pos=(0,5)  ladder_global=5  priority=3
+  priority_cost=14.83  ladder_mismatches=1
+
+┌──────────────────────────────────────────────┐
+│........╔═══▲══════════════════╗▲══════════╗..│
+│........║   ▲                  ║▲          ║..│
+│........║   ▲                  ║▲          ║..│
+│........║ AtulsWorkshop        ║▲          ║..│
+│........╚═══▲══════════════════╝▲          ║..│
+│..................╔═══════▲════╗▲          ║..│
+│..................║       ▲    ║▲     ═══════╗│
+│╔═════════▲══════╗║       ▲    ║▲ New        ║│
+│║         ▲      ║║ GuestHouse ║▲═════       ║│
+│║         ▲      ║╚═══════▲════╝..░░░░       ║│
+│║         ▲ ░░░░░░..▲════════╗....║ ▲        ║│
+│║ Sawmill ▲ ░░░░░░..▲        ║....║ GwensLod ║│
+│╚═════════▲═░░░░░░..▲        ║....╚═▲════════╝│
+│╔════════════════▲..▲ Loom   ║▲══════════════╗│
+│║                ▲..▲════════╝▲              ║│
+│║                ▲╔════════▲..▲              ║│
+│║ Field          ▲║ Kitche ▲..▲ Garden       ║│
+│╚════════════════▲╚════════▲..▲══════════════╝│
+└──────────────────────────────────────────────┘
+
+=== Rank 7/20  score=65.17 ===
+  placed: 9/9
+  AtulsWorkshop  pos=(6,13)  ladder_global=8  priority=3
+  Field          pos=(0,0)  ladder_global=8  priority=2
+  Garden         pos=(15,0)  ladder_global=15  priority=2 [LADDER MISMATCH]
+  GuestHouse     pos=(15,5)  ladder_global=19  priority=3 [LADDER MISMATCH]
+  GwensLodge     pos=(16,10)  ladder_global=17  priority=3
+  Kitchen        pos=(9,0)  ladder_global=13  priority=1
+  Loom           pos=(10,3)  ladder_global=10  priority=2
+  New            pos=(0,8)  ladder_global=0  priority=3
+  Sawmill        pos=(3,5)  ladder_global=8  priority=3
+  priority_cost=15.17  ladder_mismatches=1
+
+┌──────────────────────────────────────────────┐
+│............╔═══▲══════════════════╗..........│
+│▲══════════╗║   ▲                  ║═══════╗..│
+│▲          ║║   ▲                  ║       ║..│
+│▲          ║║ AtulsWorkshop        ║       ║..│
+│▲          ║╚═══▲══════════════════╝       ║..│
+│▲          ║....................║ ▲        ║..│
+│▲          ║....................║ GwensLod ║..│
+│▲     ╔═════════▲══════╗........╚═▲════════╝..│
+│▲ New ║         ▲      ║......╔═══════▲════╗..│
+│▲═════║         ▲      ║......║       ▲    ║..│
+│......║         ▲ ░░▲════════╗║       ▲    ║..│
+│......║ Sawmill ▲ ░░▲        ║║ GuestHouse ║..│
+│......╚═════════▲═░░▲        ║╚═══════▲════╝..│
+│╔════════════════▲..▲ Loom   ║▲══════════════╗│
+│║                ▲..▲════════╝▲              ║│
+│║                ▲╔════════▲..▲              ║│
+│║ Field          ▲║ Kitche ▲..▲ Garden       ║│
+│╚════════════════▲╚════════▲..▲══════════════╝│
+└──────────────────────────────────────────────┘
+
+=== Rank 8/20  score=65.17 ===
+  placed: 9/9
+  AtulsWorkshop  pos=(6,13)  ladder_global=8  priority=3
+  Field          pos=(0,0)  ladder_global=8  priority=2
+  Garden         pos=(15,0)  ladder_global=15  priority=2 [LADDER MISMATCH]
+  GuestHouse     pos=(15,5)  ladder_global=19  priority=3 [LADDER MISMATCH]
+  GwensLodge     pos=(16,10)  ladder_global=17  priority=3
+  Kitchen        pos=(9,0)  ladder_global=13  priority=1
+  Loom           pos=(10,3)  ladder_global=10  priority=2
+  New            pos=(0,8)  ladder_global=0  priority=3
+  Sawmill        pos=(4,5)  ladder_global=9  priority=3
+  priority_cost=15.17  ladder_mismatches=1
+
+┌──────────────────────────────────────────────┐
+│............╔═══▲══════════════════╗..........│
+│▲══════════╗║   ▲                  ║═══════╗..│
+│▲          ║║   ▲                  ║       ║..│
+│▲          ║║ AtulsWorkshop        ║       ║..│
+│▲          ║╚═══▲══════════════════╝       ║..│
+│▲          ║....................║ ▲        ║..│
+│▲          ║....................║ GwensLod ║..│
+│▲     ░░╔═════════▲══════╗......╚═▲════════╝..│
+│▲ New ░░║         ▲      ║....╔═══════▲════╗..│
+│▲═════░░║         ▲      ║....║       ▲    ║..│
+│........║         ▲ ▲════════╗║       ▲    ║..│
+│........║ Sawmill ▲ ▲        ║║ GuestHouse ║..│
+│........╚═════════▲═▲        ║╚═══════▲════╝..│
+│╔════════════════▲..▲ Loom   ║▲══════════════╗│
+│║                ▲..▲════════╝▲              ║│
+│║                ▲╔════════▲..▲              ║│
+│║ Field          ▲║ Kitche ▲..▲ Garden       ║│
+│╚════════════════▲╚════════▲..▲══════════════╝│
+└──────────────────────────────────────────────┘
+
+=== Rank 9/20  score=65.17 ===
+  placed: 9/9
+  AtulsWorkshop  pos=(6,13)  ladder_global=8  priority=3
+  Field          pos=(0,0)  ladder_global=8  priority=2
+  Garden         pos=(15,0)  ladder_global=15  priority=2 [LADDER MISMATCH]
+  GuestHouse     pos=(15,5)  ladder_global=19  priority=3 [LADDER MISMATCH]
+  GwensLodge     pos=(17,10)  ladder_global=18  priority=3
+  Kitchen        pos=(9,0)  ladder_global=13  priority=1
+  Loom           pos=(10,3)  ladder_global=10  priority=2
+  New            pos=(0,8)  ladder_global=0  priority=3
+  Sawmill        pos=(3,5)  ladder_global=8  priority=3
+  priority_cost=15.17  ladder_mismatches=1
+
+┌──────────────────────────────────────────────┐
+│............╔═══▲══════════════════╗..........│
+│▲══════════╗║   ▲                  ║░░═══════╗│
+│▲          ║║   ▲                  ║░░       ║│
+│▲          ║║ AtulsWorkshop        ║░░       ║│
+│▲          ║╚═══▲══════════════════╝░░       ║│
+│▲          ║......................║ ▲        ║│
+│▲          ║......................║ GwensLod ║│
+│▲     ╔═════════▲══════╗..........╚═▲════════╝│
+│▲ New ║         ▲      ║......╔═══════▲════╗..│
+│▲═════║         ▲      ║......║       ▲    ║..│
+│......║         ▲ ░░▲════════╗║       ▲    ║..│
+│......║ Sawmill ▲ ░░▲        ║║ GuestHouse ║..│
+│......╚═════════▲═░░▲        ║╚═══════▲════╝..│
+│╔════════════════▲..▲ Loom   ║▲══════════════╗│
+│║                ▲..▲════════╝▲              ║│
+│║                ▲╔════════▲..▲              ║│
+│║ Field          ▲║ Kitche ▲..▲ Garden       ║│
+│╚════════════════▲╚════════▲..▲══════════════╝│
+└──────────────────────────────────────────────┘
+
+=== Rank 10/20  score=65.17 ===
+  placed: 9/9
+  AtulsWorkshop  pos=(7,13)  ladder_global=9  priority=3
+  Field          pos=(0,0)  ladder_global=8  priority=2
+  Garden         pos=(15,0)  ladder_global=15  priority=2 [LADDER MISMATCH]
+  GuestHouse     pos=(15,5)  ladder_global=19  priority=3 [LADDER MISMATCH]
+  GwensLodge     pos=(17,10)  ladder_global=18  priority=3
+  Kitchen        pos=(9,0)  ladder_global=13  priority=1
+  Loom           pos=(10,3)  ladder_global=10  priority=2
+  New            pos=(0,8)  ladder_global=0  priority=3
+  Sawmill        pos=(3,5)  ladder_global=8  priority=3
+  priority_cost=15.17  ladder_mismatches=1
+
+┌──────────────────────────────────────────────┐
+│..............╔═══▲══════════════════╗........│
+│▲══════════╗..║   ▲                  ║═══════╗│
+│▲          ║..║   ▲                  ║       ║│
+│▲          ║..║ AtulsWorkshop        ║       ║│
+│▲          ║..╚═══▲══════════════════╝       ║│
+│▲          ║......................║ ▲        ║│
+│▲          ║......................║ GwensLod ║│
+│▲     ╔═════════▲══════╗..........╚═▲════════╝│
+│▲ New ║         ▲      ║......╔═══════▲════╗..│
+│▲═════║         ▲      ║......║       ▲    ║..│
+│......║         ▲ ░░▲════════╗║       ▲    ║..│
+│......║ Sawmill ▲ ░░▲        ║║ GuestHouse ║..│
+│......╚═════════▲═░░▲        ║╚═══════▲════╝..│
+│╔════════════════▲..▲ Loom   ║▲══════════════╗│
+│║                ▲..▲════════╝▲              ║│
+│║                ▲╔════════▲..▲              ║│
+│║ Field          ▲║ Kitche ▲..▲ Garden       ║│
+│╚════════════════▲╚════════▲..▲══════════════╝│
+└──────────────────────────────────────────────┘
+
+=== Rank 11/20  score=65.17 ===
+  placed: 9/9
+  AtulsWorkshop  pos=(6,13)  ladder_global=8  priority=3
+  Field          pos=(0,0)  ladder_global=8  priority=2
+  Garden         pos=(15,0)  ladder_global=15  priority=2 [LADDER MISMATCH]
+  GuestHouse     pos=(15,5)  ladder_global=19  priority=3 [LADDER MISMATCH]
+  GwensLodge     pos=(17,10)  ladder_global=18  priority=3
+  Kitchen        pos=(9,0)  ladder_global=13  priority=1
+  Loom           pos=(10,3)  ladder_global=10  priority=2
+  New            pos=(0,8)  ladder_global=0  priority=3
+  Sawmill        pos=(4,5)  ladder_global=9  priority=3
+  priority_cost=15.17  ladder_mismatches=1
+
+┌──────────────────────────────────────────────┐
+│............╔═══▲══════════════════╗..........│
+│▲══════════╗║   ▲                  ║░░═══════╗│
+│▲          ║║   ▲                  ║░░       ║│
+│▲          ║║ AtulsWorkshop        ║░░       ║│
+│▲          ║╚═══▲══════════════════╝░░       ║│
+│▲          ║......................║ ▲        ║│
+│▲          ║......................║ GwensLod ║│
+│▲     ░░╔═════════▲══════╗........╚═▲════════╝│
+│▲ New ░░║         ▲      ║....╔═══════▲════╗..│
+│▲═════░░║         ▲      ║....║       ▲    ║..│
+│........║         ▲ ▲════════╗║       ▲    ║..│
+│........║ Sawmill ▲ ▲        ║║ GuestHouse ║..│
+│........╚═════════▲═▲        ║╚═══════▲════╝..│
+│╔════════════════▲..▲ Loom   ║▲══════════════╗│
+│║                ▲..▲════════╝▲              ║│
+│║                ▲╔════════▲..▲              ║│
+│║ Field          ▲║ Kitche ▲..▲ Garden       ║│
+│╚════════════════▲╚════════▲..▲══════════════╝│
+└──────────────────────────────────────────────┘
+
+=== Rank 12/20  score=65.17 ===
+  placed: 9/9
+  AtulsWorkshop  pos=(7,13)  ladder_global=9  priority=3
+  Field          pos=(0,0)  ladder_global=8  priority=2
+  Garden         pos=(15,0)  ladder_global=15  priority=2 [LADDER MISMATCH]
+  GuestHouse     pos=(15,5)  ladder_global=19  priority=3 [LADDER MISMATCH]
+  GwensLodge     pos=(17,10)  ladder_global=18  priority=3
+  Kitchen        pos=(9,0)  ladder_global=13  priority=1
+  Loom           pos=(10,3)  ladder_global=10  priority=2
+  New            pos=(0,8)  ladder_global=0  priority=3
+  Sawmill        pos=(4,5)  ladder_global=9  priority=3
+  priority_cost=15.17  ladder_mismatches=1
+
+┌──────────────────────────────────────────────┐
+│..............╔═══▲══════════════════╗........│
+│▲══════════╗..║   ▲                  ║═══════╗│
+│▲          ║..║   ▲                  ║       ║│
+│▲          ║..║ AtulsWorkshop        ║       ║│
+│▲          ║..╚═══▲══════════════════╝       ║│
+│▲          ║......................║ ▲        ║│
+│▲          ║......................║ GwensLod ║│
+│▲     ░░╔═════════▲══════╗........╚═▲════════╝│
+│▲ New ░░║         ▲      ║....╔═══════▲════╗..│
+│▲═════░░║         ▲      ║....║       ▲    ║..│
+│........║         ▲ ▲════════╗║       ▲    ║..│
+│........║ Sawmill ▲ ▲        ║║ GuestHouse ║..│
+│........╚═════════▲═▲        ║╚═══════▲════╝..│
+│╔════════════════▲..▲ Loom   ║▲══════════════╗│
+│║                ▲..▲════════╝▲              ║│
+│║                ▲╔════════▲..▲              ║│
+│║ Field          ▲║ Kitche ▲..▲ Garden       ║│
+│╚════════════════▲╚════════▲..▲══════════════╝│
+└──────────────────────────────────────────────┘
+
+=== Rank 13/20  score=65.17 ===
+  placed: 9/9
+  AtulsWorkshop  pos=(7,13)  ladder_global=9  priority=3
+  Field          pos=(0,0)  ladder_global=8  priority=2
+  Garden         pos=(15,0)  ladder_global=15  priority=2 [LADDER MISMATCH]
+  GuestHouse     pos=(15,5)  ladder_global=19  priority=3 [LADDER MISMATCH]
+  GwensLodge     pos=(17,10)  ladder_global=18  priority=3
+  Kitchen        pos=(9,0)  ladder_global=13  priority=1
+  Loom           pos=(10,3)  ladder_global=10  priority=2
+  New            pos=(1,8)  ladder_global=1  priority=3
+  Sawmill        pos=(4,5)  ladder_global=9  priority=3
+  priority_cost=15.17  ladder_mismatches=1
+
+┌──────────────────────────────────────────────┐
+│..............╔═══▲══════════════════╗........│
+│..▲══════════╗║   ▲                  ║═══════╗│
+│..▲          ║║   ▲                  ║       ║│
+│..▲          ║║ AtulsWorkshop        ║       ║│
+│..▲          ║╚═══▲══════════════════╝       ║│
+│..▲          ║....................║ ▲        ║│
+│..▲          ║....................║ GwensLod ║│
+│..▲     ╔═════════▲══════╗........╚═▲════════╝│
+│..▲ New ║         ▲      ║....╔═══════▲════╗..│
+│..▲═════║         ▲      ║....║       ▲    ║..│
+│........║         ▲ ▲════════╗║       ▲    ║..│
+│........║ Sawmill ▲ ▲        ║║ GuestHouse ║..│
+│........╚═════════▲═▲        ║╚═══════▲════╝..│
+│╔════════════════▲..▲ Loom   ║▲══════════════╗│
+│║                ▲..▲════════╝▲              ║│
+│║                ▲╔════════▲..▲              ║│
+│║ Field          ▲║ Kitche ▲..▲ Garden       ║│
+│╚════════════════▲╚════════▲..▲══════════════╝│
+└──────────────────────────────────────────────┘
+
+=== Rank 14/20  score=65.17 ===
+  placed: 9/9
+  AtulsWorkshop  pos=(6,13)  ladder_global=8  priority=3
+  Field          pos=(0,0)  ladder_global=8  priority=2
+  Garden         pos=(15,0)  ladder_global=15  priority=2 [LADDER MISMATCH]
+  GuestHouse     pos=(16,5)  ladder_global=20  priority=3 [LADDER MISMATCH]
+  GwensLodge     pos=(16,10)  ladder_global=17  priority=3
+  Kitchen        pos=(9,0)  ladder_global=13  priority=1
+  Loom           pos=(10,3)  ladder_global=10  priority=2
+  New            pos=(0,8)  ladder_global=0  priority=3
+  Sawmill        pos=(3,5)  ladder_global=8  priority=3
+  priority_cost=15.17  ladder_mismatches=1
+
+┌──────────────────────────────────────────────┐
+│............╔═══▲══════════════════╗..........│
+│▲══════════╗║   ▲                  ║═══════╗..│
+│▲          ║║   ▲                  ║       ║..│
+│▲          ║║ AtulsWorkshop        ║       ║..│
+│▲          ║╚═══▲══════════════════╝       ║..│
+│▲          ║....................║ ▲        ║..│
+│▲          ║....................║ GwensLod ║..│
+│▲     ╔═════════▲══════╗........╚═▲════════╝..│
+│▲ New ║         ▲      ║........╔═══════▲════╗│
+│▲═════║         ▲      ║........║       ▲    ║│
+│......║         ▲ ░░▲════════╗..║       ▲    ║│
+│......║ Sawmill ▲ ░░▲        ║..║ GuestHouse ║│
+│......╚═════════▲═░░▲        ║..╚═══════▲════╝│
+│╔════════════════▲..▲ Loom   ║▲══════════════╗│
+│║                ▲..▲════════╝▲              ║│
+│║                ▲╔════════▲..▲              ║│
+│║ Field          ▲║ Kitche ▲..▲ Garden       ║│
+│╚════════════════▲╚════════▲..▲══════════════╝│
+└──────────────────────────────────────────────┘
+
+=== Rank 15/20  score=114.50 ===
+  placed: 9/9
+  AtulsWorkshop  pos=(8,13)  ladder_global=10  priority=3 [LADDER MISMATCH]
+  Field          pos=(0,0)  ladder_global=8  priority=2
+  Garden         pos=(15,0)  ladder_global=15  priority=2
+  GuestHouse     pos=(12,8)  ladder_global=16  priority=3 [LADDER MISMATCH]
+  GwensLodge     pos=(17,5)  ladder_global=18  priority=3
+  Kitchen        pos=(9,0)  ladder_global=13  priority=1
+  Loom           pos=(10,3)  ladder_global=10  priority=2 [LADDER MISMATCH]
+  New            pos=(0,8)  ladder_global=0  priority=3
+  Sawmill        pos=(3,5)  ladder_global=8  priority=3
+  priority_cost=14.50  ladder_mismatches=2
+
+┌──────────────────────────────────────────────┐
+│................╔═══▲══════════════════╗......│
+│▲══════════╗....║   ▲                  ║......│
+│▲          ║....║   ▲                  ║......│
+│▲          ║....║ AtulsWorkshop        ║......│
+│▲          ║....╚═══▲══════════════════╝......│
+│▲          ║............╔═══════▲════╗........│
+│▲          ║............║       ▲    ║═══════╗│
+│▲     ╔═════════▲══════╗║       ▲    ║       ║│
+│▲ New ║         ▲      ║║ GuestHouse ║       ║│
+│▲═════║         ▲      ║╚═══════▲════╝       ║│
+│......║         ▲ ░░▲════════╗....║ ▲        ║│
+│......║ Sawmill ▲ ░░▲        ║....║ GwensLod ║│
+│......╚═════════▲═░░▲        ║....╚═▲════════╝│
+│╔════════════════▲..▲ Loom   ║▲══════════════╗│
+│║                ▲..▲════════╝▲              ║│
+│║                ▲╔════════▲..▲              ║│
+│║ Field          ▲║ Kitche ▲..▲ Garden       ║│
+│╚════════════════▲╚════════▲..▲══════════════╝│
+└──────────────────────────────────────────────┘
+
+=== Rank 16/20  score=114.50 ===
+  placed: 9/9
+  AtulsWorkshop  pos=(9,13)  ladder_global=11  priority=3 [LADDER MISMATCH]
+  Field          pos=(0,0)  ladder_global=8  priority=2
+  Garden         pos=(15,0)  ladder_global=15  priority=2
+  GuestHouse     pos=(12,8)  ladder_global=16  priority=3 [LADDER MISMATCH]
+  GwensLodge     pos=(17,5)  ladder_global=18  priority=3
+  Kitchen        pos=(9,0)  ladder_global=13  priority=1
+  Loom           pos=(10,3)  ladder_global=10  priority=2 [LADDER MISMATCH]
+  New            pos=(0,8)  ladder_global=0  priority=3
+  Sawmill        pos=(3,5)  ladder_global=8  priority=3
+  priority_cost=14.50  ladder_mismatches=2
+
+┌──────────────────────────────────────────────┐
+│..................╔═══▲══════════════════╗....│
+│▲══════════╗......║   ▲                  ║....│
+│▲          ║......║   ▲                  ║....│
+│▲          ║......║ AtulsWorkshop        ║....│
+│▲          ║......╚═══▲══════════════════╝....│
+│▲          ║............╔═══════▲════╗........│
+│▲          ║............║       ▲    ║═══════╗│
+│▲     ╔═════════▲══════╗║       ▲    ║       ║│
+│▲ New ║         ▲      ║║ GuestHouse ║       ║│
+│▲═════║         ▲      ║╚═══════▲════╝       ║│
+│......║         ▲ ░░▲════════╗....║ ▲        ║│
+│......║ Sawmill ▲ ░░▲        ║....║ GwensLod ║│
+│......╚═════════▲═░░▲        ║....╚═▲════════╝│
+│╔════════════════▲..▲ Loom   ║▲══════════════╗│
+│║                ▲..▲════════╝▲              ║│
+│║                ▲╔════════▲..▲              ║│
+│║ Field          ▲║ Kitche ▲..▲ Garden       ║│
+│╚════════════════▲╚════════▲..▲══════════════╝│
+└──────────────────────────────────────────────┘
+
+=== Rank 17/20  score=114.50 ===
+  placed: 9/9
+  AtulsWorkshop  pos=(10,13)  ladder_global=12  priority=3 [LADDER MISMATCH]
+  Field          pos=(0,0)  ladder_global=8  priority=2
+  Garden         pos=(15,0)  ladder_global=15  priority=2
+  GuestHouse     pos=(12,8)  ladder_global=16  priority=3 [LADDER MISMATCH]
+  GwensLodge     pos=(17,5)  ladder_global=18  priority=3
+  Kitchen        pos=(9,0)  ladder_global=13  priority=1
+  Loom           pos=(10,3)  ladder_global=10  priority=2 [LADDER MISMATCH]
+  New            pos=(0,8)  ladder_global=0  priority=3
+  Sawmill        pos=(3,5)  ladder_global=8  priority=3
+  priority_cost=14.50  ladder_mismatches=2
+
+┌──────────────────────────────────────────────┐
+│....................╔═══▲══════════════════╗..│
+│▲══════════╗........║   ▲                  ║..│
+│▲          ║........║   ▲                  ║..│
+│▲          ║........║ AtulsWorkshop        ║..│
+│▲          ║........╚═══▲══════════════════╝..│
+│▲          ║............╔═══════▲════╗........│
+│▲          ║............║       ▲    ║═══════╗│
+│▲     ╔═════════▲══════╗║       ▲    ║       ║│
+│▲ New ║         ▲      ║║ GuestHouse ║       ║│
+│▲═════║         ▲      ║╚═══════▲════╝       ║│
+│......║         ▲ ░░▲════════╗....║ ▲        ║│
+│......║ Sawmill ▲ ░░▲        ║....║ GwensLod ║│
+│......╚═════════▲═░░▲        ║....╚═▲════════╝│
+│╔════════════════▲..▲ Loom   ║▲══════════════╗│
+│║                ▲..▲════════╝▲              ║│
+│║                ▲╔════════▲..▲              ║│
+│║ Field          ▲║ Kitche ▲..▲ Garden       ║│
+│╚════════════════▲╚════════▲..▲══════════════╝│
+└──────────────────────────────────────────────┘
+
+=== Rank 18/20  score=114.50 ===
+  placed: 9/9
+  AtulsWorkshop  pos=(6,13)  ladder_global=8  priority=3 [LADDER MISMATCH]
+  Field          pos=(0,0)  ladder_global=8  priority=2
+  Garden         pos=(15,0)  ladder_global=15  priority=2
+  GuestHouse     pos=(12,8)  ladder_global=16  priority=3 [LADDER MISMATCH]
+  GwensLodge     pos=(17,5)  ladder_global=18  priority=3
+  Kitchen        pos=(9,0)  ladder_global=13  priority=1
+  Loom           pos=(10,3)  ladder_global=10  priority=2 [LADDER MISMATCH]
+  New            pos=(0,8)  ladder_global=0  priority=3
+  Sawmill        pos=(3,5)  ladder_global=8  priority=3
+  priority_cost=14.50  ladder_mismatches=2
+
+┌──────────────────────────────────────────────┐
+│............╔═══▲══════════════════╗..........│
+│▲══════════╗║   ▲                  ║..........│
+│▲          ║║   ▲                  ║..........│
+│▲          ║║ AtulsWorkshop        ║..........│
+│▲          ║╚═══▲══════════════════╝..........│
+│▲          ║............╔═══════▲════╗........│
+│▲          ║............║       ▲    ║═══════╗│
+│▲     ╔═════════▲══════╗║       ▲    ║       ║│
+│▲ New ║         ▲      ║║ GuestHouse ║       ║│
+│▲═════║         ▲      ║╚═══════▲════╝       ║│
+│......║         ▲ ░░▲════════╗....║ ▲        ║│
+│......║ Sawmill ▲ ░░▲        ║....║ GwensLod ║│
+│......╚═════════▲═░░▲        ║....╚═▲════════╝│
+│╔════════════════▲..▲ Loom   ║▲══════════════╗│
+│║                ▲..▲════════╝▲              ║│
+│║                ▲╔════════▲..▲              ║│
+│║ Field          ▲║ Kitche ▲..▲ Garden       ║│
+│╚════════════════▲╚════════▲..▲══════════════╝│
+└──────────────────────────────────────────────┘
+
+=== Rank 19/20  score=114.50 ===
+  placed: 9/9
+  AtulsWorkshop  pos=(7,13)  ladder_global=9  priority=3 [LADDER MISMATCH]
+  Field          pos=(0,0)  ladder_global=8  priority=2
+  Garden         pos=(15,0)  ladder_global=15  priority=2
+  GuestHouse     pos=(12,8)  ladder_global=16  priority=3 [LADDER MISMATCH]
+  GwensLodge     pos=(17,5)  ladder_global=18  priority=3
+  Kitchen        pos=(9,0)  ladder_global=13  priority=1
+  Loom           pos=(10,3)  ladder_global=10  priority=2 [LADDER MISMATCH]
+  New            pos=(0,8)  ladder_global=0  priority=3
+  Sawmill        pos=(3,5)  ladder_global=8  priority=3
+  priority_cost=14.50  ladder_mismatches=2
+
+┌──────────────────────────────────────────────┐
+│..............╔═══▲══════════════════╗........│
+│▲══════════╗..║   ▲                  ║........│
+│▲          ║..║   ▲                  ║........│
+│▲          ║..║ AtulsWorkshop        ║........│
+│▲          ║..╚═══▲══════════════════╝........│
+│▲          ║............╔═══════▲════╗........│
+│▲          ║............║       ▲    ║═══════╗│
+│▲     ╔═════════▲══════╗║       ▲    ║       ║│
+│▲ New ║         ▲      ║║ GuestHouse ║       ║│
+│▲═════║         ▲      ║╚═══════▲════╝       ║│
+│......║         ▲ ░░▲════════╗....║ ▲        ║│
+│......║ Sawmill ▲ ░░▲        ║....║ GwensLod ║│
+│......╚═════════▲═░░▲        ║....╚═▲════════╝│
+│╔════════════════▲..▲ Loom   ║▲══════════════╗│
+│║                ▲..▲════════╝▲              ║│
+│║                ▲╔════════▲..▲              ║│
+│║ Field          ▲║ Kitche ▲..▲ Garden       ║│
+│╚════════════════▲╚════════▲..▲══════════════╝│
+└──────────────────────────────────────────────┘
+
+=== Rank 20/20  score=217.83 ===
+  placed: 9/9
+  AtulsWorkshop  pos=(0,13)  ladder_global=2  priority=3
+  Field          pos=(5,0)  ladder_global=13  priority=2 [LADDER MISMATCH]
+  Garden         pos=(6,5)  ladder_global=6  priority=2 [LADDER MISMATCH]
+  GuestHouse     pos=(16,11)  ladder_global=20  priority=3 [LADDER MISMATCH]
+  GwensLodge     pos=(10,10)  ladder_global=11  priority=3 [LADDER MISMATCH]
+  Kitchen        pos=(0,0)  ladder_global=4  priority=1 [LADDER MISMATCH]
+  Loom           pos=(16,6)  ladder_global=16  priority=2 [LADDER MISMATCH]
+  New            pos=(0,3)  ladder_global=0  priority=3 [LADDER MISMATCH]
+  Sawmill        pos=(14,0)  ladder_global=19  priority=3
+  priority_cost=17.83  ladder_mismatches=4
+
+┌──────────────────────────────────────────────┐
+│╔═══▲══════════════════╗......................│
+│║   ▲                  ║═══════╗..............│
+│║   ▲                  ║       ║╔═══════▲════╗│
+│║ AtulsWorkshop        ║       ║║       ▲    ║│
+│╚═══▲══════════════════╝       ║║       ▲    ║│
+│....................║ ▲        ║║ GuestHouse ║│
+│▲══════════╗........║ GwensLod ║╚═══════▲════╝│
+│▲          ║........╚═▲════════╝▲════════╗....│
+│▲          ║▲══════════════╗....▲        ║....│
+│▲          ║▲              ║....▲        ║....│
+│▲          ║▲              ║....▲ Loom   ║....│
+│▲          ║▲ Garden       ║....▲════════╝....│
+│▲     ░░░░░░▲══════════════╝╔═════════▲══════╗│
+│▲ New ░░░░╔════════════════▲║         ▲      ║│
+│▲═════░░░░║                ▲║         ▲      ║│
+│╔════════▲║                ▲║         ▲ ░░░░░░│
+│║ Kitche ▲║ Field          ▲║ Sawmill ▲ ░░░░░░│
+│╚════════▲╚════════════════▲╚═════════▲═░░░░░░│
+└──────────────────────────────────────────────┘
+

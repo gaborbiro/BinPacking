@@ -1,0 +1,35 @@
+container 23 18
+max_ladder_gap 3
+max_solutions 20
+weight_priority 1.0
+weight_mismatch 50.0
+
+shape New
+  size      6 9
+  carve     3 0 3 3
+  ladder    0
+  priority  3
+
+shape Field         9 5     ladder=8    priority=2
+
+shape Loom          5 5     ladder=0    priority=2
+
+shape Kitchen       5 3     ladder=4    priority=1
+
+shape AtulsWorkshop 12 5    ladder=2    priority=3
+
+shape Garden        8 5     ladder=0    priority=2
+
+shape GwensLodge
+  size      6 7
+  carve     0 3 2 4
+  ladder    1
+  priority  3
+
+shape GuestHouse    7 5     ladder=4    priority=3
+
+shape Sawmill
+  size      9 6
+  carve     6 0 3 3
+  ladder    5
+  priority  3
