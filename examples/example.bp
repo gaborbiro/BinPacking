@@ -1,10 +1,17 @@
-container 23 18
+container 30 22
 max_ladder_gap 3
-max_solutions 20
+max_solutions 50
 weight_priority 1.0
 weight_mismatch 50.0
 
-shape New
+shape Foundry
+  size      13 12
+  carve     0 5 5 7
+  carve     8 8 5 4
+  ladder    0
+  priority  3
+
+shape SummersSanctuary
   size      6 9
   carve     3 0 3 3
   ladder    0

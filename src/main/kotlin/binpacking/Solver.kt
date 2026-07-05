@@ -11,6 +11,10 @@ class Solver(private val config: Config, private val onProgress: ((pct: Int, cov
     private val seenKeys  = ConcurrentHashMap.newKeySet<String>()
     private val covered   = AtomicLong(0)
 
+    // Best score seen so far — used for branch-and-bound pruning.
+    // Only ever decreases; a stale read just means slightly less pruning, never wrong results.
+    @Volatile private var bestScore = Double.MAX_VALUE
+
     private lateinit var subtreeSize: LongArray
     private var theoreticalTotal = 1L
 
@@ -35,10 +39,9 @@ class Solver(private val config: Config, private val onProgress: ((pct: Int, cov
         val fullMask = (1 shl n) - 1
         val tryOrder = config.shapes.indices.sortedBy { config.shapes[it].priority }
 
-        // Build root-level tasks: one per (shape, x) combination.
         val tasks = mutableListOf<Runnable>()
         for (shapeIdx in tryOrder) {
-            val shape = config.shapes[shapeIdx]
+            val shape     = config.shapes[shapeIdx]
             val childMask = fullMask xor (1 shl shapeIdx)
             val xPositions = (0 until config.container.width)
                 .filter { px -> px + shape.width <= config.container.width }
@@ -51,7 +54,7 @@ class Solver(private val config: Config, private val onProgress: ((pct: Int, cov
                         return@Runnable
                     }
 
-                    credit(1)  // this root call
+                    credit(1)
 
                     val grid = Grid(config.container.width, config.container.height)
                     val py   = grid.settleY(shape, px)
@@ -59,10 +62,13 @@ class Solver(private val config: Config, private val onProgress: ((pct: Int, cov
                     if (py == -1) {
                         credit(subtreeSize[childMask])
                     } else {
-                        val remaining = config.shapes.toMutableList().also { it.removeAt(shapeIdx) }
-                        val placed    = mutableListOf(Placement(shape, px, py))
+                        val placement        = Placement(shape, px, py)
+                        val initPriorityCost = py.toDouble() / shape.priority
+                        val initMismatches   = 0  // no neighbours yet
+                        val remaining        = config.shapes.toMutableList().also { it.removeAt(shapeIdx) }
+                        val placed           = mutableListOf(placement)
                         grid.place(shape, px, py)
-                        backtrack(remaining, childMask, placed, grid)
+                        backtrack(remaining, childMask, placed, grid, initPriorityCost, initMismatches)
                     }
                 })
             }
@@ -83,9 +89,19 @@ class Solver(private val config: Config, private val onProgress: ((pct: Int, cov
         remaining: MutableList<Shape>,
         remainingMask: Int,
         placed: MutableList<Placement>,
-        grid: Grid
+        grid: Grid,
+        partialPriorityCost: Double,
+        partialMismatches: Int
     ) {
         credit(1)
+
+        // Branch and bound: partial score is a valid lower bound (costs can only grow).
+        val lowerBound = partialPriorityCost * config.weightPriority +
+                         partialMismatches   * config.weightMismatch
+        if (lowerBound >= bestScore) {
+            credit(subtreeSize[remainingMask] - 1)
+            return
+        }
 
         if (solutions.size >= config.maxSolutions) {
             credit(subtreeSize[remainingMask] - 1)
@@ -95,7 +111,10 @@ class Solver(private val config: Config, private val onProgress: ((pct: Int, cov
         if (remaining.isEmpty()) {
             val solution = Scorer.buildSolution(placed, config)
             val key = solutionKey(placed)
-            if (seenKeys.add(key)) solutions.add(solution)
+            if (seenKeys.add(key)) {
+                solutions.add(solution)
+                if (solution.score < bestScore) bestScore = solution.score
+            }
             return
         }
 
@@ -107,8 +126,8 @@ class Solver(private val config: Config, private val onProgress: ((pct: Int, cov
 
         val tryOrder = remaining.indices.sortedBy { remaining[it].priority }
         for (i in tryOrder) {
-            val shape    = remaining.removeAt(i)
-            val shapeBit = 1 shl config.shapes.indexOf(shape)
+            val shape     = remaining.removeAt(i)
+            val shapeBit  = 1 shl config.shapes.indexOf(shape)
             val childMask = remainingMask xor shapeBit
 
             val xPositions = (0 until config.container.width)
@@ -122,10 +141,22 @@ class Solver(private val config: Config, private val onProgress: ((pct: Int, cov
                     continue
                 }
 
-                placed.add(Placement(shape, px, py))
+                val placement    = Placement(shape, px, py)
+                val newPriority  = partialPriorityCost + py.toDouble() / shape.priority
+                val newMismatches = partialMismatches + countNewMismatches(placement, placed)
+
+                // Prune before recursing if already provably worse.
+                val childBound = newPriority * config.weightPriority +
+                                 newMismatches * config.weightMismatch
+                if (childBound >= bestScore) {
+                    credit(subtreeSize[childMask])
+                    continue
+                }
+
+                placed.add(placement)
                 grid.place(shape, px, py)
 
-                backtrack(remaining, childMask, placed, grid)
+                backtrack(remaining, childMask, placed, grid, newPriority, newMismatches)
 
                 grid.unplace(shape, px, py)
                 placed.removeLast()
@@ -140,8 +171,22 @@ class Solver(private val config: Config, private val onProgress: ((pct: Int, cov
         }
     }
 
+    // Counts mismatches the new placement creates with already-placed shapes.
+    // Each mismatch pair is counted once: when the second shape of the pair is placed.
+    private fun countNewMismatches(p: Placement, placed: List<Placement>): Int {
+        var count = 0
+        for (other in placed) {
+            val adjacent = other.top == p.y || p.top == other.y
+            if (!adjacent) continue
+            val overlap = p.x < other.x + other.shape.width && other.x < p.x + p.shape.width
+            if (!overlap) continue
+            if (kotlin.math.abs(p.ladderGlobalX - other.ladderGlobalX) > config.maxLadderGap) count++
+        }
+        return count
+    }
+
     private fun credit(n: Long) {
-        val c = covered.addAndGet(n)
+        val c     = covered.addAndGet(n)
         val calls = reportCounter.incrementAndGet()
         if (calls and 0xFFFF == 0L) {
             val pct  = ((c.toDouble() / theoreticalTotal) * 100).toInt().coerceIn(0, 100)
