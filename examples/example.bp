@@ -1,4 +1,4 @@
-container 38 22
+container 38 34
 max_ladder_gap 3
 #can be -1 to let the algo finish
 max_solutions 200
@@ -10,10 +10,10 @@ shape Orchard
   ladder    0
   priority  1
 
-shape AirDraft
-  size      4 6
-  ladder    0 4
-  priority  3
+#shape AirDraft
+#  size      4 6
+#  ladder    0 4
+#  priority  3
 
 shape AstridsBungallow
   size      10 11

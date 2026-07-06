@@ -8,7 +8,7 @@ import java.util.concurrent.atomic.AtomicLong
 
 class Solver(
     private val config: Config,
-    private val onProgress:       ((pct: Int, covered: Double, total: Double, found: Int) -> Unit)? = null,
+    private val onProgress:       ((pct: Double, covered: Double, total: Double, found: Int) -> Unit)? = null,
     private val onSolutionFound:  ((solution: Solution, found: Int) -> Unit)? = null,
     private val onRootTaskDone:   ((taskId: String) -> Unit)? = null,
     private val resumeSkipTasks:  Set<String> = emptySet(),
@@ -30,6 +30,8 @@ class Solver(
     fun solve(): List<Solution> {
         seenKeys.addAll(resumeSeenKeys)
         bestScore = resumeBestScore
+
+        greedySeed()
 
         val n = config.shapes.size
         val xCounts = config.shapes.map { (config.container.width - it.width + 1).coerceAtLeast(0).toDouble() }
@@ -98,6 +100,41 @@ class Solver(
         }
 
         return solutions.sortedBy { it.score }
+    }
+
+    // Fast greedy pass: for each shape (in priority order) pick the x that minimises
+    // the immediate score increase. Seeds bestScore before B&B tasks start so that
+    // pruning is effective from the very first root task.
+    private fun greedySeed() {
+        val grid   = Grid(config.container.width, config.container.height)
+        val placed = mutableListOf<Placement>()
+
+        for (shape in config.shapes.sortedBy { it.priority }) {
+            var bestPlacement: Placement? = null
+            var bestCost = Double.MAX_VALUE
+
+            for (px in 0..config.container.width - shape.width) {
+                val py = grid.settleY(shape, px)
+                if (py == -1) continue
+                val p    = Placement(shape, px, py)
+                val cost = (py.toDouble() / shape.priority) * config.weightPriority +
+                           countNewMismatches(p, placed) * config.weightMismatch
+                if (cost < bestCost) { bestCost = cost; bestPlacement = p }
+            }
+
+            if (bestPlacement == null) return   // shape doesn't fit — abandon
+            grid.place(shape, bestPlacement.x, bestPlacement.y)
+            placed.add(bestPlacement)
+        }
+
+        if (placed.size < config.shapes.size) return
+
+        val solution = Scorer.buildSolution(placed, config)
+        if (seenKeys.add(solution.key)) {
+            solutions.add(solution)
+            if (solution.score < bestScore) bestScore = solution.score
+            onSolutionFound?.invoke(solution, solutions.size)
+        }
     }
 
     private fun backtrack(
@@ -195,7 +232,7 @@ class Solver(
         val calls = reportCounter.incrementAndGet()
         if (calls and 0xFFFF == 0L) {
             val c   = covered.sum()
-            val pct = ((c / theoreticalTotal) * 100).toInt().coerceIn(0, 100)
+            val pct = ((c / theoreticalTotal) * 100).coerceIn(0.0, 100.0)
             onProgress?.invoke(pct, c, theoreticalTotal, solutions.size)
         }
     }

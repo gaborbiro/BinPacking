@@ -59,8 +59,6 @@ fun main(args: Array<String>) {
     println(header)
     println("Container: ${config.container.width}x${config.container.height}  ($containerArea cells)")
     println("Buildings: ${config.shapes.size}  total surface: $shapesArea cells  (${containerArea - shapesArea} unused)")
-    println("Solving...")
-    println()
 
     val completedTasks = ConcurrentHashMap.newKeySet<String>()
     completedTasks.addAll(resumeSkipTasks)
@@ -88,10 +86,17 @@ fun main(args: Array<String>) {
     Runtime.getRuntime().addShutdownHook(shutdownHook)
 
     val startMs = System.currentTimeMillis()
+    var solutionSpacePrinted = false
 
     val solutions = Solver(
         config,
         onProgress = { pct, covered, total, found ->
+            if (!solutionSpacePrinted) {
+                println("Solution space: ${"%,.0f".format(total)} nodes")
+                println()
+                println("Solving...")
+                solutionSpacePrinted = true
+            }
             val elapsed = (System.currentTimeMillis() - startMs).coerceAtLeast(1)
             val etaStr = if (covered > 0) {
                 val etaSec = (total - covered) / (covered / elapsed * 1000)
@@ -99,7 +104,7 @@ fun main(args: Array<String>) {
             } else "?"
             val b = lastBest.get()
             val bestStr = if (b != null) "%.2f (%s)".format(b.score, b.runId) else "none"
-            print("\r  $pct%  $found found | score: $bestStr | ${"%,.0f".format(covered)} / ${"%,.0f".format(total)} | ETA: $etaStr   ")
+            print("\r  ${"%.2f".format(pct)}%  $found found | best score: $bestStr | ETA: $etaStr   ")
             ckptFile.writeText(buildCheckpoint())
         },
         onSolutionFound = { solution, found ->
