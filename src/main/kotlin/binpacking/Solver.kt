@@ -3,31 +3,41 @@ package binpacking
 import java.util.concurrent.ConcurrentHashMap
 import java.util.concurrent.CopyOnWriteArrayList
 import java.util.concurrent.ForkJoinPool
+import java.util.concurrent.atomic.DoubleAdder
 import java.util.concurrent.atomic.AtomicLong
 
-class Solver(private val config: Config, private val onProgress: ((pct: Int, covered: Long, total: Long, found: Int, best: Double?) -> Unit)? = null) {
-
+class Solver(
+    private val config: Config,
+    private val onProgress:       ((pct: Int, covered: Double, total: Double, found: Int) -> Unit)? = null,
+    private val onSolutionFound:  ((solution: Solution, found: Int) -> Unit)? = null,
+    private val onRootTaskDone:   ((taskId: String) -> Unit)? = null,
+    private val resumeSkipTasks:  Set<String> = emptySet(),
+    private val resumeBestScore:  Double = Double.MAX_VALUE,
+    private val resumeSeenKeys:   Set<String> = emptySet()
+) {
     private val solutions = CopyOnWriteArrayList<Solution>()
     private val seenKeys  = ConcurrentHashMap.newKeySet<String>()
-    private val covered   = AtomicLong(0)
 
-    // Best score seen so far — used for branch-and-bound pruning.
-    // Only ever decreases; a stale read just means slightly less pruning, never wrong results.
+    // Double to avoid Long overflow on large trees.
+    private val covered  = DoubleAdder()
+    private lateinit var subtreeSize: DoubleArray
+    private var theoreticalTotal = 1.0
+
     @Volatile private var bestScore = Double.MAX_VALUE
-
-    private lateinit var subtreeSize: LongArray
-    private var theoreticalTotal = 1L
 
     private val reportCounter = AtomicLong(0)
 
     fun solve(): List<Solution> {
-        val n = config.shapes.size
-        val xCounts = config.shapes.map { (config.container.width - it.width + 1).coerceAtLeast(0).toLong() }
+        seenKeys.addAll(resumeSeenKeys)
+        bestScore = resumeBestScore
 
-        subtreeSize = LongArray(1 shl n)
-        subtreeSize[0] = 1L
+        val n = config.shapes.size
+        val xCounts = config.shapes.map { (config.container.width - it.width + 1).coerceAtLeast(0).toDouble() }
+
+        subtreeSize = DoubleArray(1 shl n)
+        subtreeSize[0] = 1.0
         for (mask in 1 until (1 shl n)) {
-            var t = 1L
+            var t = 1.0
             for (i in 0 until n) {
                 if (mask and (1 shl i) == 0) continue
                 t += xCounts[i] * subtreeSize[mask xor (1 shl i)]
@@ -48,13 +58,17 @@ class Solver(private val config: Config, private val onProgress: ((pct: Int, cov
                 .sortedBy { px -> ladderMismatchCost(shape, px, emptyList()) }
 
             for (px in xPositions) {
+                val taskId = "$shapeIdx:$px"
                 tasks.add(Runnable {
-                    if (solutions.size >= config.maxSolutions) {
-                        credit(subtreeSize[childMask] + 1)
-                        return@Runnable
+                    if (taskId in resumeSkipTasks) {
+                        credit(subtreeSize[childMask] + 1.0); return@Runnable
                     }
 
-                    credit(1)
+                    if (config.maxSolutions != -1 && solutions.size >= config.maxSolutions) {
+                        credit(subtreeSize[childMask] + 1.0); return@Runnable
+                    }
+
+                    credit(1.0)
 
                     val grid = Grid(config.container.width, config.container.height)
                     val py   = grid.settleY(shape, px)
@@ -64,12 +78,13 @@ class Solver(private val config: Config, private val onProgress: ((pct: Int, cov
                     } else {
                         val placement        = Placement(shape, px, py)
                         val initPriorityCost = py.toDouble() / shape.priority
-                        val initMismatches   = 0  // no neighbours yet
                         val remaining        = config.shapes.toMutableList().also { it.removeAt(shapeIdx) }
                         val placed           = mutableListOf(placement)
                         grid.place(shape, px, py)
-                        backtrack(remaining, childMask, placed, grid, initPriorityCost, initMismatches)
+                        backtrack(remaining, childMask, placed, grid, initPriorityCost, 0)
                     }
+
+                    onRootTaskDone?.invoke(taskId)
                 })
             }
         }
@@ -93,34 +108,33 @@ class Solver(private val config: Config, private val onProgress: ((pct: Int, cov
         partialPriorityCost: Double,
         partialMismatches: Int
     ) {
-        credit(1)
+        credit(1.0)
 
-        // Branch and bound: partial score is a valid lower bound (costs can only grow).
         val lowerBound = partialPriorityCost * config.weightPriority +
                          partialMismatches   * config.weightMismatch
         if (lowerBound >= bestScore) {
-            credit(subtreeSize[remainingMask] - 1)
+            credit(subtreeSize[remainingMask] - 1.0)
             return
         }
 
-        if (solutions.size >= config.maxSolutions) {
-            credit(subtreeSize[remainingMask] - 1)
+        if (config.maxSolutions != -1 && solutions.size >= config.maxSolutions) {
+            credit(subtreeSize[remainingMask] - 1.0)
             return
         }
 
         if (remaining.isEmpty()) {
             val solution = Scorer.buildSolution(placed, config)
-            val key = solutionKey(placed)
-            if (seenKeys.add(key)) {
+            if (seenKeys.add(solution.key)) {
                 solutions.add(solution)
                 if (solution.score < bestScore) bestScore = solution.score
+                onSolutionFound?.invoke(solution, solutions.size)
             }
             return
         }
 
         val remainingArea = remaining.sumOf { it.cells.size }
         if (remainingArea > grid.availableArea()) {
-            credit(subtreeSize[remainingMask] - 1)
+            credit(subtreeSize[remainingMask] - 1.0)
             return
         }
 
@@ -141,11 +155,10 @@ class Solver(private val config: Config, private val onProgress: ((pct: Int, cov
                     continue
                 }
 
-                val placement    = Placement(shape, px, py)
-                val newPriority  = partialPriorityCost + py.toDouble() / shape.priority
+                val placement     = Placement(shape, px, py)
+                val newPriority   = partialPriorityCost + py.toDouble() / shape.priority
                 val newMismatches = partialMismatches + countNewMismatches(placement, placed)
 
-                // Prune before recursing if already provably worse.
                 val childBound = newPriority * config.weightPriority +
                                  newMismatches * config.weightMismatch
                 if (childBound >= bestScore) {
@@ -161,7 +174,7 @@ class Solver(private val config: Config, private val onProgress: ((pct: Int, cov
                 grid.unplace(shape, px, py)
                 placed.removeLast()
 
-                if (solutions.size >= config.maxSolutions) {
+                if (config.maxSolutions != -1 && solutions.size >= config.maxSolutions) {
                     remaining.add(i, shape)
                     return
                 }
@@ -171,40 +184,31 @@ class Solver(private val config: Config, private val onProgress: ((pct: Int, cov
         }
     }
 
-    // Counts mismatches the new placement creates with already-placed shapes.
-    // Each mismatch pair is counted once: when the second shape of the pair is placed.
-    private fun countNewMismatches(p: Placement, placed: List<Placement>): Int {
-        var count = 0
-        for (other in placed) {
-            val adjacent = other.top == p.y || p.top == other.y
-            if (!adjacent) continue
-            val overlap = p.x < other.x + other.shape.width && other.x < p.x + p.shape.width
-            if (!overlap) continue
-            if (kotlin.math.abs(p.ladderGlobalX - other.ladderGlobalX) > config.maxLadderGap) count++
+    private fun countNewMismatches(p: Placement, placed: List<Placement>): Int =
+        placed.count { other ->
+            (p.isDirectlyBelow(other) || other.isDirectlyBelow(p)) &&
+            p.minLadderGap(other) > config.maxLadderGap
         }
-        return count
-    }
 
-    private fun credit(n: Long) {
-        val c     = covered.addAndGet(n)
+    private fun credit(n: Double) {
+        covered.add(n)
         val calls = reportCounter.incrementAndGet()
         if (calls and 0xFFFF == 0L) {
-            val pct  = ((c.toDouble() / theoreticalTotal) * 100).toInt().coerceIn(0, 100)
-            val best = solutions.minOfOrNull { it.score }
-            onProgress?.invoke(pct, c, theoreticalTotal, solutions.size, best)
+            val c   = covered.sum()
+            val pct = ((c / theoreticalTotal) * 100).toInt().coerceIn(0, 100)
+            onProgress?.invoke(pct, c, theoreticalTotal, solutions.size)
         }
     }
 
     private fun ladderMismatchCost(shape: Shape, px: Int, placed: List<Placement>): Int {
-        val ladderGlobal = px + shape.ladder
+        val ladderGlobals = shape.ladders.map { px + it }
+        // Bounding-box x-overlap as a fast proxy (ordering hint only, not final score).
         return placed.count { other ->
             val xOverlap = px < other.x + other.shape.width && other.x < px + shape.width
-            xOverlap && kotlin.math.abs(ladderGlobal - other.ladderGlobalX) > config.maxLadderGap
+            if (!xOverlap) return@count false
+            val minGap = ladderGlobals.minOf { lg -> other.ladderGlobalXs.minOf { ol -> kotlin.math.abs(lg - ol) } }
+            minGap > config.maxLadderGap
         }
     }
 
-    private fun solutionKey(placements: List<Placement>): String =
-        placements
-            .sortedWith(compareBy({ it.shape.name }, { it.x }, { it.y }))
-            .joinToString("|") { "${it.shape.name}@${it.x},${it.y}" }
 }

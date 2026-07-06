@@ -2,33 +2,31 @@ package binpacking
 
 object Renderer {
 
-    fun renderSolution(solution: Solution, config: Config, rank: Int, total: Int): String {
+    fun renderSolution(solution: Solution, config: Config, rank: Int, total: Int, runId: String = ""): String {
         val sb = StringBuilder()
 
-        sb.appendLine("=== Rank $rank/$total  score=${String.format("%.2f", solution.score)} ===")
+        val runTag = if (runId.isNotEmpty()) "  |  $runId" else ""
+        val totalStr = if (total == -1) "?" else total.toString()
+        sb.appendLine("=== Rank $rank/$totalStr  score=${String.format("%.2f", solution.score)}$runTag ===")
         sb.appendLine("  placed: ${solution.placements.size}/${config.shapes.size}")
 
         val nameWidth = solution.placements.maxOfOrNull { it.shape.name.length } ?: 0
         for (p in solution.placements.sortedBy { it.shape.name }) {
-            val ladderMark = solution.placements
-                .filter { other ->
-                    other !== p &&
-                    (other.top == p.y || p.top == other.y) &&
-                    rangesOverlap(p.x, p.x + p.shape.width - 1, other.x, other.x + other.shape.width - 1)
-                }
-                .any { other ->
-                    kotlin.math.abs(p.ladderGlobalX - other.ladderGlobalX) > config.maxLadderGap
-                }
+            val ladderMark = solution.placements.any { other ->
+                other !== p &&
+                (p.isDirectlyBelow(other) || other.isDirectlyBelow(p)) &&
+                p.minLadderGap(other) > config.maxLadderGap
+            }
 
             val mark = if (ladderMark) " [LADDER MISMATCH]" else ""
             sb.appendLine(
                 "  ${p.shape.name.padEnd(nameWidth)}  pos=(${p.x},${p.y})  " +
-                "ladder_global=${p.ladderGlobalX}  priority=${p.shape.priority}$mark"
+                "ladder_globals=${p.ladderGlobalXs.joinToString(",")}  priority=${p.shape.priority}$mark"
             )
         }
 
         sb.appendLine("  priority_cost=${String.format("%.2f", solution.priorityCost)}  " +
-                      "ladder_mismatches=${solution.mismatchCount}")
+                      "ladder_mismatches=${solution.mismatchCount}  key: ${solution.key}")
         sb.appendLine()
         sb.append(renderGrid(solution, config))
 
@@ -58,11 +56,11 @@ object Renderer {
         }
 
         val sb = StringBuilder()
-        sb.append('┌'); repeat(CW) { sb.append('─') }; sb.appendLine('┐')
+        sb.append('╔'); repeat(CW) { sb.append('═') }; sb.appendLine('╗')
         for (row in charGrid) {
-            sb.append('│'); sb.append(String(row)); sb.appendLine('│')
+            sb.append('║'); sb.append(String(row)); sb.appendLine('║')
         }
-        sb.append('└'); repeat(CW) { sb.append('─') }; sb.appendLine('┘')
+        sb.append('╚'); repeat(CW) { sb.append('═') }; sb.appendLine('╝')
         return sb.toString()
     }
 
@@ -82,11 +80,11 @@ object Renderer {
                 if (cell !in shape.cells) {
                     // Carved cell: only draw ░░ if no real cell from another building is here
                     if (!solidGrid[screenRow][charCol]) {
-                        charGrid[screenRow][charCol]     = '░'
-                        charGrid[screenRow][charCol + 1] = '░'
+                        charGrid[screenRow][charCol]     = '.'
+                        charGrid[screenRow][charCol + 1] = '.'
                     }
                 } else {
-                    val (c1, c2) = buildingChars(cx, cy, w, h, shape.name, shape.ladder)
+                    val (c1, c2) = buildingChars(cx, cy, w, h, shape.name, shape.ladders.toSet())
                     charGrid[screenRow][charCol]     = c1
                     charGrid[screenRow][charCol + 1] = c2
                     solidGrid[screenRow][charCol]     = true
@@ -100,50 +98,50 @@ object Renderer {
     //
     // Each cell is 2 chars wide. Layout:
     //   Top row:    ╔═  ══  ══  ═╗
-    //   Interior:   ║   ▲(ladder)  ║   (▲ in ladder column)
+    //   Interior:   ║   ╫(ladder)  ║   (╫ in ladder column)
     //   Name row:   ║   <name...>  ║   (2 name chars per interior cell)
-    //   Bottom row: ╚═  ══  ▲═  ═╝   (▲ at ladder column)
-    private fun buildingChars(cx: Int, cy: Int, w: Int, h: Int, name: String, ladderX: Int): Pair<Char, Char> {
+    //   Bottom row: ╚═  ══  ╫═  ═╝   (╫ at ladder column)
+    private fun buildingChars(cx: Int, cy: Int, w: Int, h: Int, name: String, ladders: Set<Int>): Pair<Char, Char> {
         val isTop       = cy == h - 1
         val isBottom    = cy == 0
         val isLeft      = cx == 0
         val isRight     = cx == w - 1
         val isNameRow   = cy == 1 && h >= 3
-        val isLadderCol = cx == ladderX
+        val isLadderCol = cx in ladders
 
         return when {
             // Top border — ladder overrides corners
-            isTop && isLeft && isLadderCol  -> '▲' to '═'
-            isTop && isRight && isLadderCol -> '═' to '▲'
-            isTop && isLeft                 -> '╔' to '═'
-            isTop && isRight                -> '═' to '╗'
-            isTop && isLadderCol            -> '▲' to '═'
-            isTop                           -> '═' to '═'
+            isTop && isLeft && isLadderCol  -> '╓' to '─'
+            isTop && isRight && isLadderCol -> '─' to '╖'
+            isTop && isLeft                 -> '┌' to '─'
+            isTop && isRight                -> '─' to '┐'
+            isTop && isLadderCol            -> '╥' to '─'
+            isTop                           -> '─' to '─'
 
             // Bottom border — ladder overrides corners
-            isBottom && isLeft && isLadderCol  -> '▲' to '═'
-            isBottom && isRight && isLadderCol -> '═' to '▲'
-            isBottom && isLeft                 -> '╚' to '═'
-            isBottom && isRight                -> '═' to '╝'
-            isBottom && isLadderCol            -> '▲' to '═'
-            isBottom                           -> '═' to '═'
+            isBottom && isLeft && isLadderCol  -> '╙' to '─'
+            isBottom && isRight && isLadderCol -> '─' to '╜'
+            isBottom && isLeft                 -> '└' to '─'
+            isBottom && isRight                -> '─' to '┘'
+            isBottom && isLadderCol            -> '╨' to '─'
+            isBottom                           -> '─' to '─'
 
             // Interior walls — ladder overrides wall chars
-            isLeft && isLadderCol  -> '▲' to ' '
-            isRight && isLadderCol -> ' ' to '▲'
-            isLeft                 -> '║' to ' '
-            isRight                -> ' ' to '║'
+            isLeft && isLadderCol  -> '╫' to ' '
+            isRight && isLadderCol -> ' ' to '╫'
+            isLeft                 -> '│' to ' '
+            isRight                -> ' ' to '│'
 
             // Name row: 2 name chars per interior cell; ladder shows if name runs out
             isNameRow -> {
                 val i  = 2 * (cx - 1)
-                val c1 = name.getOrNull(i)     ?: if (isLadderCol) '▲' else ' '
+                val c1 = name.getOrNull(i)     ?: if (isLadderCol) '╫' else ' '
                 val c2 = name.getOrNull(i + 1) ?: ' '
                 c1 to c2
             }
 
             // Ladder column in all other interior rows
-            isLadderCol -> '▲' to ' '
+            isLadderCol -> '╫' to ' '
 
             else -> ' ' to ' '
         }

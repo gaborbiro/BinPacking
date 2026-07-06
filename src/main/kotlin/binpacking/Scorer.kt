@@ -12,7 +12,10 @@ object Scorer {
         val mismatchCount = countMismatches(placements, config.maxLadderGap)
         val score = priorityCost * config.weightPriority + mismatchCount * config.weightMismatch
 
-        return Solution(placements.toList(), score, priorityCost, mismatchCount)
+        val key = placements
+            .sortedWith(compareBy({ it.shape.name }, { it.x }, { it.y }))
+            .joinToString("|") { "${it.shape.name}@${it.x},${it.y}" }
+        return Solution(placements.toList(), score, priorityCost, mismatchCount, key)
     }
 
     private fun countMismatches(placements: List<Placement>, maxGap: Int): Int {
@@ -21,21 +24,8 @@ object Scorer {
             for (j in i + 1 until placements.size) {
                 val a = placements[i]
                 val b = placements[j]
-
-                // Determine which is lower and which is upper
-                val (lower, upper) = when {
-                    a.top == b.y -> Pair(a, b)
-                    b.top == a.y -> Pair(b, a)
-                    else -> continue
-                }
-
-                // Check x-range overlap (bounding boxes)
-                val lowerLeft  = lower.x;                      val lowerRight = lower.x + lower.shape.width - 1
-                val upperLeft  = upper.x;                      val upperRight = upper.x + upper.shape.width - 1
-                if (lowerRight < upperLeft || upperRight < lowerLeft) continue
-
-                val gap = kotlin.math.abs(lower.ladderGlobalX - upper.ladderGlobalX)
-                if (gap > maxGap) count++
+                if (!a.isDirectlyBelow(b) && !b.isDirectlyBelow(a)) continue
+                if (a.minLadderGap(b) > maxGap) count++
             }
         }
         return count
