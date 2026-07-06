@@ -1,22 +1,22 @@
-=== Rank 1/200  score=197.83  |  Keen-Orbit-164 ===
+=== Rank 1/200  score=224.50  |  Rapid-Bridge-187 ===
   placed: 16/16
-  1Kitchen          pos=(8,0)  ladder_globals=12  priority=1
-  1SheepsCorral     pos=(0,6)  ladder_globals=4  priority=3 [LADDER MISMATCH]
-  2Kitchen          pos=(13,0)  ladder_globals=17  priority=1
-  2SheepsCorral     pos=(5,8)  ladder_globals=9  priority=3
-  AlicesCottage     pos=(26,5)  ladder_globals=26,31  priority=3
-  AstridsBungallow  pos=(16,5)  ladder_globals=16,25  priority=3
+  1Kitchen          pos=(17,0)  ladder_globals=21  priority=1
+  1SheepsCorral     pos=(30,11)  ladder_globals=34  priority=3
+  2Kitchen          pos=(22,0)  ladder_globals=26  priority=1 [LADDER MISMATCH]
+  2SheepsCorral     pos=(30,14)  ladder_globals=34  priority=3
+  AlicesCottage     pos=(21,11)  ladder_globals=21,26  priority=3
+  AstridsBungallow  pos=(0,10)  ladder_globals=0,9  priority=3
   AtulsWorkshop     pos=(16,16)  ladder_globals=18  priority=3
-  Field             pos=(18,0)  ladder_globals=22,26  priority=2
-  Foundry           pos=(3,11)  ladder_globals=6  priority=3
-  Garden            pos=(8,3)  ladder_globals=12,15  priority=2
-  GuestHouse        pos=(28,17)  ladder_globals=32  priority=3
-  GwensLodge        pos=(0,16)  ladder_globals=0,5  priority=3
-  Loom              pos=(27,0)  ladder_globals=27  priority=2
-  Orchard           pos=(0,0)  ladder_globals=0  priority=1 [LADDER MISMATCH]
-  Sawmill           pos=(11,21)  ladder_globals=12,19  priority=3
-  SummersSanctuary  pos=(32,8)  ladder_globals=32  priority=3
-  priority_cost=39.17  ladder_mismatches=1  key: 1Kitchen@8,0|1SheepsCorral@0,6|2Kitchen@13,0|2SheepsCorral@5,8|AlicesCottage@26,5|AstridsBungallow@16,5|AtulsWorkshop@16,16|Field@18,0|Foundry@3,11|Garden@8,3|GuestHouse@28,17|GwensLodge@0,16|Loom@27,0|Orchard@0,0|Sawmill@11,21|SummersSanctuary@32,8
+  Field             pos=(8,0)  ladder_globals=12,16  priority=1
+  Foundry           pos=(8,5)  ladder_globals=11  priority=2
+  Garden            pos=(27,0)  ladder_globals=31,34  priority=1
+  GuestHouse        pos=(2,21)  ladder_globals=6  priority=3
+  GwensLodge        pos=(28,17)  ladder_globals=28,33  priority=3
+  Loom              pos=(21,3)  ladder_globals=21  priority=2 [LADDER MISMATCH]
+  Orchard           pos=(0,0)  ladder_globals=0  priority=1
+  Sawmill           pos=(26,5)  ladder_globals=27,34  priority=2
+  SummersSanctuary  pos=(10,14)  ladder_globals=10  priority=3
+  priority_cost=44.50  ladder_mismatches=1  key: 1Kitchen@17,0|1SheepsCorral@30,11|2Kitchen@22,0|2SheepsCorral@30,14|AlicesCottage@21,11|AstridsBungallow@0,10|AtulsWorkshop@16,16|Field@8,0|Foundry@8,5|Garden@27,0|GuestHouse@2,21|GwensLodge@28,17|Loom@21,3|Orchard@0,0|Sawmill@26,5|SummersSanctuary@10,14
 
 ╔════════════════════════════════════════════════════════════════════════════╗
 ║............................................................................║
@@ -26,32 +26,32 @@
 ║............................................................................║
 ║............................................................................║
 ║............................................................................║
-║......................┌─╥──────────────╖....................................║
-║......................│ ╫              ╫....................................║
-║......................│ ╫              ╫....................................║
-║......................│ ╫         ..........................................║
-║....───────╖....──────│ Sawmill   ..........................................║
-║....       ╫....      └─╨─────────......................┌───────╥────┐......║
-║....       ╫....      ..........┌───╥──────────────────┐│       ╫    │......║
-║....       ╫....      ..........│   ╫                  ││       ╫    │......║
-║╫          ╫....               ││   ╫                  ││ GuestHouse │......║
-║╫ GwensLod ╫....               ││ AtulsWorkshop        │└───────╨────┘......║
-║╙──────────╜....               │└───╨──────────────────┘........╓──────────┐║
-║......│     ╫                  │╓─────────......................╫          │║
-║......│     ╫                  │╫         ......................╫          │║
-║......│     ╫                  │╫                  ╫............╫          │║
-║......│ Foundry                │╫                  ╫............╫          │║
-║......└─────╨──────────────────┘╫                  ╫............╫          │║
-║..........┌────────╖............╫                  ╫............╫     ......║
-║..........│ 2Sheep ╫............╫                  ╫╓─────────╥─╫ Summ......║
-║┌────────╖└────────╜............╫                  ╫╫         ╫ ╙─────......║
-║│ 1Sheep ╫......┌───────╥──────╖╫                  ╫╫         ╫      │......║
-║└────────╜......│       ╫      ╫╫ AstridsBungallow ╫╫ AlicesCottage  │......║
-║╓──────────────┐│       ╫      ╫╙──────────────────╜╙─────────╨──────┘......║
-║╫              ││ Garden╫      ╫....┌───────╥────────╖╓────────┐............║
-║╫              │└───────╨──────╜....│       ╫        ╫╫        │............║
-║╫              │┌────────╖┌────────╖│       ╫        ╫╫        │............║
-║╫ Orchard      ││ 1Kitch ╫│ 2Kitch ╫│ Field ╫        ╫╫ Loom   │............║
-║╙──────────────┘└────────╜└────────╜└───────╨────────╜╙────────┘............║
+║............................................................................║
+║....┌───────╥────┐..........................................................║
+║....│       ╫    │..........................................................║
+║....│       ╫    │..........................................───────╖........║
+║....│ GuestHouse │..╓──────────┐............................       ╫........║
+║....└───────╨────┘..╫          │............................       ╫........║
+║╓─────────..........╫          │┌───╥──────────────────┐....       ╫........║
+║╫         ..........╫          ││   ╫                  │╫          ╫........║
+║╫                  ╫╫          ││   ╫                  │╫ GwensLod ╫........║
+║╫                  ╫╫          ││ AtulsWorkshop        │╙──────────╜........║
+║╫                  ╫╫     ──────└───╨──────────────────┘....┌────────╖......║
+║╫                  ╫╫ Summ      ..........╓─────────╥─......│ 2Sheep ╫......║
+║╫                  ╫╙─────      ..........╫         ╫ ......└────────╜......║
+║╫                  ╫......      ..........╫         ╫      │┌────────╖......║
+║╫                  ╫......               │╫ AlicesCottage  ││ 1Sheep ╫......║
+║╫ AstridsBungallow ╫......               │╙─────────╨──────┘└────────╜......║
+║╙──────────────────╜......               │..........┌─╥──────────────╖......║
+║................│     ╫                  │..........│ ╫              ╫......║
+║................│     ╫                  │..........│ ╫              ╫......║
+║................│     ╫                  │╓────────┐│ ╫         ............║
+║................│ Foundry                │╫        ││ Sawmill   ............║
+║╓──────────────┐└─────╨──────────────────┘╫        │└─╨─────────............║
+║╫              │┌───────╥────────╖........╫ Loom   │..┌───────╥──────╖......║
+║╫              ││       ╫        ╫........╙────────┘..│       ╫      ╫......║
+║╫              ││       ╫        ╫┌────────╖┌────────╖│       ╫      ╫......║
+║╫ Orchard      ││ Field ╫        ╫│ 1Kitch ╫│ 2Kitch ╫│ Garden╫      ╫......║
+║╙──────────────┘└───────╨────────╜└────────╜└────────╜└───────╨──────╜......║
 ╚════════════════════════════════════════════════════════════════════════════╝
 

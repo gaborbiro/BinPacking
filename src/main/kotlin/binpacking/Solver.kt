@@ -55,6 +55,14 @@ class Solver(
         for (shapeIdx in tryOrder) {
             val shape     = config.shapes[shapeIdx]
             val childMask = fullMask xor (1 shl shapeIdx)
+
+            // Symmetry: among equivalent shapes, only create root tasks for the lowest-index one.
+            if ((0 until shapeIdx).any { j -> equivalentShapes(config.shapes[j], shape) }) {
+                val numFitX = (0 until config.container.width).count { px -> px + shape.width <= config.container.width }
+                credit(numFitX.toDouble() * (subtreeSize[childMask] + 1.0))
+                continue
+            }
+
             val xPositions = (0 until config.container.width)
                 .filter { px -> px + shape.width <= config.container.width }
                 .sortedBy { px -> ladderMismatchCost(shape, px, emptyList()) }
@@ -181,8 +189,22 @@ class Solver(
             val shapeBit  = 1 shl config.shapes.indexOf(shape)
             val childMask = remainingMask xor shapeBit
 
+            // Symmetry: only try the first equivalent shape at this level (lowest index in remaining).
+            // After removeAt(i), remaining[0..i-1] are the shapes that come before i — unchanged.
+            if ((0 until i).any { j -> equivalentShapes(remaining[j], shape) }) {
+                val numFitX = (0 until config.container.width).count { it + shape.width <= config.container.width }
+                credit(numFitX.toDouble() * subtreeSize[childMask])
+                remaining.add(i, shape)
+                continue
+            }
+
+            // Symmetry: enforce non-decreasing x among placements of equivalent shapes.
+            val minXSymmetry = placed.filter { equivalentShapes(it.shape, shape) }.maxOfOrNull { it.x } ?: 0
+            val numSkippedX  = (0 until config.container.width).count { it + shape.width <= config.container.width && it < minXSymmetry }
+            if (numSkippedX > 0) credit(numSkippedX.toDouble() * subtreeSize[childMask])
+
             val xPositions = (0 until config.container.width)
-                .filter { px -> px + shape.width <= config.container.width }
+                .filter { px -> px + shape.width <= config.container.width && px >= minXSymmetry }
                 .sortedBy { px -> ladderMismatchCost(shape, px, placed) }
 
             for (px in xPositions) {
@@ -236,6 +258,11 @@ class Solver(
             onProgress?.invoke(pct, c, theoreticalTotal, solutions.size)
         }
     }
+
+    private fun equivalentShapes(a: Shape, b: Shape) =
+        a.width == b.width && a.height == b.height &&
+        a.cells == b.cells && a.ladders == b.ladders &&
+        a.priority == b.priority
 
     private fun ladderMismatchCost(shape: Shape, px: Int, placed: List<Placement>): Int {
         val ladderGlobals = shape.ladders.map { px + it }
