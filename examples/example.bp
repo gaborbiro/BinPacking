@@ -1,19 +1,47 @@
-container 38 34
+container 45 35
+#container 45 41
 max_ladder_gap 3
 #can be -1 to let the algo finish
 max_solutions 200
-weight_priority 5.0
-weight_mismatch 2.0
+weight_y_priority 10.0
+weight_ladder_mismatch 2.0
 
-shape Orchard
+shape CuckooClockTower
+  size 3 8
+  ladder 2
+  priority 9
+
+shape BriceAndMickesCrib
+  size      12 12
+  carve     0 0 3 5
+  carve     9 0 3 5
+  ladder    0 10
+  priority  9
+
+shape GustavsGallery
+  size 6 10
+  ladder 0 3
+  priority 9
+
+shape Crusher
+  size 6 6
+  ladder 0
+  priority 2
+
+shape Windmill
+  size 4 18
+  ladder 0 3
+  priority 1
+
+shape 1Orchard
   size      8 6
   ladder    0
-  priority  1
+  priority  2
 
-#shape AirDraft
-#  size      4 6
-#  ladder    0 4
-#  priority  3
+shape 2Orchard
+  size      8 6
+  ladder    0
+  priority  2
 
 shape AstridsBungallow
   size      10 11
@@ -25,11 +53,11 @@ shape AlicesCottage
   size      9 5
   carve     6 3 3 2
   ladder    0 5
-  priority  3
+  priority  9
 
-shape 1SheepsCorral  5 3    ladder=4    priority=3
+shape 1SheepsCorral  5 3    ladder=4    priority=9
 
-shape 2SheepsCorral  5 3    ladder=4    priority=3
+shape 2SheepsCorral  5 3    ladder=4    priority=9
 
 shape Foundry
   size      13 12
@@ -42,7 +70,7 @@ shape SummersSanctuary
   size      6 9
   carve     3 0 3 3
   ladder    0
-  priority  3
+  priority  9
 
 shape Field
   size      9 5
@@ -55,7 +83,7 @@ shape 1Kitchen      5 3     ladder=4    priority=1
 
 shape 2Kitchen      5 3     ladder=4    priority=1
 
-shape AtulsWorkshop 12 5    ladder=2    priority=3
+shape AtulsWorkshop 12 5    ladder=2    priority=9
 
 shape Garden
   size      8 5
@@ -66,9 +94,9 @@ shape GwensLodge
   size      6 7
   carve     0 3 2 4
   ladder    0 5
-  priority  3
+  priority  9
 
-shape GuestHouse    7 5     ladder=4    priority=3
+shape GuestHouse    7 5     ladder=4    priority=9
 
 shape Sawmill
   size      9 6

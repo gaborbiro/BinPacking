@@ -1,57 +1,1152 @@
-=== Rank 1/200  score=224.50  |  Rapid-Bridge-187 ===
-  placed: 16/16
-  1Kitchen          pos=(17,0)  ladder_globals=21  priority=1
-  1SheepsCorral     pos=(30,11)  ladder_globals=34  priority=3
-  2Kitchen          pos=(22,0)  ladder_globals=26  priority=1 [LADDER MISMATCH]
-  2SheepsCorral     pos=(30,14)  ladder_globals=34  priority=3
-  AlicesCottage     pos=(21,11)  ladder_globals=21,26  priority=3
-  AstridsBungallow  pos=(0,10)  ladder_globals=0,9  priority=3
-  AtulsWorkshop     pos=(16,16)  ladder_globals=18  priority=3
-  Field             pos=(8,0)  ladder_globals=12,16  priority=1
-  Foundry           pos=(8,5)  ladder_globals=11  priority=2
-  Garden            pos=(27,0)  ladder_globals=31,34  priority=1
-  GuestHouse        pos=(2,21)  ladder_globals=6  priority=3
-  GwensLodge        pos=(28,17)  ladder_globals=28,33  priority=3
-  Loom              pos=(21,3)  ladder_globals=21  priority=2 [LADDER MISMATCH]
-  Orchard           pos=(0,0)  ladder_globals=0  priority=1
-  Sawmill           pos=(26,5)  ladder_globals=27,34  priority=2
-  SummersSanctuary  pos=(10,14)  ladder_globals=10  priority=3
-  priority_cost=44.50  ladder_mismatches=1  key: 1Kitchen@17,0|1SheepsCorral@30,11|2Kitchen@22,0|2SheepsCorral@30,14|AlicesCottage@21,11|AstridsBungallow@0,10|AtulsWorkshop@16,16|Field@8,0|Foundry@8,5|Garden@27,0|GuestHouse@2,21|GwensLodge@28,17|Loom@21,3|Orchard@0,0|Sawmill@26,5|SummersSanctuary@10,14
+=== Rank 1/200  score=324.56  |  Wild-Haven-246 ===
+  placed: 22/22
+  1Kitchen            pos=(13,0)  ladder_globals=17  priority=1
+  1Orchard            pos=(37,0)  ladder_globals=37  priority=2
+  1SheepsCorral       pos=(16,18)  ladder_globals=20  priority=9
+  2Kitchen            pos=(18,0)  ladder_globals=22  priority=1 [LADDER MISMATCH]
+  2Orchard            pos=(14,3)  ladder_globals=14  priority=2 [LADDER MISMATCH]
+  2SheepsCorral       pos=(33,18)  ladder_globals=37  priority=9
+  AlicesCottage       pos=(0,18)  ladder_globals=0,5  priority=9
+  AstridsBungallow    pos=(11,9)  ladder_globals=11,20  priority=3
+  AtulsWorkshop       pos=(16,23)  ladder_globals=18  priority=9
+  BriceAndMickesCrib  pos=(21,11)  ladder_globals=21,31  priority=9
+  Crusher             pos=(31,0)  ladder_globals=31  priority=2
+  CuckooClockTower    pos=(4,10)  ladder_globals=6  priority=9
+  Field               pos=(4,0)  ladder_globals=8,12  priority=1
+  Foundry             pos=(31,6)  ladder_globals=34  priority=2 [LADDER MISMATCH]
+  Garden              pos=(23,0)  ladder_globals=27,30  priority=1
+  GuestHouse          pos=(0,23)  ladder_globals=4  priority=9
+  GustavsGallery      pos=(39,14)  ladder_globals=39,42  priority=9 [LADDER MISMATCH]
+  GwensLodge          pos=(33,21)  ladder_globals=33,38  priority=9
+  Loom                pos=(5,5)  ladder_globals=5  priority=2
+  Sawmill             pos=(22,5)  ladder_globals=23,30  priority=2
+  SummersSanctuary    pos=(9,20)  ladder_globals=9  priority=9
+  Windmill            pos=(0,0)  ladder_globals=0,3  priority=1
+  priority_cost=32.06  ladder_mismatches=2  key: 1Kitchen@13,0|1Orchard@37,0|1SheepsCorral@16,18|2Kitchen@18,0|2Orchard@14,3|2SheepsCorral@33,18|AlicesCottage@0,18|AstridsBungallow@11,9|AtulsWorkshop@16,23|BriceAndMickesCrib@21,11|Crusher@31,0|CuckooClockTower@4,10|Field@4,0|Foundry@31,6|Garden@23,0|GuestHouse@0,23|GustavsGallery@39,14|GwensLodge@33,21|Loom@5,5|Sawmill@22,5|SummersSanctuary@9,20|Windmill@0,0
 
-╔════════════════════════════════════════════════════════════════════════════╗
-║............................................................................║
-║............................................................................║
-║............................................................................║
-║............................................................................║
-║............................................................................║
-║............................................................................║
-║............................................................................║
-║............................................................................║
-║....┌───────╥────┐..........................................................║
-║....│       ╫    │..........................................................║
-║....│       ╫    │..........................................───────╖........║
-║....│ GuestHouse │..╓──────────┐............................       ╫........║
-║....└───────╨────┘..╫          │............................       ╫........║
-║╓─────────..........╫          │┌───╥──────────────────┐....       ╫........║
-║╫         ..........╫          ││   ╫                  │╫          ╫........║
-║╫                  ╫╫          ││   ╫                  │╫ GwensLod ╫........║
-║╫                  ╫╫          ││ AtulsWorkshop        │╙──────────╜........║
-║╫                  ╫╫     ──────└───╨──────────────────┘....┌────────╖......║
-║╫                  ╫╫ Summ      ..........╓─────────╥─......│ 2Sheep ╫......║
-║╫                  ╫╙─────      ..........╫         ╫ ......└────────╜......║
-║╫                  ╫......      ..........╫         ╫      │┌────────╖......║
-║╫                  ╫......               │╫ AlicesCottage  ││ 1Sheep ╫......║
-║╫ AstridsBungallow ╫......               │╙─────────╨──────┘└────────╜......║
-║╙──────────────────╜......               │..........┌─╥──────────────╖......║
-║................│     ╫                  │..........│ ╫              ╫......║
-║................│     ╫                  │..........│ ╫              ╫......║
-║................│     ╫                  │╓────────┐│ ╫         ............║
-║................│ Foundry                │╫        ││ Sawmill   ............║
-║╓──────────────┐└─────╨──────────────────┘╫        │└─╨─────────............║
-║╫              │┌───────╥────────╖........╫ Loom   │..┌───────╥──────╖......║
-║╫              ││       ╫        ╫........╙────────┘..│       ╫      ╫......║
-║╫              ││       ╫        ╫┌────────╖┌────────╖│       ╫      ╫......║
-║╫ Orchard      ││ Field ╫        ╫│ 1Kitch ╫│ 2Kitch ╫│ Garden╫      ╫......║
-║╙──────────────┘└───────╨────────╜└────────╜└────────╜└───────╨──────╜......║
-╚════════════════════════════════════════════════════════════════════════════╝
+╔══════════════════════════════════════════════════════════════════════════════════════════╗
+║..........................................................................................║
+║..........................................................................................║
+║..........................................................................................║
+║..........................................................................................║
+║..........................................................................................║
+║..........................................................................................║
+║..................╓──────────┐............................................................║
+║┌───────╥────┐....╫          │..┌───╥──────────────────┐..............───────╖............║
+║│       ╫    │....╫          │..│   ╫                  │..............       ╫............║
+║│       ╫    │....╫          │..│   ╫                  │..............       ╫............║
+║│ GuestHouse │....╫          │..│ AtulsWorkshop        │..............       ╫............║
+║└───────╨────┘....╫          │..└───╨──────────────────┘..........╫          ╫╓─────╥────┐║
+║╓─────────╥─......╫     ..................╓───────────────────╥──┐╫ GwensLod ╫╫     ╫    │║
+║╫         ╫ ......╫ Summ..................╫                   ╫  │╙──────────╜╫     ╫    │║
+║╫         ╫      │╙─────........┌────────╖╫                   ╫  │┌────────╖..╫     ╫    │║
+║╫ AlicesCottage  │....╓─────────│ 1Sheep ╫╫                   ╫  ││ 2Sheep ╫..╫     ╫    │║
+║╙─────────╨──────┘....╫         └────────╜╫                   ╫  │└────────╜..╫     ╫    │║
+║╓──────╖┌────╖........╫                  ╫╫                   ╫  │......──────╫     ╫    │║
+║╫      ╫│    ╫........╫                  ╫╫                   ╫  │......      ╫     ╫    │║
+║╫      ╫│    ╫........╫                  ╫......            ............      ╫ GustavsG │║
+║╫      ╫│    ╫........╫                  ╫......            ............      ╙─────╨────┘║
+║╫      ╫│    ╫........╫                  ╫......            ............               │..║
+║╫      ╫│    ╫........╫                  ╫......eAndMickesCr............               │..║
+║╫      ╫│ Cu ╫........╫                  ╫......────────────............               │..║
+║╫      ╫└────╜........╫ AstridsBungallow ╫..┌─╥──────────────╖│     ╫                  │..║
+║╫      ╫..╓────────┐..╙──────────────────╜..│ ╫              ╫│     ╫                  │..║
+║╫      ╫..╫        │........╓──────────────┐│ ╫              ╫│     ╫                  │..║
+║╫      ╫..╫        │........╫              ││ ╫         ......│ Foundry                │..║
+║╫      ╫..╫ Loom   │........╫              ││ Sawmill   ......└─────╨──────────────────┘..║
+║╫      ╫..╙────────┘........╫              │└─╨─────────......╓──────────┐╓──────────────┐║
+║╫      ╫┌───────╥────────╖..╫ 2Orchard     │..┌───────╥──────╖╫          │╫              │║
+║╫      ╫│       ╫        ╫..╙──────────────┘..│       ╫      ╫╫          │╫              │║
+║╫      ╫│       ╫        ╫┌────────╖┌────────╖│       ╫      ╫╫          │╫              │║
+║╫ Wind ╫│ Field ╫        ╫│ 1Kitch ╫│ 2Kitch ╫│ Garden╫      ╫╫ Crusher  │╫ 1Orchard     │║
+║╙──────╜└───────╨────────╜└────────╜└────────╜└───────╨──────╜╙──────────┘╙──────────────┘║
+╚══════════════════════════════════════════════════════════════════════════════════════════╝
+
+=== Rank 2/200  score=321.33  |  Wild-Haven-246 ===
+  placed: 22/22
+  1Kitchen            pos=(20,0)  ladder_globals=24  priority=1
+  1Orchard            pos=(37,5)  ladder_globals=37  priority=2 [LADDER MISMATCH]
+  1SheepsCorral       pos=(21,3)  ladder_globals=25  priority=9
+  2Kitchen            pos=(32,0)  ladder_globals=36  priority=1
+  2Orchard            pos=(5,5)  ladder_globals=5  priority=2 [LADDER MISMATCH]
+  2SheepsCorral       pos=(32,3)  ladder_globals=36  priority=9
+  AlicesCottage       pos=(7,13)  ladder_globals=7,12  priority=9
+  AstridsBungallow    pos=(16,6)  ladder_globals=16,25  priority=3
+  AtulsWorkshop       pos=(14,17)  ladder_globals=16  priority=9
+  BriceAndMickesCrib  pos=(15,22)  ladder_globals=15,25  priority=9
+  Crusher             pos=(26,0)  ladder_globals=26  priority=2
+  CuckooClockTower    pos=(13,5)  ladder_globals=15  priority=9
+  Field               pos=(6,0)  ladder_globals=10,14  priority=1 [LADDER MISMATCH]
+  Foundry             pos=(31,12)  ladder_globals=34  priority=2 [LADDER MISMATCH]
+  Garden              pos=(37,0)  ladder_globals=41,44  priority=1 [LADDER MISMATCH]
+  GuestHouse          pos=(6,18)  ladder_globals=10  priority=9 [LADDER MISMATCH]
+  GustavsGallery      pos=(39,20)  ladder_globals=39,42  priority=9 [LADDER MISMATCH]
+  GwensLodge          pos=(27,17)  ladder_globals=27,32  priority=9
+  Loom                pos=(15,0)  ladder_globals=15  priority=2
+  Sawmill             pos=(26,6)  ladder_globals=27,34  priority=2
+  SummersSanctuary    pos=(1,20)  ladder_globals=1  priority=9 [LADDER MISMATCH]
+  Windmill            pos=(0,0)  ladder_globals=0,3  priority=1
+  priority_cost=31.33  ladder_mismatches=4  key: 1Kitchen@20,0|1Orchard@37,5|1SheepsCorral@21,3|2Kitchen@32,0|2Orchard@5,5|2SheepsCorral@32,3|AlicesCottage@7,13|AstridsBungallow@16,6|AtulsWorkshop@14,17|BriceAndMickesCrib@15,22|Crusher@26,0|CuckooClockTower@13,5|Field@6,0|Foundry@31,12|Garden@37,0|GuestHouse@6,18|GustavsGallery@39,20|GwensLodge@27,17|Loom@15,0|Sawmill@26,6|SummersSanctuary@1,20|Windmill@0,0
+
+╔══════════════════════════════════════════════════════════════════════════════════════════╗
+║..........................................................................................║
+║..............................╓───────────────────╥──┐....................................║
+║..............................╫                   ╫  │....................................║
+║..............................╫                   ╫  │....................................║
+║..............................╫                   ╫  │....................................║
+║..............................╫                   ╫  │........................╓─────╥────┐║
+║..╓──────────┐................╫                   ╫  │........................╫     ╫    │║
+║..╫          │................╫                   ╫  │........................╫     ╫    │║
+║..╫          │......................            ..............................╫     ╫    │║
+║..╫          │......................            ..............................╫     ╫    │║
+║..╫          │......................            ..............................╫     ╫    │║
+║..╫          │......................eAndMickesCr..........───────╖......──────╫     ╫    │║
+║..╫     ....┌───────╥────┐..........────────────..........       ╫......      ╫     ╫    │║
+║..╫ Summ....│       ╫    │..┌───╥──────────────────┐......       ╫......      ╫ GustavsG │║
+║..╙─────....│       ╫    │..│   ╫                  │......       ╫......      ╙─────╨────┘║
+║............│ GuestHouse │..│   ╫                  │..╫          ╫......               │..║
+║............└───────╨────┘..│ AtulsWorkshop        │..╫ GwensLod ╫......               │..║
+║╓──────╖......╓─────────╥─..└───╨──────────────────┘..╙──────────╜......               │..║
+║╫      ╫......╫         ╫ ......╓─────────....................│     ╫                  │..║
+║╫      ╫......╫         ╫      │╫         ....................│     ╫                  │..║
+║╫      ╫......╫ AlicesCottage  │╫                  ╫..........│     ╫                  │..║
+║╫      ╫......╙─────────╨──────┘╫                  ╫..........│ Foundry                │..║
+║╫      ╫..................┌────╖╫                  ╫..........└─────╨──────────────────┘..║
+║╫      ╫..................│    ╫╫                  ╫┌─╥──────────────╖....................║
+║╫      ╫..╓──────────────┐│    ╫╫                  ╫│ ╫              ╫....╓──────────────┐║
+║╫      ╫..╫              ││    ╫╫                  ╫│ ╫              ╫....╫              │║
+║╫      ╫..╫              ││    ╫╫                  ╫│ ╫         ..........╫              │║
+║╫      ╫..╫              ││    ╫╫ AstridsBungallow ╫│ Sawmill   ..........╫              │║
+║╫      ╫..╫ 2Orchard     ││ Cu ╫╙──────────────────╜└─╨─────────..........╫ 1Orchard     │║
+║╫      ╫..╙──────────────┘└────╜..........┌────────╖╓──────────┐┌────────╖╙──────────────┘║
+║╫      ╫....┌───────╥────────╖╓────────┐..│ 1Sheep ╫╫          ││ 2Sheep ╫┌───────╥──────╖║
+║╫      ╫....│       ╫        ╫╫        │..└────────╜╫          │└────────╜│       ╫      ╫║
+║╫      ╫....│       ╫        ╫╫        │┌────────╖..╫          │┌────────╖│       ╫      ╫║
+║╫ Wind ╫....│ Field ╫        ╫╫ Loom   ││ 1Kitch ╫..╫ Crusher  ││ 2Kitch ╫│ Garden╫      ╫║
+║╙──────╜....└───────╨────────╜╙────────┘└────────╜..╙──────────┘└────────╜└───────╨──────╜║
+╚══════════════════════════════════════════════════════════════════════════════════════════╝
+
+=== Rank 3/200  score=320.22  |  Wild-Haven-246 ===
+  placed: 22/22
+  1Kitchen            pos=(20,0)  ladder_globals=24  priority=1
+  1Orchard            pos=(37,5)  ladder_globals=37  priority=2 [LADDER MISMATCH]
+  1SheepsCorral       pos=(21,3)  ladder_globals=25  priority=9
+  2Kitchen            pos=(32,0)  ladder_globals=36  priority=1
+  2Orchard            pos=(5,5)  ladder_globals=5  priority=2 [LADDER MISMATCH]
+  2SheepsCorral       pos=(32,3)  ladder_globals=36  priority=9
+  AlicesCottage       pos=(7,13)  ladder_globals=7,12  priority=9
+  AstridsBungallow    pos=(16,6)  ladder_globals=16,25  priority=3
+  AtulsWorkshop       pos=(14,17)  ladder_globals=16  priority=9
+  BriceAndMickesCrib  pos=(16,22)  ladder_globals=16,26  priority=9
+  Crusher             pos=(26,0)  ladder_globals=26  priority=2
+  CuckooClockTower    pos=(13,5)  ladder_globals=15  priority=9
+  Field               pos=(6,0)  ladder_globals=10,14  priority=1 [LADDER MISMATCH]
+  Foundry             pos=(32,12)  ladder_globals=35  priority=2 [LADDER MISMATCH]
+  Garden              pos=(37,0)  ladder_globals=41,44  priority=1 [LADDER MISMATCH]
+  GuestHouse          pos=(6,18)  ladder_globals=10  priority=9 [LADDER MISMATCH]
+  GustavsGallery      pos=(39,24)  ladder_globals=39,42  priority=9 [LADDER MISMATCH]
+  GwensLodge          pos=(26,12)  ladder_globals=26,31  priority=9
+  Loom                pos=(15,0)  ladder_globals=15  priority=2
+  Sawmill             pos=(27,6)  ladder_globals=28,35  priority=2
+  SummersSanctuary    pos=(1,20)  ladder_globals=1  priority=9 [LADDER MISMATCH]
+  Windmill            pos=(0,0)  ladder_globals=0,3  priority=1
+  priority_cost=31.22  ladder_mismatches=4  key: 1Kitchen@20,0|1Orchard@37,5|1SheepsCorral@21,3|2Kitchen@32,0|2Orchard@5,5|2SheepsCorral@32,3|AlicesCottage@7,13|AstridsBungallow@16,6|AtulsWorkshop@14,17|BriceAndMickesCrib@16,22|Crusher@26,0|CuckooClockTower@13,5|Field@6,0|Foundry@32,12|Garden@37,0|GuestHouse@6,18|GustavsGallery@39,24|GwensLodge@26,12|Loom@15,0|Sawmill@27,6|SummersSanctuary@1,20|Windmill@0,0
+
+╔══════════════════════════════════════════════════════════════════════════════════════════╗
+║..........................................................................................║
+║................................╓───────────────────╥──┐......................╓─────╥────┐║
+║................................╫                   ╫  │......................╫     ╫    │║
+║................................╫                   ╫  │......................╫     ╫    │║
+║................................╫                   ╫  │......................╫     ╫    │║
+║................................╫                   ╫  │......................╫     ╫    │║
+║..╓──────────┐..................╫                   ╫  │......................╫     ╫    │║
+║..╫          │..................╫                   ╫  │......................╫     ╫    │║
+║..╫          │........................            ............................╫     ╫    │║
+║..╫          │........................            ............................╫ GustavsG │║
+║..╫          │........................            ............................╙─────╨────┘║
+║..╫          │........................eAndMickesCr........................──────..........║
+║..╫     ....┌───────╥────┐............────────────........................      ..........║
+║..╫ Summ....│       ╫    │..┌───╥──────────────────┐......................      ..........║
+║..╙─────....│       ╫    │..│   ╫                  │......................      ..........║
+║............│ GuestHouse │..│   ╫                  │......................               │║
+║............└───────╨────┘..│ AtulsWorkshop        │....───────╖..........               │║
+║╓──────╖......╓─────────╥─..└───╨──────────────────┘....       ╫..........               │║
+║╫      ╫......╫         ╫ ......╓─────────..............       ╫│     ╫                  │║
+║╫      ╫......╫         ╫      │╫         ..............       ╫│     ╫                  │║
+║╫      ╫......╫ AlicesCottage  │╫                  ╫╫          ╫│     ╫                  │║
+║╫      ╫......╙─────────╨──────┘╫                  ╫╫ GwensLod ╫│ Foundry                │║
+║╫      ╫..................┌────╖╫                  ╫╙──────────╜└─────╨──────────────────┘║
+║╫      ╫..................│    ╫╫                  ╫..┌─╥──────────────╖..................║
+║╫      ╫..╓──────────────┐│    ╫╫                  ╫..│ ╫              ╫..╓──────────────┐║
+║╫      ╫..╫              ││    ╫╫                  ╫..│ ╫              ╫..╫              │║
+║╫      ╫..╫              ││    ╫╫                  ╫..│ ╫         ........╫              │║
+║╫      ╫..╫              ││    ╫╫ AstridsBungallow ╫..│ Sawmill   ........╫              │║
+║╫      ╫..╫ 2Orchard     ││ Cu ╫╙──────────────────╜..└─╨─────────........╫ 1Orchard     │║
+║╫      ╫..╙──────────────┘└────╜..........┌────────╖╓──────────┐┌────────╖╙──────────────┘║
+║╫      ╫....┌───────╥────────╖╓────────┐..│ 1Sheep ╫╫          ││ 2Sheep ╫┌───────╥──────╖║
+║╫      ╫....│       ╫        ╫╫        │..└────────╜╫          │└────────╜│       ╫      ╫║
+║╫      ╫....│       ╫        ╫╫        │┌────────╖..╫          │┌────────╖│       ╫      ╫║
+║╫ Wind ╫....│ Field ╫        ╫╫ Loom   ││ 1Kitch ╫..╫ Crusher  ││ 2Kitch ╫│ Garden╫      ╫║
+║╙──────╜....└───────╨────────╜╙────────┘└────────╜..╙──────────┘└────────╜└───────╨──────╜║
+╚══════════════════════════════════════════════════════════════════════════════════════════╝
+
+=== Rank 4/200  score=316.00  |  Wild-Haven-246 ===
+  placed: 22/22
+  1Kitchen            pos=(20,0)  ladder_globals=24  priority=1
+  1Orchard            pos=(37,5)  ladder_globals=37  priority=2 [LADDER MISMATCH]
+  1SheepsCorral       pos=(21,3)  ladder_globals=25  priority=9
+  2Kitchen            pos=(32,0)  ladder_globals=36  priority=1
+  2Orchard            pos=(5,5)  ladder_globals=5  priority=2 [LADDER MISMATCH]
+  2SheepsCorral       pos=(32,3)  ladder_globals=36  priority=9
+  AlicesCottage       pos=(6,13)  ladder_globals=6,11  priority=9 [LADDER MISMATCH]
+  AstridsBungallow    pos=(16,6)  ladder_globals=16,25  priority=3
+  AtulsWorkshop       pos=(14,17)  ladder_globals=16  priority=9
+  BriceAndMickesCrib  pos=(16,22)  ladder_globals=16,26  priority=9
+  Crusher             pos=(26,0)  ladder_globals=26  priority=2
+  CuckooClockTower    pos=(13,5)  ladder_globals=15  priority=9 [LADDER MISMATCH]
+  Field               pos=(6,0)  ladder_globals=10,14  priority=1 [LADDER MISMATCH]
+  Foundry             pos=(32,12)  ladder_globals=35  priority=2
+  Garden              pos=(37,0)  ladder_globals=41,44  priority=1 [LADDER MISMATCH]
+  GuestHouse          pos=(7,18)  ladder_globals=11  priority=9
+  GustavsGallery      pos=(37,24)  ladder_globals=37,40  priority=9
+  GwensLodge          pos=(26,12)  ladder_globals=26,31  priority=9
+  Loom                pos=(15,0)  ladder_globals=15  priority=2
+  Sawmill             pos=(28,6)  ladder_globals=29,36  priority=2
+  SummersSanctuary    pos=(1,18)  ladder_globals=1  priority=9
+  Windmill            pos=(0,0)  ladder_globals=0,3  priority=1
+  priority_cost=31.00  ladder_mismatches=3  key: 1Kitchen@20,0|1Orchard@37,5|1SheepsCorral@21,3|2Kitchen@32,0|2Orchard@5,5|2SheepsCorral@32,3|AlicesCottage@6,13|AstridsBungallow@16,6|AtulsWorkshop@14,17|BriceAndMickesCrib@16,22|Crusher@26,0|CuckooClockTower@13,5|Field@6,0|Foundry@32,12|Garden@37,0|GuestHouse@7,18|GustavsGallery@37,24|GwensLodge@26,12|Loom@15,0|Sawmill@28,6|SummersSanctuary@1,18|Windmill@0,0
+
+╔══════════════════════════════════════════════════════════════════════════════════════════╗
+║..........................................................................................║
+║................................╓───────────────────╥──┐..................╓─────╥────┐....║
+║................................╫                   ╫  │..................╫     ╫    │....║
+║................................╫                   ╫  │..................╫     ╫    │....║
+║................................╫                   ╫  │..................╫     ╫    │....║
+║................................╫                   ╫  │..................╫     ╫    │....║
+║................................╫                   ╫  │..................╫     ╫    │....║
+║................................╫                   ╫  │..................╫     ╫    │....║
+║..╓──────────┐........................            ........................╫     ╫    │....║
+║..╫          │........................            ........................╫ GustavsG │....║
+║..╫          │........................            ........................╙─────╨────┘....║
+║..╫          │........................eAndMickesCr........................──────..........║
+║..╫          │┌───────╥────┐..........────────────........................      ..........║
+║..╫          ││       ╫    │┌───╥──────────────────┐......................      ..........║
+║..╫     ......│       ╫    ││   ╫                  │......................      ..........║
+║..╫ Summ......│ GuestHouse ││   ╫                  │......................               │║
+║..╙─────......└───────╨────┘│ AtulsWorkshop        │....───────╖..........               │║
+║╓──────╖....╓─────────╥─....└───╨──────────────────┘....       ╫..........               │║
+║╫      ╫....╫         ╫ ........╓─────────..............       ╫│     ╫                  │║
+║╫      ╫....╫         ╫      │..╫         ..............       ╫│     ╫                  │║
+║╫      ╫....╫ AlicesCottage  │..╫                  ╫╫          ╫│     ╫                  │║
+║╫      ╫....╙─────────╨──────┘..╫                  ╫╫ GwensLod ╫│ Foundry                │║
+║╫      ╫..................┌────╖╫                  ╫╙──────────╜└─────╨──────────────────┘║
+║╫      ╫..................│    ╫╫                  ╫....┌─╥──────────────╖................║
+║╫      ╫..╓──────────────┐│    ╫╫                  ╫....│ ╫              ╫╓──────────────┐║
+║╫      ╫..╫              ││    ╫╫                  ╫....│ ╫              ╫╫              │║
+║╫      ╫..╫              ││    ╫╫                  ╫....│ ╫         ......╫              │║
+║╫      ╫..╫              ││    ╫╫ AstridsBungallow ╫....│ Sawmill   ......╫              │║
+║╫      ╫..╫ 2Orchard     ││ Cu ╫╙──────────────────╜....└─╨─────────......╫ 1Orchard     │║
+║╫      ╫..╙──────────────┘└────╜..........┌────────╖╓──────────┐┌────────╖╙──────────────┘║
+║╫      ╫....┌───────╥────────╖╓────────┐..│ 1Sheep ╫╫          ││ 2Sheep ╫┌───────╥──────╖║
+║╫      ╫....│       ╫        ╫╫        │..└────────╜╫          │└────────╜│       ╫      ╫║
+║╫      ╫....│       ╫        ╫╫        │┌────────╖..╫          │┌────────╖│       ╫      ╫║
+║╫ Wind ╫....│ Field ╫        ╫╫ Loom   ││ 1Kitch ╫..╫ Crusher  ││ 2Kitch ╫│ Garden╫      ╫║
+║╙──────╜....└───────╨────────╜╙────────┘└────────╜..╙──────────┘└────────╜└───────╨──────╜║
+╚══════════════════════════════════════════════════════════════════════════════════════════╝
+
+=== Rank 5/200  score=314.00  |  Wild-Haven-246 ===
+  placed: 22/22
+  1Kitchen            pos=(20,0)  ladder_globals=24  priority=1
+  1Orchard            pos=(37,5)  ladder_globals=37  priority=2 [LADDER MISMATCH]
+  1SheepsCorral       pos=(20,3)  ladder_globals=24  priority=9
+  2Kitchen            pos=(32,0)  ladder_globals=36  priority=1
+  2Orchard            pos=(5,5)  ladder_globals=5  priority=2 [LADDER MISMATCH]
+  2SheepsCorral       pos=(32,3)  ladder_globals=36  priority=9
+  AlicesCottage       pos=(7,13)  ladder_globals=7,12  priority=9
+  AstridsBungallow    pos=(16,6)  ladder_globals=16,25  priority=3
+  AtulsWorkshop       pos=(14,17)  ladder_globals=16  priority=9
+  BriceAndMickesCrib  pos=(16,22)  ladder_globals=16,26  priority=9
+  Crusher             pos=(26,0)  ladder_globals=26  priority=2
+  CuckooClockTower    pos=(13,5)  ladder_globals=15  priority=9
+  Field               pos=(5,0)  ladder_globals=9,13  priority=1 [LADDER MISMATCH]
+  Foundry             pos=(32,12)  ladder_globals=35  priority=2
+  Garden              pos=(37,0)  ladder_globals=41,44  priority=1 [LADDER MISMATCH]
+  GuestHouse          pos=(7,18)  ladder_globals=11  priority=9
+  GustavsGallery      pos=(36,24)  ladder_globals=36,39  priority=9
+  GwensLodge          pos=(26,12)  ladder_globals=26,31  priority=9
+  Loom                pos=(15,0)  ladder_globals=15  priority=2
+  Sawmill             pos=(27,6)  ladder_globals=28,35  priority=2
+  SummersSanctuary    pos=(1,18)  ladder_globals=1  priority=9
+  Windmill            pos=(0,0)  ladder_globals=0,3  priority=1
+  priority_cost=31.00  ladder_mismatches=2  key: 1Kitchen@20,0|1Orchard@37,5|1SheepsCorral@20,3|2Kitchen@32,0|2Orchard@5,5|2SheepsCorral@32,3|AlicesCottage@7,13|AstridsBungallow@16,6|AtulsWorkshop@14,17|BriceAndMickesCrib@16,22|Crusher@26,0|CuckooClockTower@13,5|Field@5,0|Foundry@32,12|Garden@37,0|GuestHouse@7,18|GustavsGallery@36,24|GwensLodge@26,12|Loom@15,0|Sawmill@27,6|SummersSanctuary@1,18|Windmill@0,0
+
+╔══════════════════════════════════════════════════════════════════════════════════════════╗
+║..........................................................................................║
+║................................╓───────────────────╥──┐................╓─────╥────┐......║
+║................................╫                   ╫  │................╫     ╫    │......║
+║................................╫                   ╫  │................╫     ╫    │......║
+║................................╫                   ╫  │................╫     ╫    │......║
+║................................╫                   ╫  │................╫     ╫    │......║
+║................................╫                   ╫  │................╫     ╫    │......║
+║................................╫                   ╫  │................╫     ╫    │......║
+║..╓──────────┐........................            ......................╫     ╫    │......║
+║..╫          │........................            ......................╫ GustavsG │......║
+║..╫          │........................            ......................╙─────╨────┘......║
+║..╫          │........................eAndMickesCr........................──────..........║
+║..╫          │┌───────╥────┐..........────────────........................      ..........║
+║..╫          ││       ╫    │┌───╥──────────────────┐......................      ..........║
+║..╫     ......│       ╫    ││   ╫                  │......................      ..........║
+║..╫ Summ......│ GuestHouse ││   ╫                  │......................               │║
+║..╙─────......└───────╨────┘│ AtulsWorkshop        │....───────╖..........               │║
+║╓──────╖......╓─────────╥─..└───╨──────────────────┘....       ╫..........               │║
+║╫      ╫......╫         ╫ ......╓─────────..............       ╫│     ╫                  │║
+║╫      ╫......╫         ╫      │╫         ..............       ╫│     ╫                  │║
+║╫      ╫......╫ AlicesCottage  │╫                  ╫╫          ╫│     ╫                  │║
+║╫      ╫......╙─────────╨──────┘╫                  ╫╫ GwensLod ╫│ Foundry                │║
+║╫      ╫..................┌────╖╫                  ╫╙──────────╜└─────╨──────────────────┘║
+║╫      ╫..................│    ╫╫                  ╫..┌─╥──────────────╖..................║
+║╫      ╫..╓──────────────┐│    ╫╫                  ╫..│ ╫              ╫..╓──────────────┐║
+║╫      ╫..╫              ││    ╫╫                  ╫..│ ╫              ╫..╫              │║
+║╫      ╫..╫              ││    ╫╫                  ╫..│ ╫         ........╫              │║
+║╫      ╫..╫              ││    ╫╫ AstridsBungallow ╫..│ Sawmill   ........╫              │║
+║╫      ╫..╫ 2Orchard     ││ Cu ╫╙──────────────────╜..└─╨─────────........╫ 1Orchard     │║
+║╫      ╫..╙──────────────┘└────╜........┌────────╖..╓──────────┐┌────────╖╙──────────────┘║
+║╫      ╫..┌───────╥────────╖..╓────────┐│ 1Sheep ╫..╫          ││ 2Sheep ╫┌───────╥──────╖║
+║╫      ╫..│       ╫        ╫..╫        │└────────╜..╫          │└────────╜│       ╫      ╫║
+║╫      ╫..│       ╫        ╫..╫        │┌────────╖..╫          │┌────────╖│       ╫      ╫║
+║╫ Wind ╫..│ Field ╫        ╫..╫ Loom   ││ 1Kitch ╫..╫ Crusher  ││ 2Kitch ╫│ Garden╫      ╫║
+║╙──────╜..└───────╨────────╜..╙────────┘└────────╜..╙──────────┘└────────╜└───────╨──────╜║
+╚══════════════════════════════════════════════════════════════════════════════════════════╝
+
+=== Rank 6/200  score=312.89  |  Wild-Haven-246 ===
+  placed: 22/22
+  1Kitchen            pos=(19,0)  ladder_globals=23  priority=1
+  1Orchard            pos=(37,5)  ladder_globals=37  priority=2 [LADDER MISMATCH]
+  1SheepsCorral       pos=(20,3)  ladder_globals=24  priority=9
+  2Kitchen            pos=(31,0)  ladder_globals=35  priority=1
+  2Orchard            pos=(4,5)  ladder_globals=4  priority=2 [LADDER MISMATCH]
+  2SheepsCorral       pos=(31,3)  ladder_globals=35  priority=9
+  AlicesCottage       pos=(5,11)  ladder_globals=5,10  priority=9
+  AstridsBungallow    pos=(17,6)  ladder_globals=17,26  priority=3
+  AtulsWorkshop       pos=(15,29)  ladder_globals=17  priority=9
+  BriceAndMickesCrib  pos=(15,17)  ladder_globals=15,25  priority=9
+  Crusher             pos=(25,0)  ladder_globals=25  priority=2
+  CuckooClockTower    pos=(14,5)  ladder_globals=16  priority=9
+  Field               pos=(5,0)  ladder_globals=9,13  priority=1 [LADDER MISMATCH]
+  Foundry             pos=(32,12)  ladder_globals=35  priority=2
+  Garden              pos=(37,0)  ladder_globals=41,44  priority=1 [LADDER MISMATCH]
+  GuestHouse          pos=(7,16)  ladder_globals=11  priority=9
+  GustavsGallery      pos=(31,17)  ladder_globals=31,34  priority=9
+  GwensLodge          pos=(24,15)  ladder_globals=24,29  priority=9
+  Loom                pos=(14,0)  ladder_globals=14  priority=2
+  Sawmill             pos=(27,6)  ladder_globals=28,35  priority=2
+  SummersSanctuary    pos=(0,18)  ladder_globals=0  priority=9
+  Windmill            pos=(0,0)  ladder_globals=0,3  priority=1
+  priority_cost=30.89  ladder_mismatches=2  key: 1Kitchen@19,0|1Orchard@37,5|1SheepsCorral@20,3|2Kitchen@31,0|2Orchard@4,5|2SheepsCorral@31,3|AlicesCottage@5,11|AstridsBungallow@17,6|AtulsWorkshop@15,29|BriceAndMickesCrib@15,17|Crusher@25,0|CuckooClockTower@14,5|Field@5,0|Foundry@32,12|Garden@37,0|GuestHouse@7,16|GustavsGallery@31,17|GwensLodge@24,15|Loom@14,0|Sawmill@27,6|SummersSanctuary@0,18|Windmill@0,0
+
+╔══════════════════════════════════════════════════════════════════════════════════════════╗
+║..........................................................................................║
+║..............................┌───╥──────────────────┐....................................║
+║..............................│   ╫                  │....................................║
+║..............................│   ╫                  │....................................║
+║..............................│ AtulsWorkshop        │....................................║
+║..............................└───╨──────────────────┘....................................║
+║..............................╓───────────────────╥──┐....................................║
+║..............................╫                   ╫  │....................................║
+║╓──────────┐..................╫                   ╫  │........╓─────╥────┐................║
+║╫          │..................╫                   ╫  │........╫     ╫    │................║
+║╫          │..................╫                   ╫  │........╫     ╫    │................║
+║╫          │..................╫                   ╫  │........╫     ╫    │──────..........║
+║╫          │..................╫                   ╫  │........╫     ╫    │      ..........║
+║╫          │........................            ....───────╖..╫     ╫    │      ..........║
+║╫     ........┌───────╥────┐........            ....       ╫..╫     ╫    │      ..........║
+║╫ Summ........│       ╫    │........            ....       ╫..╫     ╫    │               │║
+║╙─────........│       ╫    │........eAndMickesCr....       ╫..╫ GustavsG │               │║
+║╓──────╖......│ GuestHouse │........────────────╫          ╫..╙─────╨────┘               │║
+║╫      ╫......└───────╨────┘......╓─────────....╫ GwensLod ╫....│     ╫                  │║
+║╫      ╫..╓─────────╥─............╫         ....╙──────────╜....│     ╫                  │║
+║╫      ╫..╫         ╫ ............╫                  ╫..........│     ╫                  │║
+║╫      ╫..╫         ╫      │......╫                  ╫..........│ Foundry                │║
+║╫      ╫..╫ AlicesCottage  │┌────╖╫                  ╫..........└─────╨──────────────────┘║
+║╫      ╫..╙─────────╨──────┘│    ╫╫                  ╫┌─╥──────────────╖..................║
+║╫      ╫╓──────────────┐....│    ╫╫                  ╫│ ╫              ╫..╓──────────────┐║
+║╫      ╫╫              │....│    ╫╫                  ╫│ ╫              ╫..╫              │║
+║╫      ╫╫              │....│    ╫╫                  ╫│ ╫         ........╫              │║
+║╫      ╫╫              │....│    ╫╫ AstridsBungallow ╫│ Sawmill   ........╫              │║
+║╫      ╫╫ 2Orchard     │....│ Cu ╫╙──────────────────╜└─╨─────────........╫ 1Orchard     │║
+║╫      ╫╙──────────────┘....└────╜......┌────────╖╓──────────┐┌────────╖..╙──────────────┘║
+║╫      ╫..┌───────╥────────╖╓────────┐..│ 1Sheep ╫╫          ││ 2Sheep ╫..┌───────╥──────╖║
+║╫      ╫..│       ╫        ╫╫        │..└────────╜╫          │└────────╜..│       ╫      ╫║
+║╫      ╫..│       ╫        ╫╫        │┌────────╖..╫          │┌────────╖..│       ╫      ╫║
+║╫ Wind ╫..│ Field ╫        ╫╫ Loom   ││ 1Kitch ╫..╫ Crusher  ││ 2Kitch ╫..│ Garden╫      ╫║
+║╙──────╜..└───────╨────────╜╙────────┘└────────╜..╙──────────┘└────────╜..└───────╨──────╜║
+╚══════════════════════════════════════════════════════════════════════════════════════════╝
+
+=== Rank 7/200  score=311.11  |  Wild-Haven-246 ===
+  placed: 22/22
+  1Kitchen            pos=(20,0)  ladder_globals=24  priority=1
+  1Orchard            pos=(37,5)  ladder_globals=37  priority=2
+  1SheepsCorral       pos=(20,3)  ladder_globals=24  priority=9
+  2Kitchen            pos=(31,0)  ladder_globals=35  priority=1
+  2Orchard            pos=(5,5)  ladder_globals=5  priority=2
+  2SheepsCorral       pos=(31,3)  ladder_globals=35  priority=9
+  AlicesCottage       pos=(4,11)  ladder_globals=4,9  priority=9
+  AstridsBungallow    pos=(16,6)  ladder_globals=16,25  priority=3
+  AtulsWorkshop       pos=(23,22)  ladder_globals=25  priority=9
+  BriceAndMickesCrib  pos=(3,22)  ladder_globals=3,13  priority=9
+  Crusher             pos=(25,0)  ladder_globals=25  priority=2
+  CuckooClockTower    pos=(13,5)  ladder_globals=15  priority=9
+  Field               pos=(4,0)  ladder_globals=8,12  priority=1
+  Foundry             pos=(32,12)  ladder_globals=35  priority=2
+  Garden              pos=(36,0)  ladder_globals=40,43  priority=1
+  GuestHouse          pos=(6,16)  ladder_globals=10  priority=9
+  GustavsGallery      pos=(26,12)  ladder_globals=26,29  priority=9
+  GwensLodge          pos=(36,24)  ladder_globals=36,41  priority=9
+  Loom                pos=(13,0)  ladder_globals=13  priority=2
+  Sawmill             pos=(27,6)  ladder_globals=28,35  priority=2
+  SummersSanctuary    pos=(0,18)  ladder_globals=0  priority=9
+  Windmill            pos=(0,0)  ladder_globals=0,3  priority=1
+  priority_cost=31.11  ladder_mismatches=0  key: 1Kitchen@20,0|1Orchard@37,5|1SheepsCorral@20,3|2Kitchen@31,0|2Orchard@5,5|2SheepsCorral@31,3|AlicesCottage@4,11|AstridsBungallow@16,6|AtulsWorkshop@23,22|BriceAndMickesCrib@3,22|Crusher@25,0|CuckooClockTower@13,5|Field@4,0|Foundry@32,12|Garden@36,0|GuestHouse@6,16|GustavsGallery@26,12|GwensLodge@36,24|Loom@13,0|Sawmill@27,6|SummersSanctuary@0,18|Windmill@0,0
+
+╔══════════════════════════════════════════════════════════════════════════════════════════╗
+║..........................................................................................║
+║......╓───────────────────╥──┐............................................................║
+║......╫                   ╫  │............................................................║
+║......╫                   ╫  │............................................................║
+║......╫                   ╫  │..............................................───────╖......║
+║......╫                   ╫  │..............................................       ╫......║
+║......╫                   ╫  │..............................................       ╫......║
+║......╫                   ╫  │..............................................       ╫......║
+║╓──────────┐            ......................┌───╥──────────────────┐..╫          ╫......║
+║╫          │            ......................│   ╫                  │..╫ GwensLod ╫......║
+║╫          │            ......................│   ╫                  │..╙──────────╜......║
+║╫          │eAndMickesCr......................│ AtulsWorkshop        │....──────..........║
+║╫          │────────────......................└───╨──────────────────┘....      ..........║
+║╫          │........................................╓─────╥────┐..........      ..........║
+║╫     ......┌───────╥────┐..........................╫     ╫    │..........      ..........║
+║╫ Summ......│       ╫    │..........................╫     ╫    │..........               │║
+║╙─────......│       ╫    │..........................╫     ╫    │..........               │║
+║╓──────╖....│ GuestHouse │..........................╫     ╫    │..........               │║
+║╫      ╫....└───────╨────┘......╓─────────..........╫     ╫    ││     ╫                  │║
+║╫      ╫╓─────────╥─............╫         ..........╫     ╫    ││     ╫                  │║
+║╫      ╫╫         ╫ ............╫                  ╫╫     ╫    ││     ╫                  │║
+║╫      ╫╫         ╫      │......╫                  ╫╫ GustavsG ││ Foundry                │║
+║╫      ╫╫ AlicesCottage  │┌────╖╫                  ╫╙─────╨────┘└─────╨──────────────────┘║
+║╫      ╫╙─────────╨──────┘│    ╫╫                  ╫..┌─╥──────────────╖..................║
+║╫      ╫..╓──────────────┐│    ╫╫                  ╫..│ ╫              ╫..╓──────────────┐║
+║╫      ╫..╫              ││    ╫╫                  ╫..│ ╫              ╫..╫              │║
+║╫      ╫..╫              ││    ╫╫                  ╫..│ ╫         ........╫              │║
+║╫      ╫..╫              ││    ╫╫ AstridsBungallow ╫..│ Sawmill   ........╫              │║
+║╫      ╫..╫ 2Orchard     ││ Cu ╫╙──────────────────╜..└─╨─────────........╫ 1Orchard     │║
+║╫      ╫..╙──────────────┘└────╜........┌────────╖╓──────────┐┌────────╖..╙──────────────┘║
+║╫      ╫┌───────╥────────╖╓────────┐....│ 1Sheep ╫╫          ││ 2Sheep ╫┌───────╥──────╖..║
+║╫      ╫│       ╫        ╫╫        │....└────────╜╫          │└────────╜│       ╫      ╫..║
+║╫      ╫│       ╫        ╫╫        │....┌────────╖╫          │┌────────╖│       ╫      ╫..║
+║╫ Wind ╫│ Field ╫        ╫╫ Loom   │....│ 1Kitch ╫╫ Crusher  ││ 2Kitch ╫│ Garden╫      ╫..║
+║╙──────╜└───────╨────────╜╙────────┘....└────────╜╙──────────┘└────────╜└───────╨──────╜..║
+╚══════════════════════════════════════════════════════════════════════════════════════════╝
+
+=== Rank 8/200  score=311.00  |  Wild-Haven-246 ===
+  placed: 22/22
+  1Kitchen            pos=(19,0)  ladder_globals=23  priority=1
+  1Orchard            pos=(37,5)  ladder_globals=37  priority=2
+  1SheepsCorral       pos=(19,3)  ladder_globals=23  priority=9
+  2Kitchen            pos=(31,0)  ladder_globals=35  priority=1
+  2Orchard            pos=(4,5)  ladder_globals=4  priority=2 [LADDER MISMATCH]
+  2SheepsCorral       pos=(31,6)  ladder_globals=35  priority=9
+  AlicesCottage       pos=(6,16)  ladder_globals=6,11  priority=9
+  AstridsBungallow    pos=(15,6)  ladder_globals=15,24  priority=3
+  AtulsWorkshop       pos=(20,15)  ladder_globals=22  priority=9 [LADDER MISMATCH]
+  BriceAndMickesCrib  pos=(6,21)  ladder_globals=6,16  priority=9
+  Crusher             pos=(25,6)  ladder_globals=25  priority=2
+  CuckooClockTower    pos=(12,5)  ladder_globals=14  priority=9
+  Field               pos=(4,0)  ladder_globals=8,12  priority=1 [LADDER MISMATCH]
+  Foundry             pos=(32,11)  ladder_globals=35  priority=2
+  Garden              pos=(36,0)  ladder_globals=40,43  priority=1
+  GuestHouse          pos=(5,11)  ladder_globals=9  priority=9 [LADDER MISMATCH]
+  GustavsGallery      pos=(22,20)  ladder_globals=22,25  priority=9
+  GwensLodge          pos=(28,20)  ladder_globals=28,33  priority=9 [LADDER MISMATCH]
+  Loom                pos=(13,0)  ladder_globals=13  priority=2
+  Sawmill             pos=(25,0)  ladder_globals=26,33  priority=2
+  SummersSanctuary    pos=(0,18)  ladder_globals=0  priority=9
+  Windmill            pos=(0,0)  ladder_globals=0,3  priority=1
+  priority_cost=30.50  ladder_mismatches=3  key: 1Kitchen@19,0|1Orchard@37,5|1SheepsCorral@19,3|2Kitchen@31,0|2Orchard@4,5|2SheepsCorral@31,6|AlicesCottage@6,16|AstridsBungallow@15,6|AtulsWorkshop@20,15|BriceAndMickesCrib@6,21|Crusher@25,6|CuckooClockTower@12,5|Field@4,0|Foundry@32,11|Garden@36,0|GuestHouse@5,11|GustavsGallery@22,20|GwensLodge@28,20|Loom@13,0|Sawmill@25,0|SummersSanctuary@0,18|Windmill@0,0
+
+╔══════════════════════════════════════════════════════════════════════════════════════════╗
+║..........................................................................................║
+║..........................................................................................║
+║............╓───────────────────╥──┐......................................................║
+║............╫                   ╫  │......................................................║
+║............╫                   ╫  │......................................................║
+║............╫                   ╫  │........╓─────╥────┐..................................║
+║............╫                   ╫  │........╫     ╫    │..................................║
+║............╫                   ╫  │........╫     ╫    │..................................║
+║╓──────────┐╫                   ╫  │........╫     ╫    │....───────╖......................║
+║╫          │......            ..............╫     ╫    │....       ╫......................║
+║╫          │......            ..............╫     ╫    │....       ╫......................║
+║╫          │......            ..............╫     ╫    │....       ╫......................║
+║╫          │......eAndMickesCr..............╫     ╫    │╫          ╫......──────..........║
+║╫          │......────────────..............╫ GustavsG │╫ GwensLod ╫......      ..........║
+║╫     ......╓─────────╥─....................╙─────╨────┘╙──────────╜......      ..........║
+║╫ Summ......╫         ╫ ................┌───╥──────────────────┐..........      ..........║
+║╙─────......╫         ╫      │..........│   ╫                  │..........               │║
+║╓──────╖....╫ AlicesCottage  │..........│   ╫                  │..........               │║
+║╫      ╫....╙─────────╨──────┘╓─────────│ AtulsWorkshop        │..........               │║
+║╫      ╫..┌───────╥────┐......╫         └───╨──────────────────┘│     ╫                  │║
+║╫      ╫..│       ╫    │......╫                  ╫..............│     ╫                  │║
+║╫      ╫..│       ╫    │......╫                  ╫..............│     ╫                  │║
+║╫      ╫..│ GuestHouse │┌────╖╫                  ╫..............│ Foundry                │║
+║╫      ╫..└───────╨────┘│    ╫╫                  ╫╓──────────┐..└─────╨──────────────────┘║
+║╫      ╫╓──────────────┐│    ╫╫                  ╫╫          │............╓──────────────┐║
+║╫      ╫╫              ││    ╫╫                  ╫╫          │............╫              │║
+║╫      ╫╫              ││    ╫╫                  ╫╫          │┌────────╖..╫              │║
+║╫      ╫╫              ││    ╫╫ AstridsBungallow ╫╫ Crusher  ││ 2Sheep ╫..╫              │║
+║╫      ╫╫ 2Orchard     ││ Cu ╫╙──────────────────╜╙──────────┘└────────╜..╫ 1Orchard     │║
+║╫      ╫╙──────────────┘└────╜........┌────────╖..┌─╥──────────────╖......╙──────────────┘║
+║╫      ╫┌───────╥────────╖╓────────┐..│ 1Sheep ╫..│ ╫              ╫....┌───────╥──────╖..║
+║╫      ╫│       ╫        ╫╫        │..└────────╜..│ ╫              ╫....│       ╫      ╫..║
+║╫      ╫│       ╫        ╫╫        │..┌────────╖..│ ╫         ┌────────╖│       ╫      ╫..║
+║╫ Wind ╫│ Field ╫        ╫╫ Loom   │..│ 1Kitch ╫..│ Sawmill   │ 2Kitch ╫│ Garden╫      ╫..║
+║╙──────╜└───────╨────────╜╙────────┘..└────────╜..└─╨─────────└────────╜└───────╨──────╜..║
+╚══════════════════════════════════════════════════════════════════════════════════════════╝
+
+=== Rank 9/200  score=309.56  |  Wild-Haven-246 ===
+  placed: 22/22
+  1Kitchen            pos=(19,0)  ladder_globals=23  priority=1
+  1Orchard            pos=(37,5)  ladder_globals=37  priority=2
+  1SheepsCorral       pos=(19,3)  ladder_globals=23  priority=9
+  2Kitchen            pos=(31,0)  ladder_globals=35  priority=1
+  2Orchard            pos=(4,5)  ladder_globals=4  priority=2 [LADDER MISMATCH]
+  2SheepsCorral       pos=(31,3)  ladder_globals=35  priority=9
+  AlicesCottage       pos=(4,16)  ladder_globals=4,9  priority=9
+  AstridsBungallow    pos=(15,6)  ladder_globals=15,24  priority=3
+  AtulsWorkshop       pos=(19,17)  ladder_globals=21  priority=9
+  BriceAndMickesCrib  pos=(7,19)  ladder_globals=7,17  priority=9
+  Crusher             pos=(25,0)  ladder_globals=25  priority=2
+  CuckooClockTower    pos=(12,5)  ladder_globals=14  priority=9
+  Field               pos=(5,0)  ladder_globals=9,13  priority=1 [LADDER MISMATCH]
+  Foundry             pos=(32,12)  ladder_globals=35  priority=2
+  Garden              pos=(36,0)  ladder_globals=40,43  priority=1
+  GuestHouse          pos=(4,11)  ladder_globals=8  priority=9 [LADDER MISMATCH]
+  GustavsGallery      pos=(22,22)  ladder_globals=22,25  priority=9
+  GwensLodge          pos=(31,17)  ladder_globals=31,36  priority=9
+  Loom                pos=(14,0)  ladder_globals=14  priority=2
+  Sawmill             pos=(27,6)  ladder_globals=28,35  priority=2
+  SummersSanctuary    pos=(1,18)  ladder_globals=1  priority=9
+  Windmill            pos=(0,0)  ladder_globals=0,3  priority=1
+  priority_cost=30.56  ladder_mismatches=2  key: 1Kitchen@19,0|1Orchard@37,5|1SheepsCorral@19,3|2Kitchen@31,0|2Orchard@4,5|2SheepsCorral@31,3|AlicesCottage@4,16|AstridsBungallow@15,6|AtulsWorkshop@19,17|BriceAndMickesCrib@7,19|Crusher@25,0|CuckooClockTower@12,5|Field@5,0|Foundry@32,12|Garden@36,0|GuestHouse@4,11|GustavsGallery@22,22|GwensLodge@31,17|Loom@14,0|Sawmill@27,6|SummersSanctuary@1,18|Windmill@0,0
+
+╔══════════════════════════════════════════════════════════════════════════════════════════╗
+║..........................................................................................║
+║..........................................................................................║
+║..........................................................................................║
+║............................................╓─────╥────┐..................................║
+║..............╓───────────────────╥──┐......╫     ╫    │..................................║
+║..............╫                   ╫  │......╫     ╫    │..................................║
+║..............╫                   ╫  │......╫     ╫    │..................................║
+║..............╫                   ╫  │......╫     ╫    │..................................║
+║..╓──────────┐╫                   ╫  │......╫     ╫    │..................................║
+║..╫          │╫                   ╫  │......╫     ╫    │..................................║
+║..╫          │╫                   ╫  │......╫     ╫    │..................................║
+║..╫          │......            ............╫ GustavsG │..........───────╖──────..........║
+║..╫          │......            ............╙─────╨────┘..........       ╫      ..........║
+║..╫          │......            ......┌───╥──────────────────┐....       ╫      ..........║
+║..╫     ╓─────────╥─eAndMickesCr......│   ╫                  │....       ╫      ..........║
+║..╫ Summ╫         ╫ ────────────......│   ╫                  │╫          ╫               │║
+║..╙─────╫         ╫      │............│ AtulsWorkshop        │╫ GwensLod ╫               │║
+║╓──────╖╫ AlicesCottage  │............└───╨──────────────────┘╙──────────╜               │║
+║╫      ╫╙─────────╨──────┘....╓─────────........................│     ╫                  │║
+║╫      ╫┌───────╥────┐........╫         ........................│     ╫                  │║
+║╫      ╫│       ╫    │........╫                  ╫..............│     ╫                  │║
+║╫      ╫│       ╫    │........╫                  ╫..............│ Foundry                │║
+║╫      ╫│ GuestHouse │..┌────╖╫                  ╫..............└─────╨──────────────────┘║
+║╫      ╫└───────╨────┘..│    ╫╫                  ╫....┌─╥──────────────╖..................║
+║╫      ╫╓──────────────┐│    ╫╫                  ╫....│ ╫              ╫..╓──────────────┐║
+║╫      ╫╫              ││    ╫╫                  ╫....│ ╫              ╫..╫              │║
+║╫      ╫╫              ││    ╫╫                  ╫....│ ╫         ........╫              │║
+║╫      ╫╫              ││    ╫╫ AstridsBungallow ╫....│ Sawmill   ........╫              │║
+║╫      ╫╫ 2Orchard     ││ Cu ╫╙──────────────────╜....└─╨─────────........╫ 1Orchard     │║
+║╫      ╫╙──────────────┘└────╜........┌────────╖..╓──────────┐┌────────╖..╙──────────────┘║
+║╫      ╫..┌───────╥────────╖╓────────┐│ 1Sheep ╫..╫          ││ 2Sheep ╫┌───────╥──────╖..║
+║╫      ╫..│       ╫        ╫╫        │└────────╜..╫          │└────────╜│       ╫      ╫..║
+║╫      ╫..│       ╫        ╫╫        │┌────────╖..╫          │┌────────╖│       ╫      ╫..║
+║╫ Wind ╫..│ Field ╫        ╫╫ Loom   ││ 1Kitch ╫..╫ Crusher  ││ 2Kitch ╫│ Garden╫      ╫..║
+║╙──────╜..└───────╨────────╜╙────────┘└────────╜..╙──────────┘└────────╜└───────╨──────╜..║
+╚══════════════════════════════════════════════════════════════════════════════════════════╝
+
+=== Rank 10/200  score=309.33  |  Wild-Haven-246 ===
+  placed: 22/22
+  1Kitchen            pos=(18,0)  ladder_globals=22  priority=1
+  1Orchard            pos=(37,5)  ladder_globals=37  priority=2 [LADDER MISMATCH]
+  1SheepsCorral       pos=(20,3)  ladder_globals=24  priority=9
+  2Kitchen            pos=(32,0)  ladder_globals=36  priority=1
+  2Orchard            pos=(4,5)  ladder_globals=4  priority=2 [LADDER MISMATCH]
+  2SheepsCorral       pos=(32,3)  ladder_globals=36  priority=9
+  AlicesCottage       pos=(7,16)  ladder_globals=7,12  priority=9
+  AstridsBungallow    pos=(16,6)  ladder_globals=16,25  priority=3
+  AtulsWorkshop       pos=(19,25)  ladder_globals=21  priority=9
+  BriceAndMickesCrib  pos=(7,21)  ladder_globals=7,17  priority=9
+  Crusher             pos=(26,0)  ladder_globals=26  priority=2
+  CuckooClockTower    pos=(12,5)  ladder_globals=14  priority=9
+  Field               pos=(4,0)  ladder_globals=8,12  priority=1 [LADDER MISMATCH]
+  Foundry             pos=(32,12)  ladder_globals=35  priority=2
+  Garden              pos=(37,0)  ladder_globals=41,44  priority=1 [LADDER MISMATCH]
+  GuestHouse          pos=(4,11)  ladder_globals=8  priority=9 [LADDER MISMATCH]
+  GustavsGallery      pos=(22,15)  ladder_globals=22,25  priority=9
+  GwensLodge          pos=(26,12)  ladder_globals=26,31  priority=9
+  Loom                pos=(13,0)  ladder_globals=13  priority=2
+  Sawmill             pos=(28,6)  ladder_globals=29,36  priority=2
+  SummersSanctuary    pos=(1,18)  ladder_globals=1  priority=9
+  Windmill            pos=(0,0)  ladder_globals=0,3  priority=1
+  priority_cost=30.33  ladder_mismatches=3  key: 1Kitchen@18,0|1Orchard@37,5|1SheepsCorral@20,3|2Kitchen@32,0|2Orchard@4,5|2SheepsCorral@32,3|AlicesCottage@7,16|AstridsBungallow@16,6|AtulsWorkshop@19,25|BriceAndMickesCrib@7,21|Crusher@26,0|CuckooClockTower@12,5|Field@4,0|Foundry@32,12|Garden@37,0|GuestHouse@4,11|GustavsGallery@22,15|GwensLodge@26,12|Loom@13,0|Sawmill@28,6|SummersSanctuary@1,18|Windmill@0,0
+
+╔══════════════════════════════════════════════════════════════════════════════════════════╗
+║..........................................................................................║
+║..........................................................................................║
+║..............╓───────────────────╥──┐....................................................║
+║..............╫                   ╫  │....................................................║
+║..............╫                   ╫  │....................................................║
+║..............╫                   ╫  │┌───╥──────────────────┐............................║
+║..............╫                   ╫  ││   ╫                  │............................║
+║..............╫                   ╫  ││   ╫                  │............................║
+║..╓──────────┐╫                   ╫  ││ AtulsWorkshop        │............................║
+║..╫          │......            ......└───╨──────────────────┘............................║
+║..╫          │......            ............╓─────╥────┐..................................║
+║..╫          │......            ............╫     ╫    │..................──────..........║
+║..╫          │......eAndMickesCr............╫     ╫    │..................      ..........║
+║..╫          │......────────────............╫     ╫    │..................      ..........║
+║..╫     ......╓─────────╥─..................╫     ╫    │..................      ..........║
+║..╫ Summ......╫         ╫ ..................╫     ╫    │..................               │║
+║..╙─────......╫         ╫      │............╫     ╫    │───────╖..........               │║
+║╓──────╖......╫ AlicesCottage  │............╫     ╫    │       ╫..........               │║
+║╫      ╫......╙─────────╨──────┘╓─────────..╫ GustavsG │       ╫│     ╫                  │║
+║╫      ╫┌───────╥────┐..........╫         ..╙─────╨────┘       ╫│     ╫                  │║
+║╫      ╫│       ╫    │..........╫                  ╫╫          ╫│     ╫                  │║
+║╫      ╫│       ╫    │..........╫                  ╫╫ GwensLod ╫│ Foundry                │║
+║╫      ╫│ GuestHouse │..┌────╖..╫                  ╫╙──────────╜└─────╨──────────────────┘║
+║╫      ╫└───────╨────┘..│    ╫..╫                  ╫....┌─╥──────────────╖................║
+║╫      ╫╓──────────────┐│    ╫..╫                  ╫....│ ╫              ╫╓──────────────┐║
+║╫      ╫╫              ││    ╫..╫                  ╫....│ ╫              ╫╫              │║
+║╫      ╫╫              ││    ╫..╫                  ╫....│ ╫         ......╫              │║
+║╫      ╫╫              ││    ╫..╫ AstridsBungallow ╫....│ Sawmill   ......╫              │║
+║╫      ╫╫ 2Orchard     ││ Cu ╫..╙──────────────────╜....└─╨─────────......╫ 1Orchard     │║
+║╫      ╫╙──────────────┘└────╜..........┌────────╖..╓──────────┐┌────────╖╙──────────────┘║
+║╫      ╫┌───────╥────────╖╓────────┐....│ 1Sheep ╫..╫          ││ 2Sheep ╫┌───────╥──────╖║
+║╫      ╫│       ╫        ╫╫        │....└────────╜..╫          │└────────╜│       ╫      ╫║
+║╫      ╫│       ╫        ╫╫        │┌────────╖......╫          │┌────────╖│       ╫      ╫║
+║╫ Wind ╫│ Field ╫        ╫╫ Loom   ││ 1Kitch ╫......╫ Crusher  ││ 2Kitch ╫│ Garden╫      ╫║
+║╙──────╜└───────╨────────╜╙────────┘└────────╜......╙──────────┘└────────╜└───────╨──────╜║
+╚══════════════════════════════════════════════════════════════════════════════════════════╝
+
+=== Rank 11/200  score=305.33  |  Wild-Haven-246 ===
+  placed: 22/22
+  1Kitchen            pos=(20,0)  ladder_globals=24  priority=1
+  1Orchard            pos=(37,5)  ladder_globals=37  priority=2 [LADDER MISMATCH]
+  1SheepsCorral       pos=(19,3)  ladder_globals=23  priority=9
+  2Kitchen            pos=(32,0)  ladder_globals=36  priority=1
+  2Orchard            pos=(5,5)  ladder_globals=5  priority=2
+  2SheepsCorral       pos=(32,3)  ladder_globals=36  priority=9
+  AlicesCottage       pos=(7,16)  ladder_globals=7,12  priority=9
+  AstridsBungallow    pos=(16,6)  ladder_globals=16,25  priority=3
+  AtulsWorkshop       pos=(19,25)  ladder_globals=21  priority=9
+  BriceAndMickesCrib  pos=(7,21)  ladder_globals=7,17  priority=9
+  Crusher             pos=(26,0)  ladder_globals=26  priority=2
+  CuckooClockTower    pos=(13,5)  ladder_globals=15  priority=9
+  Field               pos=(4,0)  ladder_globals=8,12  priority=1
+  Foundry             pos=(32,12)  ladder_globals=35  priority=2
+  Garden              pos=(37,0)  ladder_globals=41,44  priority=1 [LADDER MISMATCH]
+  GuestHouse          pos=(4,11)  ladder_globals=8  priority=9
+  GustavsGallery      pos=(22,15)  ladder_globals=22,25  priority=9
+  GwensLodge          pos=(26,12)  ladder_globals=26,31  priority=9
+  Loom                pos=(13,0)  ladder_globals=13  priority=2
+  Sawmill             pos=(26,6)  ladder_globals=27,34  priority=2
+  SummersSanctuary    pos=(1,18)  ladder_globals=1  priority=9
+  Windmill            pos=(0,0)  ladder_globals=0,3  priority=1
+  priority_cost=30.33  ladder_mismatches=1  key: 1Kitchen@20,0|1Orchard@37,5|1SheepsCorral@19,3|2Kitchen@32,0|2Orchard@5,5|2SheepsCorral@32,3|AlicesCottage@7,16|AstridsBungallow@16,6|AtulsWorkshop@19,25|BriceAndMickesCrib@7,21|Crusher@26,0|CuckooClockTower@13,5|Field@4,0|Foundry@32,12|Garden@37,0|GuestHouse@4,11|GustavsGallery@22,15|GwensLodge@26,12|Loom@13,0|Sawmill@26,6|SummersSanctuary@1,18|Windmill@0,0
+
+╔══════════════════════════════════════════════════════════════════════════════════════════╗
+║..........................................................................................║
+║..........................................................................................║
+║..............╓───────────────────╥──┐....................................................║
+║..............╫                   ╫  │....................................................║
+║..............╫                   ╫  │....................................................║
+║..............╫                   ╫  │┌───╥──────────────────┐............................║
+║..............╫                   ╫  ││   ╫                  │............................║
+║..............╫                   ╫  ││   ╫                  │............................║
+║..╓──────────┐╫                   ╫  ││ AtulsWorkshop        │............................║
+║..╫          │......            ......└───╨──────────────────┘............................║
+║..╫          │......            ............╓─────╥────┐..................................║
+║..╫          │......            ............╫     ╫    │..................──────..........║
+║..╫          │......eAndMickesCr............╫     ╫    │..................      ..........║
+║..╫          │......────────────............╫     ╫    │..................      ..........║
+║..╫     ......╓─────────╥─..................╫     ╫    │..................      ..........║
+║..╫ Summ......╫         ╫ ..................╫     ╫    │..................               │║
+║..╙─────......╫         ╫      │............╫     ╫    │───────╖..........               │║
+║╓──────╖......╫ AlicesCottage  │............╫     ╫    │       ╫..........               │║
+║╫      ╫......╙─────────╨──────┘╓─────────..╫ GustavsG │       ╫│     ╫                  │║
+║╫      ╫┌───────╥────┐..........╫         ..╙─────╨────┘       ╫│     ╫                  │║
+║╫      ╫│       ╫    │..........╫                  ╫╫          ╫│     ╫                  │║
+║╫      ╫│       ╫    │..........╫                  ╫╫ GwensLod ╫│ Foundry                │║
+║╫      ╫│ GuestHouse │....┌────╖╫                  ╫╙──────────╜└─────╨──────────────────┘║
+║╫      ╫└───────╨────┘....│    ╫╫                  ╫┌─╥──────────────╖....................║
+║╫      ╫..╓──────────────┐│    ╫╫                  ╫│ ╫              ╫....╓──────────────┐║
+║╫      ╫..╫              ││    ╫╫                  ╫│ ╫              ╫....╫              │║
+║╫      ╫..╫              ││    ╫╫                  ╫│ ╫         ..........╫              │║
+║╫      ╫..╫              ││    ╫╫ AstridsBungallow ╫│ Sawmill   ..........╫              │║
+║╫      ╫..╫ 2Orchard     ││ Cu ╫╙──────────────────╜└─╨─────────..........╫ 1Orchard     │║
+║╫      ╫..╙──────────────┘└────╜......┌────────╖....╓──────────┐┌────────╖╙──────────────┘║
+║╫      ╫┌───────╥────────╖╓────────┐..│ 1Sheep ╫....╫          ││ 2Sheep ╫┌───────╥──────╖║
+║╫      ╫│       ╫        ╫╫        │..└────────╜....╫          │└────────╜│       ╫      ╫║
+║╫      ╫│       ╫        ╫╫        │....┌────────╖..╫          │┌────────╖│       ╫      ╫║
+║╫ Wind ╫│ Field ╫        ╫╫ Loom   │....│ 1Kitch ╫..╫ Crusher  ││ 2Kitch ╫│ Garden╫      ╫║
+║╙──────╜└───────╨────────╜╙────────┘....└────────╜..╙──────────┘└────────╜└───────╨──────╜║
+╚══════════════════════════════════════════════════════════════════════════════════════════╝
+
+=== Rank 12/200  score=303.67  |  Wild-Haven-246 ===
+  placed: 22/22
+  1Kitchen            pos=(19,0)  ladder_globals=23  priority=1
+  1Orchard            pos=(37,5)  ladder_globals=37  priority=2 [LADDER MISMATCH]
+  1SheepsCorral       pos=(19,3)  ladder_globals=23  priority=9
+  2Kitchen            pos=(32,0)  ladder_globals=36  priority=1
+  2Orchard            pos=(5,5)  ladder_globals=5  priority=2
+  2SheepsCorral       pos=(32,6)  ladder_globals=36  priority=9
+  AlicesCottage       pos=(7,16)  ladder_globals=7,12  priority=9
+  AstridsBungallow    pos=(16,6)  ladder_globals=16,25  priority=3
+  AtulsWorkshop       pos=(20,25)  ladder_globals=22  priority=9
+  BriceAndMickesCrib  pos=(7,21)  ladder_globals=7,17  priority=9
+  Crusher             pos=(26,6)  ladder_globals=26  priority=2
+  CuckooClockTower    pos=(13,5)  ladder_globals=15  priority=9
+  Field               pos=(4,0)  ladder_globals=8,12  priority=1
+  Foundry             pos=(32,11)  ladder_globals=35  priority=2
+  Garden              pos=(37,0)  ladder_globals=41,44  priority=1 [LADDER MISMATCH]
+  GuestHouse          pos=(4,11)  ladder_globals=8  priority=9
+  GustavsGallery      pos=(21,15)  ladder_globals=21,24  priority=9
+  GwensLodge          pos=(26,12)  ladder_globals=26,31  priority=9
+  Loom                pos=(13,0)  ladder_globals=13  priority=2
+  Sawmill             pos=(26,0)  ladder_globals=27,34  priority=2
+  SummersSanctuary    pos=(0,18)  ladder_globals=0  priority=9
+  Windmill            pos=(0,0)  ladder_globals=0,3  priority=1
+  priority_cost=30.17  ladder_mismatches=1  key: 1Kitchen@19,0|1Orchard@37,5|1SheepsCorral@19,3|2Kitchen@32,0|2Orchard@5,5|2SheepsCorral@32,6|AlicesCottage@7,16|AstridsBungallow@16,6|AtulsWorkshop@20,25|BriceAndMickesCrib@7,21|Crusher@26,6|CuckooClockTower@13,5|Field@4,0|Foundry@32,11|Garden@37,0|GuestHouse@4,11|GustavsGallery@21,15|GwensLodge@26,12|Loom@13,0|Sawmill@26,0|SummersSanctuary@0,18|Windmill@0,0
+
+╔══════════════════════════════════════════════════════════════════════════════════════════╗
+║..........................................................................................║
+║..........................................................................................║
+║..............╓───────────────────╥──┐....................................................║
+║..............╫                   ╫  │....................................................║
+║..............╫                   ╫  │....................................................║
+║..............╫                   ╫  │..┌───╥──────────────────┐..........................║
+║..............╫                   ╫  │..│   ╫                  │..........................║
+║..............╫                   ╫  │..│   ╫                  │..........................║
+║╓──────────┐..╫                   ╫  │..│ AtulsWorkshop        │..........................║
+║╫          │........            ........└───╨──────────────────┘..........................║
+║╫          │........            ..........╓─────╥────┐....................................║
+║╫          │........            ..........╫     ╫    │....................................║
+║╫          │........eAndMickesCr..........╫     ╫    │....................──────..........║
+║╫          │........────────────..........╫     ╫    │....................      ..........║
+║╫     ........╓─────────╥─................╫     ╫    │....................      ..........║
+║╫ Summ........╫         ╫ ................╫     ╫    │....................      ..........║
+║╙─────........╫         ╫      │..........╫     ╫    │..───────╖..........               │║
+║╓──────╖......╫ AlicesCottage  │..........╫     ╫    │..       ╫..........               │║
+║╫      ╫......╙─────────╨──────┘╓─────────╫ GustavsG │..       ╫..........               │║
+║╫      ╫┌───────╥────┐..........╫         ╙─────╨────┘..       ╫│     ╫                  │║
+║╫      ╫│       ╫    │..........╫                  ╫╫          ╫│     ╫                  │║
+║╫      ╫│       ╫    │..........╫                  ╫╫ GwensLod ╫│     ╫                  │║
+║╫      ╫│ GuestHouse │....┌────╖╫                  ╫╙──────────╜│ Foundry                │║
+║╫      ╫└───────╨────┘....│    ╫╫                  ╫╓──────────┐└─────╨──────────────────┘║
+║╫      ╫..╓──────────────┐│    ╫╫                  ╫╫          │..........╓──────────────┐║
+║╫      ╫..╫              ││    ╫╫                  ╫╫          │..........╫              │║
+║╫      ╫..╫              ││    ╫╫                  ╫╫          │┌────────╖╫              │║
+║╫      ╫..╫              ││    ╫╫ AstridsBungallow ╫╫ Crusher  ││ 2Sheep ╫╫              │║
+║╫      ╫..╫ 2Orchard     ││ Cu ╫╙──────────────────╜╙──────────┘└────────╜╫ 1Orchard     │║
+║╫      ╫..╙──────────────┘└────╜......┌────────╖....┌─╥──────────────╖....╙──────────────┘║
+║╫      ╫┌───────╥────────╖╓────────┐..│ 1Sheep ╫....│ ╫              ╫....┌───────╥──────╖║
+║╫      ╫│       ╫        ╫╫        │..└────────╜....│ ╫              ╫....│       ╫      ╫║
+║╫      ╫│       ╫        ╫╫        │..┌────────╖....│ ╫         ┌────────╖│       ╫      ╫║
+║╫ Wind ╫│ Field ╫        ╫╫ Loom   │..│ 1Kitch ╫....│ Sawmill   │ 2Kitch ╫│ Garden╫      ╫║
+║╙──────╜└───────╨────────╜╙────────┘..└────────╜....└─╨─────────└────────╜└───────╨──────╜║
+╚══════════════════════════════════════════════════════════════════════════════════════════╝
+
+=== Rank 13/200  score=303.67  |  Wild-Haven-246 ===
+  placed: 22/22
+  1Kitchen            pos=(19,0)  ladder_globals=23  priority=1
+  1Orchard            pos=(37,5)  ladder_globals=37  priority=2 [LADDER MISMATCH]
+  1SheepsCorral       pos=(19,3)  ladder_globals=23  priority=9
+  2Kitchen            pos=(32,0)  ladder_globals=36  priority=1
+  2Orchard            pos=(5,5)  ladder_globals=5  priority=2
+  2SheepsCorral       pos=(32,6)  ladder_globals=36  priority=9
+  AlicesCottage       pos=(6,16)  ladder_globals=6,11  priority=9
+  AstridsBungallow    pos=(16,6)  ladder_globals=16,25  priority=3
+  AtulsWorkshop       pos=(19,25)  ladder_globals=21  priority=9
+  BriceAndMickesCrib  pos=(7,21)  ladder_globals=7,17  priority=9
+  Crusher             pos=(26,6)  ladder_globals=26  priority=2
+  CuckooClockTower    pos=(13,5)  ladder_globals=15  priority=9
+  Field               pos=(4,0)  ladder_globals=8,12  priority=1
+  Foundry             pos=(32,11)  ladder_globals=35  priority=2
+  Garden              pos=(37,0)  ladder_globals=41,44  priority=1 [LADDER MISMATCH]
+  GuestHouse          pos=(4,11)  ladder_globals=8  priority=9
+  GustavsGallery      pos=(22,15)  ladder_globals=22,25  priority=9
+  GwensLodge          pos=(26,12)  ladder_globals=26,31  priority=9
+  Loom                pos=(14,0)  ladder_globals=14  priority=2
+  Sawmill             pos=(26,0)  ladder_globals=27,34  priority=2
+  SummersSanctuary    pos=(0,18)  ladder_globals=0  priority=9
+  Windmill            pos=(0,0)  ladder_globals=0,3  priority=1
+  priority_cost=30.17  ladder_mismatches=1  key: 1Kitchen@19,0|1Orchard@37,5|1SheepsCorral@19,3|2Kitchen@32,0|2Orchard@5,5|2SheepsCorral@32,6|AlicesCottage@6,16|AstridsBungallow@16,6|AtulsWorkshop@19,25|BriceAndMickesCrib@7,21|Crusher@26,6|CuckooClockTower@13,5|Field@4,0|Foundry@32,11|Garden@37,0|GuestHouse@4,11|GustavsGallery@22,15|GwensLodge@26,12|Loom@14,0|Sawmill@26,0|SummersSanctuary@0,18|Windmill@0,0
+
+╔══════════════════════════════════════════════════════════════════════════════════════════╗
+║..........................................................................................║
+║..........................................................................................║
+║..............╓───────────────────╥──┐....................................................║
+║..............╫                   ╫  │....................................................║
+║..............╫                   ╫  │....................................................║
+║..............╫                   ╫  │┌───╥──────────────────┐............................║
+║..............╫                   ╫  ││   ╫                  │............................║
+║..............╫                   ╫  ││   ╫                  │............................║
+║╓──────────┐..╫                   ╫  ││ AtulsWorkshop        │............................║
+║╫          │........            ......└───╨──────────────────┘............................║
+║╫          │........            ............╓─────╥────┐..................................║
+║╫          │........            ............╫     ╫    │..................................║
+║╫          │........eAndMickesCr............╫     ╫    │..................──────..........║
+║╫          │........────────────............╫     ╫    │..................      ..........║
+║╫     ......╓─────────╥─....................╫     ╫    │..................      ..........║
+║╫ Summ......╫         ╫ ....................╫     ╫    │..................      ..........║
+║╙─────......╫         ╫      │..............╫     ╫    │───────╖..........               │║
+║╓──────╖....╫ AlicesCottage  │..............╫     ╫    │       ╫..........               │║
+║╫      ╫....╙─────────╨──────┘..╓─────────..╫ GustavsG │       ╫..........               │║
+║╫      ╫┌───────╥────┐..........╫         ..╙─────╨────┘       ╫│     ╫                  │║
+║╫      ╫│       ╫    │..........╫                  ╫╫          ╫│     ╫                  │║
+║╫      ╫│       ╫    │..........╫                  ╫╫ GwensLod ╫│     ╫                  │║
+║╫      ╫│ GuestHouse │....┌────╖╫                  ╫╙──────────╜│ Foundry                │║
+║╫      ╫└───────╨────┘....│    ╫╫                  ╫╓──────────┐└─────╨──────────────────┘║
+║╫      ╫..╓──────────────┐│    ╫╫                  ╫╫          │..........╓──────────────┐║
+║╫      ╫..╫              ││    ╫╫                  ╫╫          │..........╫              │║
+║╫      ╫..╫              ││    ╫╫                  ╫╫          │┌────────╖╫              │║
+║╫      ╫..╫              ││    ╫╫ AstridsBungallow ╫╫ Crusher  ││ 2Sheep ╫╫              │║
+║╫      ╫..╫ 2Orchard     ││ Cu ╫╙──────────────────╜╙──────────┘└────────╜╫ 1Orchard     │║
+║╫      ╫..╙──────────────┘└────╜......┌────────╖....┌─╥──────────────╖....╙──────────────┘║
+║╫      ╫┌───────╥────────╖..╓────────┐│ 1Sheep ╫....│ ╫              ╫....┌───────╥──────╖║
+║╫      ╫│       ╫        ╫..╫        │└────────╜....│ ╫              ╫....│       ╫      ╫║
+║╫      ╫│       ╫        ╫..╫        │┌────────╖....│ ╫         ┌────────╖│       ╫      ╫║
+║╫ Wind ╫│ Field ╫        ╫..╫ Loom   ││ 1Kitch ╫....│ Sawmill   │ 2Kitch ╫│ Garden╫      ╫║
+║╙──────╜└───────╨────────╜..╙────────┘└────────╜....└─╨─────────└────────╜└───────╨──────╜║
+╚══════════════════════════════════════════════════════════════════════════════════════════╝
+
+=== Rank 14/200  score=303.44  |  Wild-Haven-246 ===
+  placed: 22/22
+  1Kitchen            pos=(19,0)  ladder_globals=23  priority=1
+  1Orchard            pos=(37,5)  ladder_globals=37  priority=2
+  1SheepsCorral       pos=(19,3)  ladder_globals=23  priority=9
+  2Kitchen            pos=(31,0)  ladder_globals=35  priority=1
+  2Orchard            pos=(4,5)  ladder_globals=4  priority=2 [LADDER MISMATCH]
+  2SheepsCorral       pos=(32,6)  ladder_globals=36  priority=9
+  AlicesCottage       pos=(4,16)  ladder_globals=4,9  priority=9
+  AstridsBungallow    pos=(16,6)  ladder_globals=16,25  priority=3
+  AtulsWorkshop       pos=(19,25)  ladder_globals=21  priority=9
+  BriceAndMickesCrib  pos=(7,19)  ladder_globals=7,17  priority=9
+  Crusher             pos=(26,6)  ladder_globals=26  priority=2
+  CuckooClockTower    pos=(13,5)  ladder_globals=15  priority=9
+  Field               pos=(4,0)  ladder_globals=8,12  priority=1 [LADDER MISMATCH]
+  Foundry             pos=(32,11)  ladder_globals=35  priority=2
+  Garden              pos=(36,0)  ladder_globals=40,43  priority=1
+  GuestHouse          pos=(5,11)  ladder_globals=9  priority=9 [LADDER MISMATCH]
+  GustavsGallery      pos=(22,15)  ladder_globals=22,25  priority=9
+  GwensLodge          pos=(26,12)  ladder_globals=26,31  priority=9
+  Loom                pos=(14,0)  ladder_globals=14  priority=2
+  Sawmill             pos=(25,0)  ladder_globals=26,33  priority=2
+  SummersSanctuary    pos=(1,18)  ladder_globals=1  priority=9
+  Windmill            pos=(0,0)  ladder_globals=0,3  priority=1
+  priority_cost=29.94  ladder_mismatches=2  key: 1Kitchen@19,0|1Orchard@37,5|1SheepsCorral@19,3|2Kitchen@31,0|2Orchard@4,5|2SheepsCorral@32,6|AlicesCottage@4,16|AstridsBungallow@16,6|AtulsWorkshop@19,25|BriceAndMickesCrib@7,19|Crusher@26,6|CuckooClockTower@13,5|Field@4,0|Foundry@32,11|Garden@36,0|GuestHouse@5,11|GustavsGallery@22,15|GwensLodge@26,12|Loom@14,0|Sawmill@25,0|SummersSanctuary@1,18|Windmill@0,0
+
+╔══════════════════════════════════════════════════════════════════════════════════════════╗
+║..........................................................................................║
+║..........................................................................................║
+║..........................................................................................║
+║..........................................................................................║
+║..............╓───────────────────╥──┐....................................................║
+║..............╫                   ╫  │┌───╥──────────────────┐............................║
+║..............╫                   ╫  ││   ╫                  │............................║
+║..............╫                   ╫  ││   ╫                  │............................║
+║..╓──────────┐╫                   ╫  ││ AtulsWorkshop        │............................║
+║..╫          │╫                   ╫  │└───╨──────────────────┘............................║
+║..╫          │╫                   ╫  │......╓─────╥────┐..................................║
+║..╫          │......            ............╫     ╫    │..................................║
+║..╫          │......            ............╫     ╫    │..................──────..........║
+║..╫          │......            ............╫     ╫    │..................      ..........║
+║..╫     ╓─────────╥─eAndMickesCr............╫     ╫    │..................      ..........║
+║..╫ Summ╫         ╫ ────────────............╫     ╫    │..................      ..........║
+║..╙─────╫         ╫      │..................╫     ╫    │───────╖..........               │║
+║╓──────╖╫ AlicesCottage  │..................╫     ╫    │       ╫..........               │║
+║╫      ╫╙─────────╨──────┘......╓─────────..╫ GustavsG │       ╫..........               │║
+║╫      ╫..┌───────╥────┐........╫         ..╙─────╨────┘       ╫│     ╫                  │║
+║╫      ╫..│       ╫    │........╫                  ╫╫          ╫│     ╫                  │║
+║╫      ╫..│       ╫    │........╫                  ╫╫ GwensLod ╫│     ╫                  │║
+║╫      ╫..│ GuestHouse │..┌────╖╫                  ╫╙──────────╜│ Foundry                │║
+║╫      ╫..└───────╨────┘..│    ╫╫                  ╫╓──────────┐└─────╨──────────────────┘║
+║╫      ╫╓──────────────┐..│    ╫╫                  ╫╫          │..........╓──────────────┐║
+║╫      ╫╫              │..│    ╫╫                  ╫╫          │..........╫              │║
+║╫      ╫╫              │..│    ╫╫                  ╫╫          │┌────────╖╫              │║
+║╫      ╫╫              │..│    ╫╫ AstridsBungallow ╫╫ Crusher  ││ 2Sheep ╫╫              │║
+║╫      ╫╫ 2Orchard     │..│ Cu ╫╙──────────────────╜╙──────────┘└────────╜╫ 1Orchard     │║
+║╫      ╫╙──────────────┘..└────╜......┌────────╖..┌─╥──────────────╖......╙──────────────┘║
+║╫      ╫┌───────╥────────╖..╓────────┐│ 1Sheep ╫..│ ╫              ╫....┌───────╥──────╖..║
+║╫      ╫│       ╫        ╫..╫        │└────────╜..│ ╫              ╫....│       ╫      ╫..║
+║╫      ╫│       ╫        ╫..╫        │┌────────╖..│ ╫         ┌────────╖│       ╫      ╫..║
+║╫ Wind ╫│ Field ╫        ╫..╫ Loom   ││ 1Kitch ╫..│ Sawmill   │ 2Kitch ╫│ Garden╫      ╫..║
+║╙──────╜└───────╨────────╜..╙────────┘└────────╜..└─╨─────────└────────╜└───────╨──────╜..║
+╚══════════════════════════════════════════════════════════════════════════════════════════╝
+
+=== Rank 15/200  score=301.44  |  Wild-Haven-246 ===
+  placed: 22/22
+  1Kitchen            pos=(18,0)  ladder_globals=22  priority=1
+  1Orchard            pos=(37,5)  ladder_globals=37  priority=2
+  1SheepsCorral       pos=(19,3)  ladder_globals=23  priority=9
+  2Kitchen            pos=(31,0)  ladder_globals=35  priority=1
+  2Orchard            pos=(5,5)  ladder_globals=5  priority=2 [LADDER MISMATCH]
+  2SheepsCorral       pos=(32,6)  ladder_globals=36  priority=9
+  AlicesCottage       pos=(4,16)  ladder_globals=4,9  priority=9
+  AstridsBungallow    pos=(16,6)  ladder_globals=16,25  priority=3
+  AtulsWorkshop       pos=(19,25)  ladder_globals=21  priority=9
+  BriceAndMickesCrib  pos=(7,19)  ladder_globals=7,17  priority=9
+  Crusher             pos=(26,6)  ladder_globals=26  priority=2
+  CuckooClockTower    pos=(13,5)  ladder_globals=15  priority=9
+  Field               pos=(4,0)  ladder_globals=8,12  priority=1
+  Foundry             pos=(32,11)  ladder_globals=35  priority=2
+  Garden              pos=(36,0)  ladder_globals=40,43  priority=1
+  GuestHouse          pos=(5,11)  ladder_globals=9  priority=9 [LADDER MISMATCH]
+  GustavsGallery      pos=(22,15)  ladder_globals=22,25  priority=9
+  GwensLodge          pos=(26,12)  ladder_globals=26,31  priority=9
+  Loom                pos=(13,0)  ladder_globals=13  priority=2
+  Sawmill             pos=(25,0)  ladder_globals=26,33  priority=2
+  SummersSanctuary    pos=(1,18)  ladder_globals=1  priority=9
+  Windmill            pos=(0,0)  ladder_globals=0,3  priority=1
+  priority_cost=29.94  ladder_mismatches=1  key: 1Kitchen@18,0|1Orchard@37,5|1SheepsCorral@19,3|2Kitchen@31,0|2Orchard@5,5|2SheepsCorral@32,6|AlicesCottage@4,16|AstridsBungallow@16,6|AtulsWorkshop@19,25|BriceAndMickesCrib@7,19|Crusher@26,6|CuckooClockTower@13,5|Field@4,0|Foundry@32,11|Garden@36,0|GuestHouse@5,11|GustavsGallery@22,15|GwensLodge@26,12|Loom@13,0|Sawmill@25,0|SummersSanctuary@1,18|Windmill@0,0
+
+╔══════════════════════════════════════════════════════════════════════════════════════════╗
+║..........................................................................................║
+║..........................................................................................║
+║..........................................................................................║
+║..........................................................................................║
+║..............╓───────────────────╥──┐....................................................║
+║..............╫                   ╫  │┌───╥──────────────────┐............................║
+║..............╫                   ╫  ││   ╫                  │............................║
+║..............╫                   ╫  ││   ╫                  │............................║
+║..╓──────────┐╫                   ╫  ││ AtulsWorkshop        │............................║
+║..╫          │╫                   ╫  │└───╨──────────────────┘............................║
+║..╫          │╫                   ╫  │......╓─────╥────┐..................................║
+║..╫          │......            ............╫     ╫    │..................................║
+║..╫          │......            ............╫     ╫    │..................──────..........║
+║..╫          │......            ............╫     ╫    │..................      ..........║
+║..╫     ╓─────────╥─eAndMickesCr............╫     ╫    │..................      ..........║
+║..╫ Summ╫         ╫ ────────────............╫     ╫    │..................      ..........║
+║..╙─────╫         ╫      │..................╫     ╫    │───────╖..........               │║
+║╓──────╖╫ AlicesCottage  │..................╫     ╫    │       ╫..........               │║
+║╫      ╫╙─────────╨──────┘......╓─────────..╫ GustavsG │       ╫..........               │║
+║╫      ╫..┌───────╥────┐........╫         ..╙─────╨────┘       ╫│     ╫                  │║
+║╫      ╫..│       ╫    │........╫                  ╫╫          ╫│     ╫                  │║
+║╫      ╫..│       ╫    │........╫                  ╫╫ GwensLod ╫│     ╫                  │║
+║╫      ╫..│ GuestHouse │..┌────╖╫                  ╫╙──────────╜│ Foundry                │║
+║╫      ╫..└───────╨────┘..│    ╫╫                  ╫╓──────────┐└─────╨──────────────────┘║
+║╫      ╫..╓──────────────┐│    ╫╫                  ╫╫          │..........╓──────────────┐║
+║╫      ╫..╫              ││    ╫╫                  ╫╫          │..........╫              │║
+║╫      ╫..╫              ││    ╫╫                  ╫╫          │┌────────╖╫              │║
+║╫      ╫..╫              ││    ╫╫ AstridsBungallow ╫╫ Crusher  ││ 2Sheep ╫╫              │║
+║╫      ╫..╫ 2Orchard     ││ Cu ╫╙──────────────────╜╙──────────┘└────────╜╫ 1Orchard     │║
+║╫      ╫..╙──────────────┘└────╜......┌────────╖..┌─╥──────────────╖......╙──────────────┘║
+║╫      ╫┌───────╥────────╖╓────────┐..│ 1Sheep ╫..│ ╫              ╫....┌───────╥──────╖..║
+║╫      ╫│       ╫        ╫╫        │..└────────╜..│ ╫              ╫....│       ╫      ╫..║
+║╫      ╫│       ╫        ╫╫        │┌────────╖....│ ╫         ┌────────╖│       ╫      ╫..║
+║╫ Wind ╫│ Field ╫        ╫╫ Loom   ││ 1Kitch ╫....│ Sawmill   │ 2Kitch ╫│ Garden╫      ╫..║
+║╙──────╜└───────╨────────╜╙────────┘└────────╜....└─╨─────────└────────╜└───────╨──────╜..║
+╚══════════════════════════════════════════════════════════════════════════════════════════╝
+
+=== Rank 16/200  score=297.22  |  Wild-Haven-246 ===
+  placed: 22/22
+  1Kitchen            pos=(18,0)  ladder_globals=22  priority=1
+  1Orchard            pos=(37,5)  ladder_globals=37  priority=2
+  1SheepsCorral       pos=(18,3)  ladder_globals=22  priority=9
+  2Kitchen            pos=(29,0)  ladder_globals=33  priority=1
+  2Orchard            pos=(5,5)  ladder_globals=5  priority=2
+  2SheepsCorral       pos=(32,5)  ladder_globals=36  priority=9
+  AlicesCottage       pos=(4,11)  ladder_globals=4,9  priority=9
+  AstridsBungallow    pos=(16,6)  ladder_globals=16,25  priority=3
+  AtulsWorkshop       pos=(15,17)  ladder_globals=17  priority=9
+  BriceAndMickesCrib  pos=(7,22)  ladder_globals=7,17  priority=9
+  Crusher             pos=(26,6)  ladder_globals=26  priority=2
+  CuckooClockTower    pos=(13,5)  ladder_globals=15  priority=9
+  Field               pos=(4,0)  ladder_globals=8,12  priority=1
+  Foundry             pos=(32,11)  ladder_globals=35  priority=2
+  Garden              pos=(35,0)  ladder_globals=39,42  priority=1
+  GuestHouse          pos=(6,16)  ladder_globals=10  priority=9
+  GustavsGallery      pos=(28,19)  ladder_globals=28,31  priority=9
+  GwensLodge          pos=(26,12)  ladder_globals=26,31  priority=9
+  Loom                pos=(13,0)  ladder_globals=13  priority=2
+  Sawmill             pos=(23,0)  ladder_globals=24,31  priority=2
+  SummersSanctuary    pos=(0,18)  ladder_globals=0  priority=9
+  Windmill            pos=(0,0)  ladder_globals=0,3  priority=1
+  priority_cost=29.72  ladder_mismatches=0  key: 1Kitchen@18,0|1Orchard@37,5|1SheepsCorral@18,3|2Kitchen@29,0|2Orchard@5,5|2SheepsCorral@32,5|AlicesCottage@4,11|AstridsBungallow@16,6|AtulsWorkshop@15,17|BriceAndMickesCrib@7,22|Crusher@26,6|CuckooClockTower@13,5|Field@4,0|Foundry@32,11|Garden@35,0|GuestHouse@6,16|GustavsGallery@28,19|GwensLodge@26,12|Loom@13,0|Sawmill@23,0|SummersSanctuary@0,18|Windmill@0,0
+
+╔══════════════════════════════════════════════════════════════════════════════════════════╗
+║..........................................................................................║
+║..............╓───────────────────╥──┐....................................................║
+║..............╫                   ╫  │....................................................║
+║..............╫                   ╫  │....................................................║
+║..............╫                   ╫  │....................................................║
+║..............╫                   ╫  │....................................................║
+║..............╫                   ╫  │..................╓─────╥────┐......................║
+║..............╫                   ╫  │..................╫     ╫    │......................║
+║╓──────────┐........            ........................╫     ╫    │......................║
+║╫          │........            ........................╫     ╫    │......................║
+║╫          │........            ........................╫     ╫    │......................║
+║╫          │........eAndMickesCr........................╫     ╫    │......................║
+║╫          │........────────────........................╫     ╫    │......──────..........║
+║╫          │..................┌───╥──────────────────┐..╫     ╫    │......      ..........║
+║╫     ......┌───────╥────┐....│   ╫                  │..╫ GustavsG │......      ..........║
+║╫ Summ......│       ╫    │....│   ╫                  │..╙─────╨────┘......      ..........║
+║╙─────......│       ╫    │....│ AtulsWorkshop        │..───────╖..........               │║
+║╓──────╖....│ GuestHouse │....└───╨──────────────────┘..       ╫..........               │║
+║╫      ╫....└───────╨────┘......╓─────────..............       ╫..........               │║
+║╫      ╫╓─────────╥─............╫         ..............       ╫│     ╫                  │║
+║╫      ╫╫         ╫ ............╫                  ╫╫          ╫│     ╫                  │║
+║╫      ╫╫         ╫      │......╫                  ╫╫ GwensLod ╫│     ╫                  │║
+║╫      ╫╫ AlicesCottage  │┌────╖╫                  ╫╙──────────╜│ Foundry                │║
+║╫      ╫╙─────────╨──────┘│    ╫╫                  ╫╓──────────┐└─────╨──────────────────┘║
+║╫      ╫..╓──────────────┐│    ╫╫                  ╫╫          │..........╓──────────────┐║
+║╫      ╫..╫              ││    ╫╫                  ╫╫          │..........╫              │║
+║╫      ╫..╫              ││    ╫╫                  ╫╫          │..........╫              │║
+║╫      ╫..╫              ││    ╫╫ AstridsBungallow ╫╫ Crusher  │┌────────╖╫              │║
+║╫      ╫..╫ 2Orchard     ││ Cu ╫╙──────────────────╜╙──────────┘│ 2Sheep ╫╫ 1Orchard     │║
+║╫      ╫..╙──────────────┘└────╜....┌────────╖┌─╥──────────────╖└────────╜╙──────────────┘║
+║╫      ╫┌───────╥────────╖╓────────┐│ 1Sheep ╫│ ╫              ╫......┌───────╥──────╖....║
+║╫      ╫│       ╫        ╫╫        │└────────╜│ ╫              ╫......│       ╫      ╫....║
+║╫      ╫│       ╫        ╫╫        │┌────────╖│ ╫         ┌────────╖..│       ╫      ╫....║
+║╫ Wind ╫│ Field ╫        ╫╫ Loom   ││ 1Kitch ╫│ Sawmill   │ 2Kitch ╫..│ Garden╫      ╫....║
+║╙──────╜└───────╨────────╜╙────────┘└────────╜└─╨─────────└────────╜..└───────╨──────╜....║
+╚══════════════════════════════════════════════════════════════════════════════════════════╝
+
+=== Rank 17/200  score=297.00  |  Wild-Haven-246 ===
+  placed: 22/22
+  1Kitchen            pos=(18,0)  ladder_globals=22  priority=1
+  1Orchard            pos=(37,5)  ladder_globals=37  priority=2 [LADDER MISMATCH]
+  1SheepsCorral       pos=(18,3)  ladder_globals=22  priority=9
+  2Kitchen            pos=(29,0)  ladder_globals=33  priority=1
+  2Orchard            pos=(5,5)  ladder_globals=5  priority=2
+  2SheepsCorral       pos=(32,3)  ladder_globals=36  priority=9
+  AlicesCottage       pos=(4,16)  ladder_globals=4,9  priority=9
+  AstridsBungallow    pos=(16,6)  ladder_globals=16,25  priority=3
+  AtulsWorkshop       pos=(13,17)  ladder_globals=15  priority=9
+  BriceAndMickesCrib  pos=(7,22)  ladder_globals=7,17  priority=9
+  Crusher             pos=(26,6)  ladder_globals=26  priority=2
+  CuckooClockTower    pos=(13,5)  ladder_globals=15  priority=9
+  Field               pos=(4,0)  ladder_globals=8,12  priority=1
+  Foundry             pos=(32,11)  ladder_globals=35  priority=2
+  Garden              pos=(37,0)  ladder_globals=41,44  priority=1 [LADDER MISMATCH]
+  GuestHouse          pos=(4,11)  ladder_globals=8  priority=9
+  GustavsGallery      pos=(28,19)  ladder_globals=28,31  priority=9
+  GwensLodge          pos=(26,12)  ladder_globals=26,31  priority=9
+  Loom                pos=(13,0)  ladder_globals=13  priority=2
+  Sawmill             pos=(23,0)  ladder_globals=24,31  priority=2
+  SummersSanctuary    pos=(1,18)  ladder_globals=1  priority=9
+  Windmill            pos=(0,0)  ladder_globals=0,3  priority=1
+  priority_cost=29.50  ladder_mismatches=1  key: 1Kitchen@18,0|1Orchard@37,5|1SheepsCorral@18,3|2Kitchen@29,0|2Orchard@5,5|2SheepsCorral@32,3|AlicesCottage@4,16|AstridsBungallow@16,6|AtulsWorkshop@13,17|BriceAndMickesCrib@7,22|Crusher@26,6|CuckooClockTower@13,5|Field@4,0|Foundry@32,11|Garden@37,0|GuestHouse@4,11|GustavsGallery@28,19|GwensLodge@26,12|Loom@13,0|Sawmill@23,0|SummersSanctuary@1,18|Windmill@0,0
+
+╔══════════════════════════════════════════════════════════════════════════════════════════╗
+║..........................................................................................║
+║..............╓───────────────────╥──┐....................................................║
+║..............╫                   ╫  │....................................................║
+║..............╫                   ╫  │....................................................║
+║..............╫                   ╫  │....................................................║
+║..............╫                   ╫  │....................................................║
+║..............╫                   ╫  │..................╓─────╥────┐......................║
+║..............╫                   ╫  │..................╫     ╫    │......................║
+║..╓──────────┐......            ........................╫     ╫    │......................║
+║..╫          │......            ........................╫     ╫    │......................║
+║..╫          │......            ........................╫     ╫    │......................║
+║..╫          │......eAndMickesCr........................╫     ╫    │......................║
+║..╫          │......────────────........................╫     ╫    │......──────..........║
+║..╫          │............┌───╥──────────────────┐......╫     ╫    │......      ..........║
+║..╫     ╓─────────╥─......│   ╫                  │......╫ GustavsG │......      ..........║
+║..╫ Summ╫         ╫ ......│   ╫                  │......╙─────╨────┘......      ..........║
+║..╙─────╫         ╫      ││ AtulsWorkshop        │......───────╖..........               │║
+║╓──────╖╫ AlicesCottage  │└───╨──────────────────┘......       ╫..........               │║
+║╫      ╫╙─────────╨──────┘......╓─────────..............       ╫..........               │║
+║╫      ╫┌───────╥────┐..........╫         ..............       ╫│     ╫                  │║
+║╫      ╫│       ╫    │..........╫                  ╫╫          ╫│     ╫                  │║
+║╫      ╫│       ╫    │..........╫                  ╫╫ GwensLod ╫│     ╫                  │║
+║╫      ╫│ GuestHouse │....┌────╖╫                  ╫╙──────────╜│ Foundry                │║
+║╫      ╫└───────╨────┘....│    ╫╫                  ╫╓──────────┐└─────╨──────────────────┘║
+║╫      ╫..╓──────────────┐│    ╫╫                  ╫╫          │..........╓──────────────┐║
+║╫      ╫..╫              ││    ╫╫                  ╫╫          │..........╫              │║
+║╫      ╫..╫              ││    ╫╫                  ╫╫          │..........╫              │║
+║╫      ╫..╫              ││    ╫╫ AstridsBungallow ╫╫ Crusher  │..........╫              │║
+║╫      ╫..╫ 2Orchard     ││ Cu ╫╙──────────────────╜╙──────────┘..........╫ 1Orchard     │║
+║╫      ╫..╙──────────────┘└────╜....┌────────╖┌─╥──────────────╖┌────────╖╙──────────────┘║
+║╫      ╫┌───────╥────────╖╓────────┐│ 1Sheep ╫│ ╫              ╫│ 2Sheep ╫┌───────╥──────╖║
+║╫      ╫│       ╫        ╫╫        │└────────╜│ ╫              ╫└────────╜│       ╫      ╫║
+║╫      ╫│       ╫        ╫╫        │┌────────╖│ ╫         ┌────────╖......│       ╫      ╫║
+║╫ Wind ╫│ Field ╫        ╫╫ Loom   ││ 1Kitch ╫│ Sawmill   │ 2Kitch ╫......│ Garden╫      ╫║
+║╙──────╜└───────╨────────╜╙────────┘└────────╜└─╨─────────└────────╜......└───────╨──────╜║
+╚══════════════════════════════════════════════════════════════════════════════════════════╝
+
+=== Rank 18/200  score=297.00  |  Wild-Haven-246 ===
+  placed: 22/22
+  1Kitchen            pos=(18,0)  ladder_globals=22  priority=1
+  1Orchard            pos=(37,5)  ladder_globals=37  priority=2 [LADDER MISMATCH]
+  1SheepsCorral       pos=(18,3)  ladder_globals=22  priority=9
+  2Kitchen            pos=(30,0)  ladder_globals=34  priority=1
+  2Orchard            pos=(5,5)  ladder_globals=5  priority=2
+  2SheepsCorral       pos=(32,3)  ladder_globals=36  priority=9
+  AlicesCottage       pos=(4,11)  ladder_globals=4,9  priority=9
+  AstridsBungallow    pos=(16,6)  ladder_globals=16,25  priority=3
+  AtulsWorkshop       pos=(15,17)  ladder_globals=17  priority=9
+  BriceAndMickesCrib  pos=(18,22)  ladder_globals=18,28  priority=9
+  Crusher             pos=(26,6)  ladder_globals=26  priority=2
+  CuckooClockTower    pos=(13,5)  ladder_globals=15  priority=9
+  Field               pos=(4,0)  ladder_globals=8,12  priority=1
+  Foundry             pos=(32,11)  ladder_globals=35  priority=2
+  Garden              pos=(37,0)  ladder_globals=41,44  priority=1 [LADDER MISMATCH]
+  GuestHouse          pos=(8,16)  ladder_globals=12  priority=9
+  GustavsGallery      pos=(31,19)  ladder_globals=31,34  priority=9
+  GwensLodge          pos=(26,12)  ladder_globals=26,31  priority=9
+  Loom                pos=(13,0)  ladder_globals=13  priority=2
+  Sawmill             pos=(23,0)  ladder_globals=24,31  priority=2
+  SummersSanctuary    pos=(0,18)  ladder_globals=0  priority=9
+  Windmill            pos=(0,0)  ladder_globals=0,3  priority=1
+  priority_cost=29.50  ladder_mismatches=1  key: 1Kitchen@18,0|1Orchard@37,5|1SheepsCorral@18,3|2Kitchen@30,0|2Orchard@5,5|2SheepsCorral@32,3|AlicesCottage@4,11|AstridsBungallow@16,6|AtulsWorkshop@15,17|BriceAndMickesCrib@18,22|Crusher@26,6|CuckooClockTower@13,5|Field@4,0|Foundry@32,11|Garden@37,0|GuestHouse@8,16|GustavsGallery@31,19|GwensLodge@26,12|Loom@13,0|Sawmill@23,0|SummersSanctuary@0,18|Windmill@0,0
+
+╔══════════════════════════════════════════════════════════════════════════════════════════╗
+║..........................................................................................║
+║....................................╓───────────────────╥──┐..............................║
+║....................................╫                   ╫  │..............................║
+║....................................╫                   ╫  │..............................║
+║....................................╫                   ╫  │..............................║
+║....................................╫                   ╫  │..............................║
+║....................................╫                   ╫  │..╓─────╥────┐................║
+║....................................╫                   ╫  │..╫     ╫    │................║
+║╓──────────┐..............................            ........╫     ╫    │................║
+║╫          │..............................            ........╫     ╫    │................║
+║╫          │..............................            ........╫     ╫    │................║
+║╫          │..............................eAndMickesCr........╫     ╫    │................║
+║╫          │..............................────────────........╫     ╫    │──────..........║
+║╫          │..................┌───╥──────────────────┐........╫     ╫    │      ..........║
+║╫     ..........┌───────╥────┐│   ╫                  │........╫ GustavsG │      ..........║
+║╫ Summ..........│       ╫    ││   ╫                  │........╙─────╨────┘      ..........║
+║╙─────..........│       ╫    ││ AtulsWorkshop        │..───────╖..........               │║
+║╓──────╖........│ GuestHouse │└───╨──────────────────┘..       ╫..........               │║
+║╫      ╫........└───────╨────┘..╓─────────..............       ╫..........               │║
+║╫      ╫╓─────────╥─............╫         ..............       ╫│     ╫                  │║
+║╫      ╫╫         ╫ ............╫                  ╫╫          ╫│     ╫                  │║
+║╫      ╫╫         ╫      │......╫                  ╫╫ GwensLod ╫│     ╫                  │║
+║╫      ╫╫ AlicesCottage  │┌────╖╫                  ╫╙──────────╜│ Foundry                │║
+║╫      ╫╙─────────╨──────┘│    ╫╫                  ╫╓──────────┐└─────╨──────────────────┘║
+║╫      ╫..╓──────────────┐│    ╫╫                  ╫╫          │..........╓──────────────┐║
+║╫      ╫..╫              ││    ╫╫                  ╫╫          │..........╫              │║
+║╫      ╫..╫              ││    ╫╫                  ╫╫          │..........╫              │║
+║╫      ╫..╫              ││    ╫╫ AstridsBungallow ╫╫ Crusher  │..........╫              │║
+║╫      ╫..╫ 2Orchard     ││ Cu ╫╙──────────────────╜╙──────────┘..........╫ 1Orchard     │║
+║╫      ╫..╙──────────────┘└────╜....┌────────╖┌─╥──────────────╖┌────────╖╙──────────────┘║
+║╫      ╫┌───────╥────────╖╓────────┐│ 1Sheep ╫│ ╫              ╫│ 2Sheep ╫┌───────╥──────╖║
+║╫      ╫│       ╫        ╫╫        │└────────╜│ ╫              ╫└────────╜│       ╫      ╫║
+║╫      ╫│       ╫        ╫╫        │┌────────╖│ ╫         ..┌────────╖....│       ╫      ╫║
+║╫ Wind ╫│ Field ╫        ╫╫ Loom   ││ 1Kitch ╫│ Sawmill   ..│ 2Kitch ╫....│ Garden╫      ╫║
+║╙──────╜└───────╨────────╜╙────────┘└────────╜└─╨─────────..└────────╜....└───────╨──────╜║
+╚══════════════════════════════════════════════════════════════════════════════════════════╝
 

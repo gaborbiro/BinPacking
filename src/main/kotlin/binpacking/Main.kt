@@ -104,7 +104,7 @@ fun main(args: Array<String>) {
             } else "?"
             val b = lastBest.get()
             val bestStr = if (b != null) "%.2f (%s)".format(b.score, b.runId) else "none"
-            print("\r  ${"%.2f".format(pct)}%  $found found | best score: $bestStr | ETA: $etaStr   ")
+            print("\r  ${"%.15f".format(pct)}%  $found found | best score: $bestStr | ETA: $etaStr   ")
             ckptFile.writeText(buildCheckpoint())
         },
         onSolutionFound = { solution, found ->

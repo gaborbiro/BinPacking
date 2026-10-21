@@ -1,0 +1,8 @@
+{
+  "permissions": {
+    "allow": [
+      "PowerShell(New-Item -ItemType Directory -Force \"C:\\\\Work\\\\BinPacking\\\\src\\\\main\\\\kotlin\\\\binpacking\")",
+      "PowerShell(New-Item -ItemType Directory -Force \"C:\\\\Work\\\\BinPacking\\\\examples\")"
+    ]
+  }
+}

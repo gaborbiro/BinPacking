@@ -27,6 +27,10 @@ class Solver(
 
     private val reportCounter = AtomicLong(0)
 
+    @Volatile private var saRunning = false
+    private var greedyPerm: List<Shape> = emptyList()
+    private var greedyXs:  IntArray     = IntArray(0)
+
     fun solve(): List<Solution> {
         seenKeys.addAll(resumeSeenKeys)
         bestScore = resumeBestScore
@@ -99,6 +103,9 @@ class Solver(
             }
         }
 
+        saRunning = true
+        val saThread = Thread(::runSA, "sa-worker").also { it.isDaemon = true; it.start() }
+
         val pool = ForkJoinPool(Runtime.getRuntime().availableProcessors())
         try {
             pool.submit { tasks.forEach { pool.submit(it) } }.get()
@@ -106,6 +113,9 @@ class Solver(
         } finally {
             pool.shutdown()
         }
+
+        saRunning = false
+        saThread.join(2000)
 
         return solutions.sortedBy { it.score }
     }
@@ -136,6 +146,9 @@ class Solver(
         }
 
         if (placed.size < config.shapes.size) return
+
+        greedyPerm = placed.map { it.shape }
+        greedyXs   = IntArray(placed.size) { placed[it].x }
 
         val solution = Scorer.buildSolution(placed, config)
         if (seenKeys.add(solution.key)) {
@@ -240,6 +253,100 @@ class Solver(
             }
 
             remaining.add(i, shape)
+        }
+    }
+
+    // Evaluates a full placement sequence and returns the resulting Solution,
+    // or null if any shape cannot be settled (no room).
+    private fun evaluate(perm: List<Shape>, xs: IntArray): Solution? {
+        val grid   = Grid(config.container.width, config.container.height)
+        val placed = mutableListOf<Placement>()
+        for ((i, shape) in perm.withIndex()) {
+            val py = grid.settleY(shape, xs[i])
+            if (py == -1) return null
+            grid.place(shape, xs[i], py)
+            placed.add(Placement(shape, xs[i], py))
+        }
+        return Scorer.buildSolution(placed, config)
+    }
+
+    // Simulated annealing worker: runs alongside B&B, sharing bestScore and seenKeys.
+    // State = (permutation of shapes, x position per shape). Two move types:
+    //   swap  — exchange two shapes' permutation slots (changes settling order)
+    //   shift — move one shape's x by ±1
+    // Restarts periodically by reheating with a shuffled permutation seeded from
+    // the best solution found so far.
+    private fun runSA() {
+        val n = config.shapes.size
+        if (n == 0) return
+        val rng = java.util.Random()
+
+        val perm: MutableList<Shape> =
+            if (greedyPerm.isNotEmpty()) greedyPerm.toMutableList()
+            else config.shapes.toMutableList().also { java.util.Collections.shuffle(it, rng) }
+        val xs: IntArray =
+            if (greedyXs.isNotEmpty()) greedyXs.copyOf()
+            else IntArray(n) { i -> rng.nextInt((config.container.width - perm[i].width).coerceAtLeast(0) + 1) }
+
+        var currentScore = evaluate(perm, xs)?.score ?: Double.MAX_VALUE
+
+        val tInitial = if (currentScore < Double.MAX_VALUE) (currentScore * 0.05).coerceAtLeast(1.0) else 10.0
+        var T        = tInitial
+        val tMin     = tInitial * 1e-4
+
+        while (saRunning) {
+            if (config.maxSolutions != -1 && solutions.size >= config.maxSolutions) break
+
+            // Apply move in-place, record undo info
+            val doSwap = n > 1 && rng.nextBoolean()
+            val idx1   = rng.nextInt(n)
+            var idx2   = 0; var savedX = 0
+
+            if (doSwap) {
+                idx2 = rng.nextInt(n - 1).let { if (it >= idx1) it + 1 else it }
+                val t  = perm[idx1]; perm[idx1] = perm[idx2]; perm[idx2] = t
+                val tx = xs[idx1];   xs[idx1]   = xs[idx2];   xs[idx2]   = tx
+            } else {
+                savedX = xs[idx1]
+                val maxX = (config.container.width - perm[idx1].width).coerceAtLeast(0)
+                xs[idx1] = (xs[idx1] + if (rng.nextBoolean()) 1 else -1).coerceIn(0, maxX)
+            }
+
+            val newSol   = evaluate(perm, xs)
+            val newScore = newSol?.score ?: Double.MAX_VALUE
+
+            // Record global improvement regardless of SA acceptance
+            if (newSol != null && newScore < bestScore && seenKeys.add(newSol.key)) {
+                solutions.add(newSol)
+                bestScore = newScore
+                onSolutionFound?.invoke(newSol, solutions.size)
+            }
+
+            // SA acceptance criterion
+            val delta = newScore - currentScore
+            if (delta < 0 || (T > tMin && rng.nextDouble() < Math.exp(-delta / T))) {
+                currentScore = newScore
+            } else {
+                if (doSwap) {
+                    val t  = perm[idx1]; perm[idx1] = perm[idx2]; perm[idx2] = t
+                    val tx = xs[idx1];   xs[idx1]   = xs[idx2];   xs[idx2]   = tx
+                } else {
+                    xs[idx1] = savedX
+                }
+            }
+
+            T *= 0.99995
+            if (T < tMin) {
+                // Reheat: random permutation, seed x positions from best known solution
+                T = tInitial
+                val best = solutions.minByOrNull { it.score }
+                java.util.Collections.shuffle(perm, rng)
+                if (best != null) {
+                    val xByName = best.placements.associate { it.shape.name to it.x }
+                    for (i in 0 until n) xs[i] = xByName[perm[i].name] ?: xs[i]
+                }
+                currentScore = evaluate(perm, xs)?.score ?: Double.MAX_VALUE
+            }
         }
     }
 

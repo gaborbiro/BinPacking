@@ -28,8 +28,8 @@ object Parser {
                 }
                 "max_ladder_gap"  -> { maxLadderGap  = tokens[1].toInt();    i++ }
                 "max_solutions"   -> { maxSolutions   = tokens[1].toInt();    i++ }
-                "weight_priority" -> { weightPriority = tokens[1].toDouble(); i++ }
-                "weight_mismatch" -> { weightMismatch = tokens[1].toDouble(); i++ }
+                "weight_y_priority" -> { weightPriority = tokens[1].toDouble(); i++ }
+                "weight_ladder_mismatch" -> { weightMismatch = tokens[1].toDouble(); i++ }
                 "shape" -> {
                     val name = tokens[1]
                     if (tokens.size >= 4 && tokens[2].toIntOrNull() != null) {
